@@ -1,0 +1,54 @@
+Il seguente tree è il contenuto della cartella "REPLICA_OF_RASPBERRY_SPACE":
+
+.
+└── home
+    └── pi
+        └── aarch64_build_ref-neon
+            ├── audio_files_collector
+            │   └── inference_results.txt
+            ├── History.csv
+            ├── inference_QueenBees_spectrogram_binaries.cpp
+            ├── inference_QueenBees_spectrogram_binaries_exe
+            ├── python_env
+            │   └── sensors_network
+            │       ├── AudioProcessing_Bee_Server_for_esp32_efficient_with_Thingsboard_encrypted.py
+            │       └── credentials.py
+            ├── queen_bee_presence_prediction.tflite
+            ├── received_audio_files
+            └── rpw_presence_prediction.tflite
+
+
+
+In breve, ci sono due folder principali, che sono il "python_env" dove gira il Server RaspberryPi 
+"AudioProcessing_Bee_Server_for_esp32_efficient_with_Thingsboard_encrypted.py" che comunica
+con i vari esp32, e il path "aarch64_build_ref-neon", dove deve necesariamente stare 
+l'eseguibile 'inference_QueenBees_spectrogram_binaries_exe' da chiamare per poter sfruttare
+l'accelerazione della inference tramite ARM-NN.
+
+Le cartelle "received_audio_files" e "audio_files_collector" servono al Server RaspberryPi per poter preprocessare
+gli audio ricevuti dagli esp32, e successivamente classificarli tramite la 
+chiamata all'eseguibile "inference_QueenBees_spectrogram_binaries_exe".
+
+
+
+
+
+Per poter utilizzare  il tutto, da RaspberryPi si può seguire la seguente sequenza di passi da terminale:
+
+-Rendi visibili le librerie .so da utilizzare al sistema operativo:
+pi@pi:~ $ 	export LD_LIBRARY_PATH=/home/pi/aarch64_build_ref-neon:$LD_LIBRARY_PATH
+
+-Spostati sul python environment precedentemente creato:
+pi@pi:~ $ 	cd /home/pi/aarch64_build_ref-neon/python_env/
+
+-Attivalo:
+pi@pi:~/aarch64_build_ref-neon/python_env $ 	source python_env/bin/activate
+
+-Spostati nel path in cui si trova l'ambiente ArmNN da utilizzare:
+(python_env) pi@pi:~/aarch64_build_ref-neon/python_env $ 	cd ..
+
+-Da qui chiama lo script python del Server della rete di sensori da far girare su Raspberry:
+(python_env) pi@pi:~/aarch64_build_ref-neon $ 	python3 /home/pi/aarch64_build_ref-neon/python_env/sensors_network/AudioProcessing_Bee_Server_for_esp32_efficient_with_Thingsboard_encrypted.py
+
+
+

@@ -1,0 +1,8 @@
+Contenuto di questa cartella:
+
+.
+├── ESP32_Code							Codice per Arduino-IDE da usare sulle esp32.
+├── Training_ML_Code					Codice per effettuare il trainig della rete neurale basata su dataset di tipo queen/noqueen.
+├── RaspberryPi_Code					Replica dei path del RaspberryPi dove sono contenuti il codice del Server (python) che deve comunicare con gli esp32 ed effettuare l'inference degli audio.
+├── Sensors_Network_Simulator_Code		Codici Python che simulano in modo 1:1 i codici per esp32 e per RaspberryPi (quest'ultimo è uguale a quello del Server che gira su RaspberryPi).
+└── Python_Utilities_Code				Vari codici python che fungono da utilities per: visualizzare audio e preprocessing, oppure per suddividere gli audio in audio più piccoli.
