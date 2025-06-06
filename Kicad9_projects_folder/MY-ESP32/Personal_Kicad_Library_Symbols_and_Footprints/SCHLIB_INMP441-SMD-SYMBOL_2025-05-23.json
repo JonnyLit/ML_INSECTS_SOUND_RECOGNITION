@@ -1,0 +1,44 @@
+{
+  "head": {
+    "docType": "2",
+    "editorVersion": "6.5.50",
+    "newgId": true,
+    "c_para": {
+      "name": "INMP441-SMD FOOTPRINT",
+      "package": "INMP441_OMNIDIRECTIONAL_MICROPHONE_MODULE",
+      "pre": "U?",
+      "Manufacturer": "Teyleten",
+      "Manufacturer Part": "INMP441",
+      "Supplier Part": "B09G4RNT3G",
+      "Supplier": "RS-Online",
+      "link": "https://www.amazon.com/gp/product/B09G4RNT3G",
+      "Contributor": "jackfulks1"
+    },
+    "c_spiceCmd": null,
+    "hasIdFlag": true,
+    "x": 400,
+    "y": 300,
+    "utime": 1698678184,
+    "uuid": "aa3f63ad28434473b16df2a6c78c476d",
+    "puuid": "24c2b50ac0b540edb54a27df5e81f595",
+    "importFlag": 0
+  },
+  "canvas": "CA~1000~1000~#FFFFFF~yes~#CCCCCC~10~1000~1000~line~10~pixel~5~400~300",
+  "shape": [
+    "E~400~300~5~5~#000000~1~0~none~gge5~0",
+    "P~show~0~8~450~290~0~gge62~0^^450~290^^M 450 290 h -20~#880000^^1~428~293~0~GND~end~~~#0000FF^^1~435~289~0~1~start~~~#0000FF^^0~433~290^^0~M 430 287 L 427 290 L 430 293",
+    "E~400~300~30~30~#000000~1~0~none~gge104~0",
+    "P~show~0~2~450~300~0~gge113~0^^450~300^^M 450 300 h -20~#880000^^1~428~303~0~VDD~end~~~#0000FF^^1~435~299~0~2~start~~~#0000FF^^0~433~300^^0~M 430 297 L 427 300 L 430 303",
+    "P~show~0~3~450~310~0~gge120~0^^450~310^^M 450 310 h -20~#880000^^1~428~313~0~SD~end~~~#0000FF^^1~435~309~0~3~start~~~#0000FF^^0~433~310^^0~M 430 307 L 427 310 L 430 313",
+    "P~show~0~4~350~310~180~gge134~0^^350~310^^M 350 310 h 20~#880000^^1~372~313~0~SCK~start~~~#0000FF^^1~365~309~0~4~end~~~#0000FF^^0~367~310^^0~M 370 313 L 373 310 L 370 307",
+    "P~show~0~5~350~300~180~gge148~0^^350~300^^M 350 300 h 20~#880000^^1~372~303~0~WS~start~~~#0000FF^^1~365~299~0~5~end~~~#0000FF^^0~367~300^^0~M 370 303 L 373 300 L 370 297",
+    "P~show~0~6~350~290~180~gge155~0^^350~290^^M 350 290 h 20~#880000^^1~372~293~0~L/R~start~~~#0000FF^^1~365~289~0~6~end~~~#0000FF^^0~367~290^^0~M 370 293 L 373 290 L 370 287"
+  ],
+  "BBox": {
+    "x": 349,
+    "y": 270,
+    "width": 102,
+    "height": 60
+  },
+  "colors": {}
+}
