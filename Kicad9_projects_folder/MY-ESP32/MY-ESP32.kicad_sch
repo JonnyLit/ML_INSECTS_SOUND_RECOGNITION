@@ -6192,7 +6192,7 @@
 	)
 	(text "Decoupling smd ceramic\ncapacitor 0603 package\n(it should stay as near \nas possible to 3V3 \nwhen designed)"
 		(exclude_from_sim no)
-		(at 435.102 42.672 0)
+		(at 408.432 42.672 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6550,13 +6550,13 @@
 		(uuid "32583c75-61f7-4c5a-b1f9-7a86129c6f9e")
 	)
 	(junction
-		(at 486.41 90.17)
+		(at 459.74 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "080f75e9-0129-45bd-a5d7-17f0429201ea")
 	)
 	(junction
-		(at 495.3 95.25)
+		(at 468.63 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a3c0c56-2e30-40c4-98ed-3e08af5ca594")
@@ -6572,6 +6572,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "102c5986-97db-4ad0-8633-c869b9ecdbb0")
+	)
+	(junction
+		(at 478.79 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "122473b0-6796-45db-95a9-634fe71eecff")
 	)
 	(junction
 		(at 180.34 232.41)
@@ -6592,7 +6598,7 @@
 		(uuid "1e530ca1-8a71-41ba-9fa8-b56af73e2305")
 	)
 	(junction
-		(at 477.52 85.09)
+		(at 450.85 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22a05095-8737-4b25-a426-af0451b5e8f6")
@@ -6608,6 +6614,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30cf555e-f265-454e-9f6c-d0ae758b18af")
+	)
+	(junction
+		(at 516.89 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "316cfd75-5141-4785-972a-01230c28ef5c")
 	)
 	(junction
 		(at 177.8 87.63)
@@ -6676,7 +6688,7 @@
 		(uuid "652110b3-5a39-4c65-869c-e4de7d5b23c9")
 	)
 	(junction
-		(at 544.83 90.17)
+		(at 566.42 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ab15286-56f8-4cb4-9ad7-0ed98954e782")
@@ -6700,7 +6712,7 @@
 		(uuid "8823870e-2198-44fb-993e-2ac36818ad87")
 	)
 	(junction
-		(at 486.41 34.29)
+		(at 459.74 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8fcba1d4-5fdc-41fa-ab5f-9987acb3dde7")
@@ -6760,7 +6772,7 @@
 		(uuid "b3a94951-8470-4efb-b403-201405908606")
 	)
 	(junction
-		(at 529.59 109.22)
+		(at 551.18 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfa352d9-4dfc-4e3d-9c4b-5c8830481f2f")
@@ -6784,19 +6796,25 @@
 		(uuid "cc76aab7-1a66-4bda-a658-c77dcf631792")
 	)
 	(junction
+		(at 505.46 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d11de161-58a5-41d5-8eba-2b74ed85e1f3")
+	)
+	(junction
 		(at 364.49 364.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d64f42eb-9095-431a-bde7-e7cbcaaec275")
 	)
 	(junction
-		(at 477.52 34.29)
+		(at 450.85 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8c48f66-ac38-40f4-aee1-b1151e1edf2f")
 	)
 	(junction
-		(at 462.28 34.29)
+		(at 435.61 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc1c0a5b-dada-4e70-9610-8f1bc038f8c8")
@@ -6808,13 +6826,13 @@
 		(uuid "e06d2acb-fc91-4d90-9230-0154b3450655")
 	)
 	(junction
-		(at 529.59 71.12)
+		(at 551.18 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2bd06b8-bf52-4789-a450-45bbd24db322")
 	)
 	(junction
-		(at 495.3 34.29)
+		(at 468.63 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e541cefb-e6d6-4ce6-9118-9298c8abe368")
@@ -6894,8 +6912,8 @@
 		(uuid "4246d95c-4dc8-4c85-b4f1-cdf0a15365bf")
 	)
 	(no_connect
-		(at 509.27 80.01)
-		(uuid "49975151-b207-4bcb-92ee-c69a1b3230d6")
+		(at 530.86 100.33)
+		(uuid "43d27b79-5b3a-4b06-8455-65748727fe54")
 	)
 	(no_connect
 		(at 492.76 279.4)
@@ -6910,16 +6928,8 @@
 		(uuid "53f6baa1-486c-421c-87ec-1d1e2c27afa8")
 	)
 	(no_connect
-		(at 509.27 97.79)
-		(uuid "54644a2b-8094-46f5-9b2c-450bb1cce365")
-	)
-	(no_connect
 		(at 193.04 295.91)
 		(uuid "58cc8e24-e944-419d-9448-f76bde00d44e")
-	)
-	(no_connect
-		(at 509.27 100.33)
-		(uuid "6242dcb2-7c38-420a-9c85-f6357a717d19")
 	)
 	(no_connect
 		(at 193.04 270.51)
@@ -6940,10 +6950,6 @@
 	(no_connect
 		(at 492.76 281.94)
 		(uuid "a7a1144b-bf5d-4b78-b859-ca39a2e0c833")
-	)
-	(no_connect
-		(at 509.27 82.55)
-		(uuid "cfccfcc5-1890-4591-97a4-617d03b8ede4")
 	)
 	(no_connect
 		(at 523.24 264.16)
@@ -6985,7 +6991,7 @@
 	)
 	(wire
 		(pts
-			(xy 544.83 90.17) (xy 549.91 90.17)
+			(xy 566.42 90.17) (xy 571.5 90.17)
 		)
 		(stroke
 			(width 0)
@@ -7005,7 +7011,7 @@
 	)
 	(wire
 		(pts
-			(xy 495.3 71.12) (xy 495.3 95.25)
+			(xy 468.63 71.12) (xy 468.63 95.25)
 		)
 		(stroke
 			(width 0)
@@ -7015,7 +7021,17 @@
 	)
 	(wire
 		(pts
-			(xy 544.83 71.12) (xy 544.83 90.17)
+			(xy 478.79 83.82) (xy 478.79 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08c49d43-3f3d-4e3d-8fcb-ebb76e390183")
+	)
+	(wire
+		(pts
+			(xy 566.42 71.12) (xy 566.42 90.17)
 		)
 		(stroke
 			(width 0)
@@ -7025,7 +7041,7 @@
 	)
 	(wire
 		(pts
-			(xy 529.59 71.12) (xy 529.59 74.93)
+			(xy 551.18 71.12) (xy 551.18 74.93)
 		)
 		(stroke
 			(width 0)
@@ -7035,7 +7051,7 @@
 	)
 	(wire
 		(pts
-			(xy 544.83 109.22) (xy 544.83 90.17)
+			(xy 566.42 109.22) (xy 566.42 90.17)
 		)
 		(stroke
 			(width 0)
@@ -7215,7 +7231,7 @@
 	)
 	(wire
 		(pts
-			(xy 524.51 71.12) (xy 529.59 71.12)
+			(xy 546.1 71.12) (xy 551.18 71.12)
 		)
 		(stroke
 			(width 0)
@@ -7265,6 +7281,16 @@
 	)
 	(wire
 		(pts
+			(xy 516.89 34.29) (xy 527.05 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1913df3c-4d0b-4ed9-8d7c-7e0c99c6edb3")
+	)
+	(wire
+		(pts
 			(xy 180.34 232.41) (xy 184.15 232.41)
 		)
 		(stroke
@@ -7305,7 +7331,7 @@
 	)
 	(wire
 		(pts
-			(xy 502.92 34.29) (xy 502.92 87.63)
+			(xy 527.05 34.29) (xy 527.05 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7315,7 +7341,7 @@
 	)
 	(wire
 		(pts
-			(xy 473.71 90.17) (xy 486.41 90.17)
+			(xy 447.04 90.17) (xy 459.74 90.17)
 		)
 		(stroke
 			(width 0)
@@ -7332,6 +7358,16 @@
 			(type default)
 		)
 		(uuid "223aa121-fc8f-4281-b606-9ab093147b8f")
+	)
+	(wire
+		(pts
+			(xy 478.79 97.79) (xy 530.86 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2293695d-2321-4a12-843c-6e95a3e9db40")
 	)
 	(wire
 		(pts
@@ -7385,6 +7421,16 @@
 	)
 	(wire
 		(pts
+			(xy 505.46 82.55) (xy 530.86 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee8f0fd-5b1c-40f3-b5ee-e92c035720d5")
+	)
+	(wire
+		(pts
 			(xy 424.18 168.91) (xy 427.99 168.91)
 		)
 		(stroke
@@ -7402,16 +7448,6 @@
 			(type default)
 		)
 		(uuid "2f59feb8-2c5c-40cb-9e29-71eb4eefc330")
-	)
-	(wire
-		(pts
-			(xy 486.41 90.17) (xy 509.27 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "303399c0-cacc-440e-8f4c-8c50dbb2957e")
 	)
 	(wire
 		(pts
@@ -7495,23 +7531,13 @@
 	)
 	(wire
 		(pts
-			(xy 524.51 74.93) (xy 524.51 71.12)
+			(xy 546.1 74.93) (xy 546.1 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "356cc590-4fc1-442b-9110-72cedeb497c2")
-	)
-	(wire
-		(pts
-			(xy 495.3 95.25) (xy 509.27 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3638c23b-ce89-4ae4-9c4a-6e8c3ff724ca")
 	)
 	(wire
 		(pts
@@ -7595,6 +7621,16 @@
 	)
 	(wire
 		(pts
+			(xy 505.46 34.29) (xy 505.46 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9c6f42-a413-47fc-ba5b-c6b36afc7184")
+	)
+	(wire
+		(pts
 			(xy 118.11 87.63) (xy 147.32 87.63)
 		)
 		(stroke
@@ -7625,6 +7661,16 @@
 	)
 	(wire
 		(pts
+			(xy 505.46 58.42) (xy 505.46 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41c437eb-c7b8-415b-8c48-12b792b7b655")
+	)
+	(wire
+		(pts
 			(xy 237.49 264.16) (xy 265.43 264.16)
 		)
 		(stroke
@@ -7635,7 +7681,7 @@
 	)
 	(wire
 		(pts
-			(xy 462.28 34.29) (xy 477.52 34.29)
+			(xy 435.61 34.29) (xy 450.85 34.29)
 		)
 		(stroke
 			(width 0)
@@ -7715,7 +7761,7 @@
 	)
 	(wire
 		(pts
-			(xy 462.28 49.53) (xy 462.28 45.72)
+			(xy 435.61 49.53) (xy 435.61 45.72)
 		)
 		(stroke
 			(width 0)
@@ -7825,7 +7871,7 @@
 	)
 	(wire
 		(pts
-			(xy 473.71 85.09) (xy 477.52 85.09)
+			(xy 447.04 85.09) (xy 450.85 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7845,7 +7891,7 @@
 	)
 	(wire
 		(pts
-			(xy 502.92 87.63) (xy 509.27 87.63)
+			(xy 527.05 87.63) (xy 530.86 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7875,7 +7921,7 @@
 	)
 	(wire
 		(pts
-			(xy 477.52 34.29) (xy 477.52 35.56)
+			(xy 450.85 34.29) (xy 450.85 35.56)
 		)
 		(stroke
 			(width 0)
@@ -7892,6 +7938,16 @@
 			(type default)
 		)
 		(uuid "531640ec-d521-4aa9-8d73-8f7a3a885202")
+	)
+	(wire
+		(pts
+			(xy 516.89 80.01) (xy 530.86 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539b0fdd-b919-438c-b742-11f06c56f6b7")
 	)
 	(wire
 		(pts
@@ -7915,7 +7971,7 @@
 	)
 	(wire
 		(pts
-			(xy 524.51 109.22) (xy 529.59 109.22)
+			(xy 546.1 109.22) (xy 551.18 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8105,6 +8161,16 @@
 	)
 	(wire
 		(pts
+			(xy 516.89 92.71) (xy 530.86 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63ff6d5b-024a-4b33-82b1-6c024f7db8f3")
+	)
+	(wire
+		(pts
 			(xy 424.18 185.42) (xy 427.99 185.42)
 		)
 		(stroke
@@ -8165,7 +8231,7 @@
 	)
 	(wire
 		(pts
-			(xy 529.59 105.41) (xy 529.59 109.22)
+			(xy 551.18 105.41) (xy 551.18 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8225,6 +8291,16 @@
 	)
 	(wire
 		(pts
+			(xy 459.74 90.17) (xy 530.86 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e76e8aa-fd88-4eab-b5f1-48562bfc4365")
+	)
+	(wire
+		(pts
 			(xy 194.31 190.5) (xy 198.12 190.5)
 		)
 		(stroke
@@ -8232,6 +8308,16 @@
 			(type default)
 		)
 		(uuid "6f437984-5436-446d-ab04-176c3ec65bfe")
+	)
+	(wire
+		(pts
+			(xy 516.89 48.26) (xy 516.89 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70c4cfed-9a55-4a71-88b5-62efbaa91af1")
 	)
 	(wire
 		(pts
@@ -8265,7 +8351,7 @@
 	)
 	(wire
 		(pts
-			(xy 477.52 45.72) (xy 477.52 85.09)
+			(xy 450.85 45.72) (xy 450.85 85.09)
 		)
 		(stroke
 			(width 0)
@@ -8302,6 +8388,16 @@
 			(type default)
 		)
 		(uuid "771456e4-78c0-4919-8174-1d2a36da1b64")
+	)
+	(wire
+		(pts
+			(xy 516.89 34.29) (xy 516.89 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7748400c-c3fe-41ed-846b-c7e6a4bea94b")
 	)
 	(wire
 		(pts
@@ -8445,6 +8541,16 @@
 	)
 	(wire
 		(pts
+			(xy 450.85 85.09) (xy 530.86 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a096880-7dca-4310-a5db-0a07cb6eeb38")
+	)
+	(wire
+		(pts
 			(xy 424.18 163.83) (xy 427.99 163.83)
 		)
 		(stroke
@@ -8475,7 +8581,7 @@
 	)
 	(wire
 		(pts
-			(xy 486.41 34.29) (xy 486.41 48.26)
+			(xy 459.74 34.29) (xy 459.74 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8502,6 +8608,16 @@
 			(type default)
 		)
 		(uuid "8f96e553-0963-4354-a795-4991f391a9b8")
+	)
+	(wire
+		(pts
+			(xy 478.79 34.29) (xy 478.79 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ff6935c-1479-4bfe-a99c-0b326c3f77ca")
 	)
 	(wire
 		(pts
@@ -8575,7 +8691,7 @@
 	)
 	(wire
 		(pts
-			(xy 486.41 34.29) (xy 495.3 34.29)
+			(xy 459.74 34.29) (xy 468.63 34.29)
 		)
 		(stroke
 			(width 0)
@@ -8605,7 +8721,7 @@
 	)
 	(wire
 		(pts
-			(xy 472.44 95.25) (xy 495.3 95.25)
+			(xy 445.77 95.25) (xy 468.63 95.25)
 		)
 		(stroke
 			(width 0)
@@ -8645,7 +8761,7 @@
 	)
 	(wire
 		(pts
-			(xy 462.28 31.75) (xy 462.28 34.29)
+			(xy 435.61 31.75) (xy 435.61 34.29)
 		)
 		(stroke
 			(width 0)
@@ -8715,6 +8831,16 @@
 	)
 	(wire
 		(pts
+			(xy 468.63 95.25) (xy 530.86 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a72832aa-f2cd-4909-bdaf-91b6f33e1bfe")
+	)
+	(wire
+		(pts
 			(xy 220.98 93.98) (xy 227.33 93.98)
 		)
 		(stroke
@@ -8732,6 +8858,16 @@
 			(type default)
 		)
 		(uuid "a83bc1ae-6c1a-4691-8c9f-d12569e5d197")
+	)
+	(wire
+		(pts
+			(xy 505.46 34.29) (xy 516.89 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8487cfe-c8e6-4639-95e3-17c47b80dd1c")
 	)
 	(wire
 		(pts
@@ -8795,7 +8931,7 @@
 	)
 	(wire
 		(pts
-			(xy 524.51 105.41) (xy 524.51 109.22)
+			(xy 546.1 105.41) (xy 546.1 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8805,7 +8941,7 @@
 	)
 	(wire
 		(pts
-			(xy 477.52 34.29) (xy 486.41 34.29)
+			(xy 450.85 34.29) (xy 459.74 34.29)
 		)
 		(stroke
 			(width 0)
@@ -8815,7 +8951,7 @@
 	)
 	(wire
 		(pts
-			(xy 495.3 34.29) (xy 502.92 34.29)
+			(xy 468.63 34.29) (xy 478.79 34.29)
 		)
 		(stroke
 			(width 0)
@@ -8905,7 +9041,7 @@
 	)
 	(wire
 		(pts
-			(xy 495.3 34.29) (xy 495.3 60.96)
+			(xy 468.63 34.29) (xy 468.63 60.96)
 		)
 		(stroke
 			(width 0)
@@ -8965,7 +9101,7 @@
 	)
 	(wire
 		(pts
-			(xy 529.59 71.12) (xy 544.83 71.12)
+			(xy 551.18 71.12) (xy 566.42 71.12)
 		)
 		(stroke
 			(width 0)
@@ -9002,16 +9138,6 @@
 			(type default)
 		)
 		(uuid "c4b3bd5b-e60a-4137-bfff-5c82fa3fc85b")
-	)
-	(wire
-		(pts
-			(xy 502.92 92.71) (xy 502.92 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c52e49ef-f7d5-4818-81a2-422792566de2")
 	)
 	(wire
 		(pts
@@ -9075,7 +9201,7 @@
 	)
 	(wire
 		(pts
-			(xy 486.41 58.42) (xy 486.41 90.17)
+			(xy 459.74 58.42) (xy 459.74 90.17)
 		)
 		(stroke
 			(width 0)
@@ -9112,16 +9238,6 @@
 			(type default)
 		)
 		(uuid "d417165d-f113-4b94-8a86-170798a7d609")
-	)
-	(wire
-		(pts
-			(xy 502.92 92.71) (xy 509.27 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d468e8df-c41b-4202-84aa-2e0822c339d6")
 	)
 	(wire
 		(pts
@@ -9195,7 +9311,7 @@
 	)
 	(wire
 		(pts
-			(xy 529.59 109.22) (xy 544.83 109.22)
+			(xy 551.18 109.22) (xy 566.42 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9272,6 +9388,16 @@
 			(type default)
 		)
 		(uuid "e69089a9-7c36-43d3-ab13-447efe4d2635")
+	)
+	(wire
+		(pts
+			(xy 478.79 34.29) (xy 505.46 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6b275f3-0b11-4b0a-b96c-d9373a023026")
 	)
 	(wire
 		(pts
@@ -9415,7 +9541,7 @@
 	)
 	(wire
 		(pts
-			(xy 462.28 34.29) (xy 462.28 38.1)
+			(xy 435.61 34.29) (xy 435.61 38.1)
 		)
 		(stroke
 			(width 0)
@@ -9472,16 +9598,6 @@
 			(type default)
 		)
 		(uuid "fa2de743-28f9-4be2-b43e-8d1cb1f044c8")
-	)
-	(wire
-		(pts
-			(xy 477.52 85.09) (xy 509.27 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa87e620-ad4b-4855-8ed6-3fba9805fdb8")
 	)
 	(wire
 		(pts
@@ -9567,7 +9683,7 @@
 	)
 	(global_label "D2"
 		(shape input)
-		(at 472.44 95.25 180)
+		(at 445.77 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9577,7 +9693,7 @@
 		)
 		(uuid "04a0d028-0570-4bca-89c1-990c8e7a7df9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 466.9753 95.25 0)
+			(at 440.3053 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10425,7 +10541,7 @@
 	)
 	(global_label "D15"
 		(shape input)
-		(at 473.71 85.09 180)
+		(at 447.04 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10435,7 +10551,7 @@
 		)
 		(uuid "8f4268b2-3414-4c41-ab9f-3d94c398fab4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 467.0358 85.09 0)
+			(at 440.3658 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10997,7 +11113,7 @@
 	)
 	(global_label "D14"
 		(shape input)
-		(at 473.71 90.17 180)
+		(at 447.04 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11007,7 +11123,7 @@
 		)
 		(uuid "f49583d6-bb22-4fde-9164-e46a04849c5b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 467.0358 90.17 0)
+			(at 440.3658 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11480,7 +11596,7 @@
 	(symbol
 		(lib_name "+3V3_1")
 		(lib_id "power:+3V3")
-		(at 462.28 31.75 0)
+		(at 435.61 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11489,7 +11605,7 @@
 		(fields_autoplaced yes)
 		(uuid "05a8b6e0-8a35-4a0c-ae7f-c17300c1c772")
 		(property "Reference" "#PWR032"
-			(at 462.28 35.56 0)
+			(at 435.61 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11498,7 +11614,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 462.28 26.67 0)
+			(at 435.61 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11506,7 +11622,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 462.28 31.75 0)
+			(at 435.61 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11515,7 +11631,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 462.28 31.75 0)
+			(at 435.61 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11524,7 +11640,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 462.28 31.75 0)
+			(at 435.61 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11547,7 +11663,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 462.28 49.53 0)
+		(at 435.61 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11556,7 +11672,7 @@
 		(fields_autoplaced yes)
 		(uuid "062693d1-9a19-4bfa-954d-a33b57a7a51b")
 		(property "Reference" "#PWR028"
-			(at 462.28 55.88 0)
+			(at 435.61 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11565,7 +11681,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 462.28 54.61 0)
+			(at 435.61 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11573,7 +11689,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 462.28 49.53 0)
+			(at 435.61 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11582,7 +11698,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 462.28 49.53 0)
+			(at 435.61 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11591,7 +11707,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 462.28 49.53 0)
+			(at 435.61 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11756,7 +11872,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 549.91 90.17 0)
+		(at 571.5 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11765,7 +11881,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e351971-d744-48e5-a7b5-6bd22502a9ff")
 		(property "Reference" "#PWR027"
-			(at 549.91 96.52 0)
+			(at 571.5 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11774,7 +11890,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 549.91 95.25 0)
+			(at 571.5 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11782,7 +11898,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 549.91 90.17 0)
+			(at 571.5 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11791,7 +11907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 549.91 90.17 0)
+			(at 571.5 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11800,7 +11916,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 549.91 90.17 0)
+			(at 571.5 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11949,6 +12065,119 @@
 			(project "MY-ESP32"
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
 					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "My_Personal_Symbols_Library:0603WAF7501T5E")
+		(at 505.46 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15ff0b12-663c-4d16-a2a0-dea70092669f")
+		(property "Reference" "R25"
+			(at 508 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "7.5kΩ"
+			(at 509.27 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "My_Personal_Footprints_Library:0603WAF7501T5E"
+			(at 498.348 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 492.76 53.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Type:Thick Film Resistors Resistance:7.5kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"
+			(at 495.3 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF7501T5E"
+			(at 517.144 53.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 519.684 53.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C23234"
+			(at 511.81 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 521.97 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "7.5kΩ ±1% 100mW"
+			(at 516.636 56.642 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b71808f-5616-489f-abbf-c57aed9528bc")
+		)
+		(pin "2"
+			(uuid "fd126713-6e59-4859-8807-b8434ca6b164")
+		)
+		(instances
+			(project "MY-ESP32"
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -12508,7 +12737,7 @@
 	)
 	(symbol
 		(lib_id "My_Personal_Symbols_Library:0603WAF7501T5E")
-		(at 486.41 53.34 90)
+		(at 459.74 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12516,7 +12745,7 @@
 		(dnp no)
 		(uuid "2da95b68-ab6e-4e2e-85d5-058eb7fd0ca4")
 		(property "Reference" "R22"
-			(at 488.95 53.3399 90)
+			(at 462.28 53.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12525,7 +12754,7 @@
 			)
 		)
 		(property "Value" "7.5kΩ"
-			(at 490.22 53.34 0)
+			(at 463.55 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12534,7 +12763,7 @@
 			)
 		)
 		(property "Footprint" "My_Personal_Footprints_Library:0603WAF7501T5E"
-			(at 479.298 53.34 0)
+			(at 452.628 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12543,7 +12772,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 473.71 53.086 0)
+			(at 447.04 53.086 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12552,7 +12781,7 @@
 			)
 		)
 		(property "Description" "Type:Thick Film Resistors Resistance:7.5kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"
-			(at 476.25 53.34 0)
+			(at 449.58 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12561,7 +12790,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF7501T5E"
-			(at 498.094 53.086 0)
+			(at 471.424 53.086 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12570,7 +12799,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 500.634 53.848 0)
+			(at 473.964 53.848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12579,7 +12808,7 @@
 			)
 		)
 		(property "Supplier Part" "C23234"
-			(at 492.76 53.34 0)
+			(at 466.09 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12588,7 +12817,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 502.92 53.34 0)
+			(at 476.25 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12597,7 +12826,7 @@
 			)
 		)
 		(property "LCSC Part Name" "7.5kΩ ±1% 100mW"
-			(at 497.586 56.642 90)
+			(at 470.916 56.642 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12621,7 +12850,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 393.7 43.18 0)
+		(at 358.14 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12629,7 +12858,7 @@
 		(dnp no)
 		(uuid "2dfbbebf-3cf3-4b77-8ef4-7c14f1ff3edf")
 		(property "Reference" "TP1"
-			(at 393.7 38.1 90)
+			(at 358.14 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12638,7 +12867,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 396.24 40.005 0)
+			(at 360.68 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12647,7 +12876,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 398.78 43.18 0)
+			(at 363.22 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12656,7 +12885,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 398.78 43.18 0)
+			(at 363.22 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12665,7 +12894,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 393.7 43.18 0)
+			(at 358.14 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13188,7 +13417,7 @@
 	)
 	(symbol
 		(lib_id "My_Personal_Symbols_Library:0603WAF7501T5E")
-		(at 495.3 66.04 90)
+		(at 468.63 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13196,7 +13425,7 @@
 		(dnp no)
 		(uuid "3f426695-9cdc-49fa-89fe-03af7e372fd8")
 		(property "Reference" "R23"
-			(at 497.84 66.0399 90)
+			(at 471.17 66.0399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13205,7 +13434,7 @@
 			)
 		)
 		(property "Value" "7.5kΩ"
-			(at 499.11 66.04 0)
+			(at 472.44 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13214,7 +13443,7 @@
 			)
 		)
 		(property "Footprint" "My_Personal_Footprints_Library:0603WAF7501T5E"
-			(at 488.188 66.04 0)
+			(at 461.518 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13223,7 +13452,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 482.6 65.786 0)
+			(at 455.93 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13232,7 +13461,7 @@
 			)
 		)
 		(property "Description" "Type:Thick Film Resistors Resistance:7.5kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"
-			(at 485.14 66.04 0)
+			(at 458.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13241,7 +13470,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF7501T5E"
-			(at 506.984 65.786 0)
+			(at 480.314 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13250,7 +13479,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 509.524 66.548 0)
+			(at 482.854 66.548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13259,7 +13488,7 @@
 			)
 		)
 		(property "Supplier Part" "C23234"
-			(at 501.65 66.04 0)
+			(at 474.98 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13268,7 +13497,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 511.81 66.04 0)
+			(at 485.14 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13277,7 +13506,7 @@
 			)
 		)
 		(property "LCSC Part Name" "7.5kΩ ±1% 100mW"
-			(at 506.476 69.342 90)
+			(at 479.806 69.342 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14627,7 +14856,7 @@
 	)
 	(symbol
 		(lib_id "My_Personal_Symbols_Library:0603WAF7501T5E")
-		(at 477.52 40.64 90)
+		(at 450.85 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14635,7 +14864,7 @@
 		(dnp no)
 		(uuid "60d3c24c-d4be-4a11-aa99-f6c3b40c6cde")
 		(property "Reference" "R21"
-			(at 480.06 40.6399 90)
+			(at 453.39 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14644,7 +14873,7 @@
 			)
 		)
 		(property "Value" "7.5kΩ"
-			(at 481.33 40.64 0)
+			(at 454.66 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14653,7 +14882,7 @@
 			)
 		)
 		(property "Footprint" "My_Personal_Footprints_Library:0603WAF7501T5E"
-			(at 470.408 40.64 0)
+			(at 443.738 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14662,7 +14891,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 464.82 40.386 0)
+			(at 438.15 40.386 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14671,7 +14900,7 @@
 			)
 		)
 		(property "Description" "Type:Thick Film Resistors Resistance:7.5kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"
-			(at 467.36 40.64 0)
+			(at 440.69 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14680,7 +14909,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF7501T5E"
-			(at 489.204 40.386 0)
+			(at 462.534 40.386 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14689,7 +14918,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 491.744 41.148 0)
+			(at 465.074 41.148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14698,7 +14927,7 @@
 			)
 		)
 		(property "Supplier Part" "C23234"
-			(at 483.87 40.64 0)
+			(at 457.2 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14707,7 +14936,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 494.03 40.64 0)
+			(at 467.36 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14716,7 +14945,7 @@
 			)
 		)
 		(property "LCSC Part Name" "7.5kΩ ±1% 100mW"
-			(at 488.696 43.942 90)
+			(at 462.026 43.942 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14989,6 +15218,119 @@
 		)
 	)
 	(symbol
+		(lib_id "My_Personal_Symbols_Library:0603WAF7501T5E")
+		(at 478.79 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66562076-3335-4615-b52d-03eb6888f30d")
+		(property "Reference" "R26"
+			(at 481.33 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "7.5kΩ"
+			(at 482.6 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "My_Personal_Footprints_Library:0603WAF7501T5E"
+			(at 471.678 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 466.09 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Type:Thick Film Resistors Resistance:7.5kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"
+			(at 468.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF7501T5E"
+			(at 490.474 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 493.014 79.248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C23234"
+			(at 485.14 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 495.3 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "7.5kΩ ±1% 100mW"
+			(at 489.966 82.042 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "335f7756-f6c9-4375-8a48-5430c8df2e11")
+		)
+		(pin "2"
+			(uuid "0ec7002f-0867-4fd7-97c4-84281bdeb3dc")
+		)
+		(instances
+			(project "MY-ESP32"
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "My_Personal_Symbols_Library:Header-Female-2.54_1x2")
 		(at 500.38 186.69 0)
 		(unit 1)
@@ -15106,7 +15448,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 502.92 104.14 0)
+		(at 516.89 92.71 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15115,7 +15457,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f47eb1f-d125-4139-8604-234fba309419")
 		(property "Reference" "#PWR026"
-			(at 502.92 110.49 0)
+			(at 510.54 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15124,7 +15466,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 502.92 109.22 0)
+			(at 515.62 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15132,7 +15474,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 502.92 104.14 0)
+			(at 516.89 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15141,7 +15483,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 502.92 104.14 0)
+			(at 516.89 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15150,7 +15492,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 502.92 104.14 0)
+			(at 516.89 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15306,7 +15648,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 412.75 40.64 0)
+		(at 377.19 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15315,7 +15657,7 @@
 		(fields_autoplaced yes)
 		(uuid "785f62af-d013-4946-97f6-96c22330ed68")
 		(property "Reference" "#PWR030"
-			(at 412.75 46.99 0)
+			(at 377.19 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15324,7 +15666,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 412.75 45.72 0)
+			(at 377.19 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15332,7 +15674,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 412.75 40.64 0)
+			(at 377.19 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15341,7 +15683,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 412.75 40.64 0)
+			(at 377.19 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15350,7 +15692,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 412.75 40.64 0)
+			(at 377.19 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16754,7 +17096,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 393.7 43.18 0)
+		(at 358.14 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16763,7 +17105,7 @@
 		(fields_autoplaced yes)
 		(uuid "a26c881f-d32c-4663-8e5d-095ba881e07b")
 		(property "Reference" "#PWR029"
-			(at 393.7 49.53 0)
+			(at 358.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16772,7 +17114,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 393.7 48.26 0)
+			(at 358.14 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16780,7 +17122,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 393.7 43.18 0)
+			(at 358.14 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16789,7 +17131,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 393.7 43.18 0)
+			(at 358.14 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16798,7 +17140,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 393.7 43.18 0)
+			(at 358.14 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16820,7 +17162,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 412.75 40.64 0)
+		(at 377.19 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16829,7 +17171,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3066d39-4865-447a-a0bf-28fa84d7a81b")
 		(property "Reference" "#FLG04"
-			(at 412.75 38.735 0)
+			(at 377.19 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16838,7 +17180,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 414.401 39.8038 0)
+			(at 378.841 88.0638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16847,7 +17189,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 412.75 40.64 0)
+			(at 377.19 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16856,7 +17198,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 412.75 40.64 0)
+			(at 377.19 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16865,7 +17207,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 412.75 40.64 0)
+			(at 377.19 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17164,7 +17506,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 462.28 41.91 180)
+		(at 435.61 41.91 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17173,7 +17515,7 @@
 		(fields_autoplaced yes)
 		(uuid "b094f5b7-43a3-4005-94eb-46b86dc26bd2")
 		(property "Reference" "C10"
-			(at 466.09 40.6399 0)
+			(at 439.42 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17182,7 +17524,7 @@
 			)
 		)
 		(property "Value" "104"
-			(at 466.09 43.1799 0)
+			(at 439.42 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17191,7 +17533,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 461.3148 38.1 0)
+			(at 434.6448 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17200,7 +17542,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 462.28 41.91 0)
+			(at 435.61 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17209,7 +17551,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 462.28 41.91 0)
+			(at 435.61 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17217,7 +17559,7 @@
 			)
 		)
 		(property "REF" "C49678"
-			(at 462.28 41.91 0)
+			(at 435.61 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18485,7 +18827,7 @@
 	)
 	(symbol
 		(lib_id "My_Personal_Symbols_Library:TF PUSH - micro_SD_card_slot")
-		(at 519.43 90.17 0)
+		(at 541.02 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18493,7 +18835,7 @@
 		(dnp no)
 		(uuid "e1031333-6896-4808-858f-5101deec6c69")
 		(property "Reference" "CARD1"
-			(at 536.194 92.456 90)
+			(at 557.784 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18502,7 +18844,7 @@
 			)
 		)
 		(property "Value" "micro SD Card slot TF PUSH"
-			(at 533.4 103.886 90)
+			(at 554.99 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18511,7 +18853,7 @@
 			)
 		)
 		(property "Footprint" "My_Personal_Footprints_Library:TF-SMD_TF-PUSH-micro_SD_card_slot"
-			(at 519.43 122.936 0)
+			(at 541.02 122.936 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18520,7 +18862,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20191011/C393941_0DDD896EE907FEB750D8B7B8982E2A67.pdf"
-			(at 519.43 59.182 0)
+			(at 541.02 59.182 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18529,7 +18871,7 @@
 			)
 		)
 		(property "Description" "Card Connection Mode:Self-bouncing Card Type:MicroSD card (TF card) Connector Type:Card Slot Additional Card Detection Pins:None Supplementary Features:- Maximum Body Height:2mm Operating Temperature Range:-20°C~+90°C Operating Temperature Range:-20°C~+90°C"
-			(at 520.7 62.738 0)
+			(at 542.29 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18538,7 +18880,7 @@
 			)
 		)
 		(property "Manufacturer Part" "TF PUSH"
-			(at 524.51 90.932 90)
+			(at 546.1 90.932 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18547,7 +18889,7 @@
 			)
 		)
 		(property "Manufacturer" "SHOU HAN(首韩)"
-			(at 520.954 125.476 0)
+			(at 542.544 125.476 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18556,7 +18898,7 @@
 			)
 		)
 		(property "Supplier Part" "C393941"
-			(at 527.812 90.932 90)
+			(at 549.402 90.932 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18565,7 +18907,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 521.462 128.016 0)
+			(at 543.052 128.016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18574,7 +18916,7 @@
 			)
 		)
 		(property "LCSC Part Name" "自弹式 MicroSD卡(TF卡) 卡座"
-			(at 520.192 119.38 0)
+			(at 541.782 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18915,6 +19257,119 @@
 			(project ""
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
 					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "My_Personal_Symbols_Library:0603WAF7501T5E")
+		(at 516.89 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6ca40fc-7b82-4dc7-a84b-1e3ac46faa7b")
+		(property "Reference" "R24"
+			(at 519.43 43.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "7.5kΩ"
+			(at 520.7 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "My_Personal_Footprints_Library:0603WAF7501T5E"
+			(at 509.778 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 504.19 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Type:Thick Film Resistors Resistance:7.5kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"
+			(at 506.73 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF7501T5E"
+			(at 528.574 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 531.114 43.688 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C23234"
+			(at 523.24 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 533.4 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "7.5kΩ ±1% 100mW"
+			(at 528.066 46.482 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73fcff2a-02b9-4492-8e42-8b9092513859")
+		)
+		(pin "2"
+			(uuid "bc2b0bb0-d04d-43e2-9a5d-cecb8533559d")
+		)
+		(instances
+			(project "MY-ESP32"
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
+					(reference "R24")
 					(unit 1)
 				)
 			)
