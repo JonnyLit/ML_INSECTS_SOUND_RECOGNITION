@@ -4172,178 +4172,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "My_Personal_Symbols_Library:TPS3839G33DBZR"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 6.604 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "ProLib_pcs_TPS3839G33DBZR_2025-05-15:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
-				(at 0 12.954 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/cn/lit/gpn/tps3839"
-				(at 0.508 16.256 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "ChipType:Simple reset/Power-on reset Output Type:推挽 Reset Active Level:低电平有效 Threshold Voltage:3.08V Number of Voltages Monitored:1 Reset Timeout:120ms Operating Temperature:-40°C~+85°C@(TA) Operating Temperature:-40°C~+85°C@(TA)"
-				(at 0.254 9.652 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part" "TPS3839G33DBZR"
-				(at -0.508 -7.366 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "TI(德州仪器)"
-				(at 0 -13.716 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier Part" "C485802"
-				(at 0.254 -16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier" "LCSC"
-				(at 0.254 -20.828 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part Name" "TPS3839G33DBZR"
-				(at -1.016 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TPS3839G33DBZR_1_0"
-				(rectangle
-					(start -6.35 -5.08)
-					(end 6.35 5.08)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -5.08 3.81)
-					(radius 0.381)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin input line
-					(at -8.89 2.54 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -8.89 -2.54 0)
-					(length 2.54)
-					(name "RESET#"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "My_Personal_Symbols_Library:WIFI-SMD_ESP32-WROVER-E-N4R8"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6242,17 +6070,6 @@
 		)
 		(uuid "227438e1-b8cd-4c31-a861-d16d42a77353")
 	)
-	(text "The TPS3839G33 is a voltage supervisor that takes in input \nthe voltage coming from the USB-C or from the batteries. \nIf this voltage (VDD) is over the threshold of 3.08 Volts (VTH)\nat a given time tx, then, after 200ms (tx+200ms),\nif VDD is over VTH, it gives in output (RESET#) an high signal\n(of about VDD-0.4V), otherwise, it stays low.\nAnyway, if at any moment the VDD signal goes below VTH, \nthe output RESET# will become instantly a low signal.\nVTH=3.08V is an ideal value to check the batteries voltage,\nthus turning off the Buck-Boost when VDD < VTH, so avoiding\nto eventually discharge and so damage the batteries."
-		(exclude_from_sim no)
-		(at 217.424 120.65 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2ff59127-0d7a-4d18-a844-40dd355b672f")
-	)
 	(text "The three pull-up resistors (smd, 0603 package) should be of values between:\n4.7K (faster rise times, supports higher speeds, less prone to signal integrity problems, consumes slightly more power)\nand 10K (slower, more prone to signal integrity problems, consumes less power)"
 		(exclude_from_sim no)
 		(at 440.182 22.098 0)
@@ -6656,12 +6473,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4dc955ab-7dc4-46cf-83cb-b2224da0b63e")
-	)
-	(junction
-		(at 194.31 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5074fa88-7550-4843-9169-cd509d9b7c5c")
 	)
 	(junction
 		(at 422.91 341.63)
@@ -8151,16 +7962,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 111.76) (xy 213.36 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63e0f03a-bf25-47fb-84fa-7d8917c8ddea")
-	)
-	(wire
-		(pts
 			(xy 516.89 92.71) (xy 530.86 92.71)
 		)
 		(stroke
@@ -8338,16 +8139,6 @@
 			(type default)
 		)
 		(uuid "71ea7b15-ab94-4d41-b2a2-87e38c9907be")
-	)
-	(wire
-		(pts
-			(xy 194.31 109.22) (xy 195.58 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "727778a6-b111-4e50-9c17-43f870f5b8be")
 	)
 	(wire
 		(pts
@@ -8771,16 +8562,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 106.68) (xy 220.98 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4019013-e251-4d2d-949a-d922e471eb0a")
-	)
-	(wire
-		(pts
 			(xy 85.09 87.63) (xy 114.3 87.63)
 		)
 		(stroke
@@ -8838,16 +8619,6 @@
 			(type default)
 		)
 		(uuid "a72832aa-f2cd-4909-bdaf-91b6f33e1bfe")
-	)
-	(wire
-		(pts
-			(xy 220.98 93.98) (xy 227.33 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a832d86c-ee07-4b00-8e12-687dbc531e24")
 	)
 	(wire
 		(pts
@@ -8968,16 +8739,6 @@
 			(type default)
 		)
 		(uuid "b286ed4c-356a-40e8-abb1-0449a7205543")
-	)
-	(wire
-		(pts
-			(xy 220.98 106.68) (xy 220.98 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2d13d80-8d7c-4e48-96cf-7fded19d3a80")
 	)
 	(wire
 		(pts
@@ -9148,16 +8909,6 @@
 			(type default)
 		)
 		(uuid "c62b0d2e-d782-46c5-a66a-2d4ce8ce7681")
-	)
-	(wire
-		(pts
-			(xy 194.31 109.22) (xy 194.31 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9209765-210a-4d46-95c2-fbb2dae90213")
 	)
 	(wire
 		(pts
@@ -15035,122 +14786,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My_Personal_Symbols_Library:TPS3839G33DBZR")
-		(at 204.47 109.22 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61e94c23-7397-48c6-be7e-beaa5bb3b7fa")
-		(property "Reference" "U11"
-			(at 204.47 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS3839G33DBZR"
-			(at 204.47 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "My_Personal_Footprints_Library:TPS3839G33DBZR"
-			(at 204.47 122.174 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/tps3839"
-			(at 203.962 125.476 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ChipType:Simple reset/Power-on reset Output Type:推挽 Reset Active Level:低电平有效 Threshold Voltage:3.08V Number of Voltages Monitored:1 Reset Timeout:120ms Operating Temperature:-40°C~+85°C@(TA) Operating Temperature:-40°C~+85°C@(TA)"
-			(at 204.216 118.872 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "TPS3839G33DBZR"
-			(at 204.978 101.854 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TI(德州仪器)"
-			(at 204.47 95.504 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C485802"
-			(at 204.216 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 204.216 88.392 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "TPS3839G33DBZR"
-			(at 205.486 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9fcdc0a2-efda-4355-b488-63aa49e7df95")
-		)
-		(pin "2"
-			(uuid "e7e3c635-b323-4bbc-8751-1a3661bdbe65")
-		)
-		(pin "3"
-			(uuid "2e58147d-c14e-4e99-8506-37ed95760aeb")
-		)
-		(instances
-			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "U11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 516.89 222.25 180)
@@ -18301,73 +17936,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 213.36 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cdb8a79c-725d-438d-a42a-425983ac95a7")
-		(property "Reference" "#PWR054"
-			(at 213.36 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43cd6826-bce3-4394-957c-b78a9c93a5f7")
-		)
-		(instances
-			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "#PWR054")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Interface_USB:CP2102N-Axx-xQFN28")
 		(at 180.34 267.97 0)
 		(unit 1)
@@ -20092,16 +19660,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "Buck-Boost_EN" input
-			(at 227.33 93.98 180)
-			(uuid "2ab54b39-69f6-4f7e-930a-09a01e80c2bc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances

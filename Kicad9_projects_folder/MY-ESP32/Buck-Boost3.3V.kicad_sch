@@ -1259,6 +1259,12 @@
 		(uuid "80dd7026-ec77-4e43-bdd7-631dd205dfb2")
 	)
 	(junction
+		(at 125.73 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b9de102-dc48-4bed-bd0f-da124f2e3ab4")
+	)
+	(junction
 		(at 173.99 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1311,6 +1317,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f52bc2cb-5317-45eb-9af8-937ee8de8c65")
+	)
+	(wire
+		(pts
+			(xy 125.73 99.06) (xy 125.73 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a83cd0c-6e36-4471-aad2-a989868e3fc4")
 	)
 	(wire
 		(pts
@@ -1381,16 +1397,6 @@
 			(type default)
 		)
 		(uuid "3aa3dc77-8d75-4e00-a9bd-7d697593ef6f")
-	)
-	(wire
-		(pts
-			(xy 129.54 99.06) (xy 129.54 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40e72c91-49dd-4770-90cc-091ab4323c59")
 	)
 	(wire
 		(pts
@@ -1524,16 +1530,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 99.06) (xy 132.08 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "721c4ab2-8f89-42af-b238-de0415bf6441")
-	)
-	(wire
-		(pts
 			(xy 168.91 107.95) (xy 168.91 106.68)
 		)
 		(stroke
@@ -1594,7 +1590,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 106.68) (xy 125.73 93.98)
+			(xy 125.73 106.68) (xy 125.73 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1634,13 +1630,13 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 144.78) (xy 124.46 144.78)
+			(xy 125.73 99.06) (xy 132.08 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b3dccec6-98c5-4f59-8397-84c5cc05f06c")
+		(uuid "b0888224-a0d9-44e6-b290-fec7c4017854")
 	)
 	(wire
 		(pts
@@ -1723,17 +1719,6 @@
 			(justify right)
 		)
 		(uuid "b59e4940-1af5-4a90-8cd4-96e5c23930ed")
-	)
-	(hierarchical_label "Buck-Boost_EN"
-		(shape input)
-		(at 124.46 144.78 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "df027bb0-aa9d-4271-8994-16d7f4768f2c")
 	)
 	(symbol
 		(lib_name "GND_1")
