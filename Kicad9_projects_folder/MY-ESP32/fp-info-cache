@@ -1,4 +1,4 @@
-25324339587892376
+25329591635607826
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -69650,6 +69650,13 @@ CONN-TH_S2B-PH-K-S-GW
 2
 2
 My_Personal_Footprints_Library
+CONN_SM04B-SRSS-TB_JST
+
+SM04B-SRSS-TB 
+0
+6
+6
+My_Personal_Footprints_Library
 CYA0630-2.2UH
 
 
@@ -69671,12 +69678,26 @@ E6C0606RGBC3UDA
 4
 4
 My_Personal_Footprints_Library
+ESP32-WROVER
+
+
+0
+64
+39
+My_Personal_Footprints_Library
 FRC04002F3001TS
 
 
 0
 2
 2
+My_Personal_Footprints_Library
+GCT_USB4110GFA
+
+
+0
+16
+16
 My_Personal_Footprints_Library
 Header-Female-2.54_1x2
 
@@ -69920,7 +69941,7 @@ TPS63001DRCR
 
 
 0
-11
+14
 11
 My_Personal_Footprints_Library
 TPS628438YKAR
@@ -69948,7 +69969,7 @@ WIFI-SMD_ESP32-WROVER-E-N4R8
 
 
 0
-47
+63
 39
 My_Personal_Footprints_Library
 ind_47uH_LPS4018-473MRC

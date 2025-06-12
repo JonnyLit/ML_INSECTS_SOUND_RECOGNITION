@@ -9,11 +9,11 @@
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
-      "pads": 0.5899999737739563,
+      "pads": 0.5299999713897705,
       "shapes": 0.41999998688697815,
       "tracks": 1.0,
       "vias": 1.0,
-      "zones": 0.7799999713897705
+      "zones": 0.7200000286102295
     },
     "ratsnest_display_mode": 0,
     "selection_filter": {
@@ -48,7 +48,7 @@
       "drc_warnings",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff5_ffffffbe",
+    "visible_layers": "ffffffff_ffffffff_fffffff5_ffffffff",
     "zone_display_mode": 0
   },
   "git": {

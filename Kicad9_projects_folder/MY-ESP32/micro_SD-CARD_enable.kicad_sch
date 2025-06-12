@@ -1200,7 +1200,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "66a83826-5dfb-42dc-ae19-a65e60d11be4")
+			(uuid "454c2124-cc9f-4407-a61d-1ba3981d0d4e")
 		)
 		(instances
 			(project "MY-ESP32"
@@ -1220,7 +1220,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1cbfbd15-2818-4439-9179-bad4dab36f7b")
-		(property "Reference" "R26"
+		(property "Reference" "R27"
 			(at 102.87 120.6499 90)
 			(effects
 				(font
@@ -1310,15 +1310,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "90f07c20-3869-4d59-a89a-7b30e2e02961")
+			(uuid "8161ef91-2853-414a-9279-40b71d1ade8c")
 		)
 		(pin "2"
-			(uuid "76c265bc-0d47-433a-883b-f302050e8616")
+			(uuid "fce8d221-aa92-4d3a-ad7b-716f5f565c00")
 		)
 		(instances
 			(project ""
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/b05cfee3-cdbd-4ba0-a586-ca5aad6ef209"
-					(reference "R26")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -1380,7 +1380,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "ce516c85-62a7-439c-a0e1-0ce7a1b6ba03")
+			(uuid "51bc7fe0-e134-4d2c-9e8f-58ad42cdaa84")
 		)
 		(instances
 			(project "MY-ESP32"
@@ -1492,13 +1492,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "4000297f-d375-42a5-b66b-df2064972a83")
+			(uuid "d567c880-43e8-4882-9f50-e48e4b6fffd4")
 		)
 		(pin "1"
-			(uuid "9eedfc01-b3ac-4ba2-854d-5c4216158c8f")
+			(uuid "79f4f7ea-789b-4a3d-9a01-2b074494862a")
 		)
 		(pin "2"
-			(uuid "69655d49-5e25-4c57-9ded-89858106fbaf")
+			(uuid "eac56259-54e0-4c55-86c8-3b730c24458f")
 		)
 		(instances
 			(project "MY-ESP32"
@@ -1573,10 +1573,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "eba83218-4e60-443f-845b-1521df27d855")
+			(uuid "6633f46d-4076-49e9-8d2d-2bb1de1e4ab4")
 		)
 		(pin "2"
-			(uuid "deb6c513-acb7-4e22-8abb-add196554d31")
+			(uuid "1a3042f6-c8ec-4b5c-b653-96f7250758ea")
 		)
 		(instances
 			(project "MY-ESP32"
@@ -1597,7 +1597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c065f1a1-afe4-4439-b6cf-608606f74564")
-		(property "Reference" "Q6"
+		(property "Reference" "Q8"
 			(at 95.25 68.5799 0)
 			(effects
 				(font
@@ -1688,18 +1688,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "88ff3bc4-9c9a-4839-98bd-9c1b03dfbd48")
+			(uuid "79611496-635f-4826-83cc-623fb98329d0")
 		)
 		(pin "3"
-			(uuid "9e983adc-ed3f-49d3-97ff-b0245c4cd885")
+			(uuid "3860d3dd-5bc5-43b5-9a45-9a4a5d117a69")
 		)
 		(pin "2"
-			(uuid "8a9b277a-e3eb-443b-b5de-208123380692")
+			(uuid "4a4e0c82-1638-4994-9a67-1d7a3ceb0a2e")
 		)
 		(instances
 			(project ""
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/b05cfee3-cdbd-4ba0-a586-ca5aad6ef209"
-					(reference "Q6")
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -1767,10 +1767,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "967c9198-351f-4cd5-a769-ade3c45043d3")
+			(uuid "8801037b-e22b-46e3-8358-34c3a1bcf61a")
 		)
 		(pin "2"
-			(uuid "b0037afc-0d94-4063-8935-3375694e9434")
+			(uuid "629aba75-f4a7-4a6a-a7c5-c74280440995")
 		)
 		(instances
 			(project "MY-ESP32"

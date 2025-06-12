@@ -715,6 +715,10 @@
     [
       "b05cfee3-cdbd-4ba0-a586-ca5aad6ef209",
       "micro_SD-CARD_enable"
+    ],
+    [
+      "6919b8a3-84d4-45ca-a14c-74be4024a5b9",
+      "I2C_Connector_Enable"
     ]
   ],
   "text_variables": {}
