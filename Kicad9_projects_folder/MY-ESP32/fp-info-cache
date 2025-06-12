@@ -1,4 +1,4 @@
-25303344441210678
+25324339587892376
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -69496,6 +69496,13 @@ threaded screw
 4
 1
 My_Personal_Footprints_Library
+1TS005F-2500-5001
+
+
+0
+4
+4
+My_Personal_Footprints_Library
 2N7002
 
 
@@ -69518,6 +69525,13 @@ My_Personal_Footprints_Library
 2
 My_Personal_Footprints_Library
 0603WAF1003T5E
+
+
+0
+2
+2
+My_Personal_Footprints_Library
+0603WAF4701T5E
 
 
 0
@@ -69629,12 +69643,33 @@ CM05X5R226M06AH080
 2
 2
 My_Personal_Footprints_Library
+CONN-TH_S2B-PH-K-S-GW
+
+
+0
+2
+2
+My_Personal_Footprints_Library
 CYA0630-2.2UH
 
 
 0
 2
 2
+My_Personal_Footprints_Library
+DFR0819
+
+
+0
+9
+7
+My_Personal_Footprints_Library
+E6C0606RGBC3UDA
+
+
+0
+4
+4
 My_Personal_Footprints_Library
 FRC04002F3001TS
 
@@ -69685,6 +69720,20 @@ INMP441_SMD
 6
 6
 My_Personal_Footprints_Library
+KEY-SMD_B3U-1000PM
+
+
+0
+2
+2
+My_Personal_Footprints_Library
+KMR211NGLFS
+
+
+0
+4
+4
+My_Personal_Footprints_Library
 LED0603-RD_RED
 
 
@@ -69726,6 +69775,13 @@ PMOSFET_SI2343DS_T1_E3-HXY
 0
 3
 3
+My_Personal_Footprints_Library
+RB168MM-40TR
+
+
+0
+2
+2
 My_Personal_Footprints_Library
 RC0402FR-071M78L
 
@@ -69797,6 +69853,27 @@ SOT-23-3-REV
 3
 3
 My_Personal_Footprints_Library
+SS-12F49-G050
+
+
+0
+5
+5
+My_Personal_Footprints_Library
+ST-0-102-C03-N003-RS
+
+
+0
+5
+5
+My_Personal_Footprints_Library
+SW-TH_2MS1T2B2VS2QES
+
+
+0
+5
+5
+My_Personal_Footprints_Library
 SW_1TS005F-2500-5001
 
 
@@ -69859,6 +69936,13 @@ USB3.1C16PFSMT
 0
 16
 13
+My_Personal_Footprints_Library
+Untitled
+
+
+0
+0
+0
 My_Personal_Footprints_Library
 WIFI-SMD_ESP32-WROVER-E-N4R8
 

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\zord\Documents\Kicad_projects\MY-ESP32\MY-ESP32.kicad_sch</source>
-    <date>2025-06-09T10:40:26+0200</date>
+    <date>2025-06-12T08:33:23+0200</date>
     <tool>Eeschema 9.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -22,25 +22,7 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="2" name="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/">
-      <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
-        <source>Battery_charger_LiFePo4.kicad_sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
-        <comment number="5" value=""/>
-        <comment number="6" value=""/>
-        <comment number="7" value=""/>
-        <comment number="8" value=""/>
-        <comment number="9" value=""/>
-      </title_block>
-    </sheet>
-    <sheet number="3" name="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0/">
+    <sheet number="2" name="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/55e03eb4-45c0-417f-b828-ae972a1a241c/">
       <title_block>
         <title/>
         <company/>
@@ -58,13 +40,31 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="4" name="/Buck-Boost3.3V/" tstamps="/7efd7115-3e45-40c0-b344-3c012cbc13c1/">
+    <sheet number="3" name="/Buck-Boost3.3V/" tstamps="/bd1333f1-cd43-4d31-a242-4960306cc242/">
       <title_block>
         <title/>
         <company/>
         <rev/>
         <date/>
         <source>Buck-Boost3.3V.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/micro_SD-CARD_enable/" tstamps="/b05cfee3-cdbd-4ba0-a586-ca5aad6ef209/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>micro_SD-CARD_enable.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -282,7 +282,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b094f5b7-43a3-4005-94eb-46b86dc26bd2</tstamps>
     </comp>
-    <comp ref="C19">
+    <comp ref="C15">
       <value>104</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
@@ -301,7 +301,7 @@
       <tstamps>ca0fdc42-9e48-474e-9078-0b3f93b55e1d</tstamps>
     </comp>
     <comp ref="CARD1">
-      <value>micro SD Card slot TF PUSH</value>
+      <value>micro SD-CARD TF PUSH</value>
       <footprint>My_Personal_Footprints_Library:TF-SMD_TF-PUSH-micro_SD_card_slot</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20191011/C393941_0DDD896EE907FEB750D8B7B8982E2A67.pdf</datasheet>
       <description>Card Connection Mode:Self-bouncing Card Type:MicroSD card (TF card) Connector Type:Card Slot Additional Card Detection Pins:None Supplementary Features:- Maximum Body Height:2mm Operating Temperature Range:-20°C~+90°C Operating Temperature Range:-20°C~+90°C</description>
@@ -324,61 +324,85 @@
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>e1031333-6896-4808-858f-5101deec6c69</tstamps>
+      <tstamps>3df1e529-47e2-4c96-96de-3cd1dca6e8df</tstamps>
     </comp>
     <comp ref="D1">
-      <value>BAT760-7</value>
-      <footprint>Diode_SMD:D_SOD-323F</footprint>
+      <value>RB168MM-40TR</value>
+      <footprint>My_Personal_Footprints_Library:RB168MM-40TR</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200911/C509936_2B70D2FEE0E72B02658D34F3D27F66D8.pdf</datasheet>
+      <description>Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V</description>
       <fields>
-        <field name="REF">C124187</field>
-        <field name="Footprint">Diode_SMD:D_SOD-323F</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
+        <field name="Manufacturer Part">RB168MM-40TR</field>
+        <field name="Manufacturer">ROHM(罗姆)</field>
+        <field name="Supplier Part">C509936</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">电压:40V 电流:1A</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RB168MM-40TR</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200911/C509936_2B70D2FEE0E72B02658D34F3D27F66D8.pdf</field>
+        <field name="Description">Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V</field>
       </fields>
-      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <property name="REF" value="C124187"/>
+      <libsource lib="My_Personal_Symbols_Library" part="RB168MM-40TR" description="Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V"/>
+      <property name="Manufacturer Part" value="RB168MM-40TR"/>
+      <property name="Manufacturer" value="ROHM(罗姆)"/>
+      <property name="Supplier Part" value="C509936"/>
+      <property name="Supplier" value="LCSC"/>
+      <property name="LCSC Part Name" value="电压:40V 电流:1A"/>
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
-      <property name="ki_keywords" value="diode Schottky"/>
-      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>8af53e41-a35e-43a4-8ddb-1244cb68ab8c</tstamps>
+      <tstamps>1bac162e-730b-4b76-a074-45140d75f9c3</tstamps>
     </comp>
     <comp ref="D2">
-      <value>BAT760-7</value>
-      <footprint>Diode_SMD:D_SOD-323F</footprint>
+      <value>RB168MM-40TR</value>
+      <footprint>My_Personal_Footprints_Library:RB168MM-40TR</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200911/C509936_2B70D2FEE0E72B02658D34F3D27F66D8.pdf</datasheet>
+      <description>Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V</description>
       <fields>
-        <field name="REF">C124187</field>
-        <field name="Footprint">Diode_SMD:D_SOD-323F</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
+        <field name="Manufacturer Part">RB168MM-40TR</field>
+        <field name="Manufacturer">ROHM(罗姆)</field>
+        <field name="Supplier Part">C509936</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">电压:40V 电流:1A</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RB168MM-40TR</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200911/C509936_2B70D2FEE0E72B02658D34F3D27F66D8.pdf</field>
+        <field name="Description">Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V</field>
       </fields>
-      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <property name="REF" value="C124187"/>
+      <libsource lib="My_Personal_Symbols_Library" part="RB168MM-40TR" description="Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V"/>
+      <property name="Manufacturer Part" value="RB168MM-40TR"/>
+      <property name="Manufacturer" value="ROHM(罗姆)"/>
+      <property name="Supplier Part" value="C509936"/>
+      <property name="Supplier" value="LCSC"/>
+      <property name="LCSC Part Name" value="电压:40V 电流:1A"/>
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
-      <property name="ki_keywords" value="diode Schottky"/>
-      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>5e455c08-5f5c-4921-9c3d-ffd436db6f66</tstamps>
+      <tstamps>4a41d50c-775a-4619-ae84-e6e420ebc25b</tstamps>
     </comp>
     <comp ref="D3">
-      <value>BAT760-7</value>
-      <footprint>Diode_SMD:D_SOD-323F</footprint>
+      <value>RB168MM-40TR</value>
+      <footprint>My_Personal_Footprints_Library:RB168MM-40TR</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200911/C509936_2B70D2FEE0E72B02658D34F3D27F66D8.pdf</datasheet>
+      <description>Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V</description>
       <fields>
-        <field name="REF">C124187</field>
-        <field name="Footprint">Diode_SMD:D_SOD-323F</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
+        <field name="Manufacturer Part">RB168MM-40TR</field>
+        <field name="Manufacturer">ROHM(罗姆)</field>
+        <field name="Supplier Part">C509936</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">电压:40V 电流:1A</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RB168MM-40TR</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200911/C509936_2B70D2FEE0E72B02658D34F3D27F66D8.pdf</field>
+        <field name="Description">Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V</field>
       </fields>
-      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <property name="REF" value="C124187"/>
+      <libsource lib="My_Personal_Symbols_Library" part="RB168MM-40TR" description="Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V"/>
+      <property name="Manufacturer Part" value="RB168MM-40TR"/>
+      <property name="Manufacturer" value="ROHM(罗姆)"/>
+      <property name="Supplier Part" value="C509936"/>
+      <property name="Supplier" value="LCSC"/>
+      <property name="LCSC Part Name" value="电压:40V 电流:1A"/>
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
-      <property name="ki_keywords" value="diode Schottky"/>
-      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>069ba449-6aff-4bf3-b43f-323685dc4438</tstamps>
+      <tstamps>4292714c-415d-4662-be11-ea460cfb041a</tstamps>
     </comp>
     <comp ref="H1">
       <value>Header-Female-2.54_1x3</value>
@@ -497,7 +521,7 @@
         <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210301/C2718488_F4427B881E42CAA8DDB0B1C12B3A522C.pdf</field>
         <field name="Description">Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-</field>
       </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="Header-Female-2.54_1x6" description="Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-"/>
+      <libsource lib="" part="Header-Female-2.54_1x6_1" description="Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-"/>
       <property name="Manufacturer Part" value="2.54-1*6P母"/>
       <property name="Manufacturer" value="BOOMELE(博穆精密)"/>
       <property name="Supplier Part" value="C40877"/>
@@ -506,7 +530,7 @@
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>8154d130-4456-4059-9026-dfef76050c1a</tstamps>
+      <tstamps>8ebfb07d-ce6f-49ba-bc19-698b56830fe7</tstamps>
     </comp>
     <comp ref="H6">
       <value>Header-Female-2.54_1x6</value>
@@ -523,7 +547,7 @@
         <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210301/C2718488_F4427B881E42CAA8DDB0B1C12B3A522C.pdf</field>
         <field name="Description">Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-</field>
       </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="Header-Female-2.54_1x6" description="Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-"/>
+      <libsource lib="" part="Header-Female-2.54_1x6_1" description="Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-"/>
       <property name="Manufacturer Part" value="2.54-1*6P母"/>
       <property name="Manufacturer" value="BOOMELE(博穆精密)"/>
       <property name="Supplier Part" value="C40877"/>
@@ -532,7 +556,7 @@
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>00303669-cd69-4ec6-8e2e-d6bf6e9c90bb</tstamps>
+      <tstamps>08a81d7c-5311-49ee-8b02-5a9d063dc01b</tstamps>
     </comp>
     <comp ref="H7">
       <value>Header-Female-2.54_1x2</value>
@@ -585,6 +609,31 @@
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6ea61993-a669-49f6-a249-d6a156fcc195</tstamps>
+    </comp>
+    <comp ref="LED1">
+      <value>E6C0606RGBC3UDA</value>
+      <footprint>My_Personal_Footprints_Library:E6C0606RGBC3UDA</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20220330/8DE12FB9881A833E867FD7AF6894B416.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer Part">E6C0606RGBC3UDA</field>
+        <field name="Manufacturer">ekinglux(亿晶源)</field>
+        <field name="Supplier Part">C375569</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">RGB LED</field>
+        <field name="Footprint">My_Personal_Footprints_Library:E6C0606RGBC3UDA</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20220330/8DE12FB9881A833E867FD7AF6894B416.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="E6C0606RGBC3UDA" description=""/>
+      <property name="Manufacturer Part" value="E6C0606RGBC3UDA"/>
+      <property name="Manufacturer" value="ekinglux(亿晶源)"/>
+      <property name="Supplier Part" value="C375569"/>
+      <property name="Supplier" value="LCSC"/>
+      <property name="LCSC Part Name" value="RGB LED"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>967a73f6-1109-43c7-a4ef-c6ec5e5288bb</tstamps>
     </comp>
     <comp ref="Q1">
       <value>2N3904S-RTK/PS</value>
@@ -826,7 +875,85 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2b7325e3-500e-496e-b52a-90552b24a6b6</tstamps>
     </comp>
-    <comp ref="R21">
+    <comp ref="R10">
+      <value>150Ω ±1% 62.5mW</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504</datasheet>
+      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface</description>
+      <fields>
+        <field name="Manufacturer Part">RC0402FR-07150RL</field>
+        <field name="Manufacturer">YAGEO </field>
+        <field name="Supplier Part">C138054</field>
+        <field name="Supplier"/>
+        <field name="LCSC Part Name">150Ω ±1% 62.5mW</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504</field>
+        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
+      <property name="Manufacturer Part" value="RC0402FR-07150RL"/>
+      <property name="Manufacturer" value="YAGEO "/>
+      <property name="Supplier Part" value="C138054"/>
+      <property name="Supplier" value=""/>
+      <property name="LCSC Part Name" value="150Ω ±1% 62.5mW"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>76f65e5f-8f00-4e9b-8af0-bc94ce0de68e</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>36Ω ±1% 62.5mW</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</datasheet>
+      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</description>
+      <fields>
+        <field name="Manufacturer Part">FRC0402J360 TS</field>
+        <field name="Manufacturer">FOJAN</field>
+        <field name="Supplier Part">C2906935</field>
+        <field name="Supplier"/>
+        <field name="LCSC Part Name">36Ω ±1% 62.5mW</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</field>
+        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
+      <property name="Manufacturer Part" value="FRC0402J360 TS"/>
+      <property name="Manufacturer" value="FOJAN"/>
+      <property name="Supplier Part" value="C2906935"/>
+      <property name="Supplier" value=""/>
+      <property name="LCSC Part Name" value="36Ω ±1% 62.5mW"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cef75ecc-527a-469e-9c17-e3776ed709a7</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>36Ω ±1% 62.5mW</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</datasheet>
+      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</description>
+      <fields>
+        <field name="Manufacturer Part">FRC0402J360 TS</field>
+        <field name="Manufacturer">FOJAN</field>
+        <field name="Supplier Part">C2906935</field>
+        <field name="Supplier"/>
+        <field name="LCSC Part Name">36Ω ±1% 62.5mW</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</field>
+        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
+      <property name="Manufacturer Part" value="FRC0402J360 TS"/>
+      <property name="Manufacturer" value="FOJAN"/>
+      <property name="Supplier Part" value="C2906935"/>
+      <property name="Supplier" value=""/>
+      <property name="LCSC Part Name" value="36Ω ±1% 62.5mW"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bbbbb835-1dea-4f06-a03e-9608d5a21f15</tstamps>
+    </comp>
+    <comp ref="R18">
       <value>7.5kΩ</value>
       <footprint>My_Personal_Footprints_Library:0603WAF7501T5E</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
@@ -852,7 +979,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>60d3c24c-d4be-4a11-aa99-f6c3b40c6cde</tstamps>
     </comp>
-    <comp ref="R22">
+    <comp ref="R19">
       <value>7.5kΩ</value>
       <footprint>My_Personal_Footprints_Library:0603WAF7501T5E</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
@@ -878,7 +1005,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2da95b68-ab6e-4e2e-85d5-058eb7fd0ca4</tstamps>
     </comp>
-    <comp ref="R23">
+    <comp ref="R20">
       <value>7.5kΩ</value>
       <footprint>My_Personal_Footprints_Library:0603WAF7501T5E</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
@@ -904,7 +1031,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>3f426695-9cdc-49fa-89fe-03af7e372fd8</tstamps>
     </comp>
-    <comp ref="R24">
+    <comp ref="R21">
       <value>7.5kΩ</value>
       <footprint>My_Personal_Footprints_Library:0603WAF7501T5E</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
@@ -930,7 +1057,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e6ca40fc-7b82-4dc7-a84b-1e3ac46faa7b</tstamps>
     </comp>
-    <comp ref="R25">
+    <comp ref="R22">
       <value>7.5kΩ</value>
       <footprint>My_Personal_Footprints_Library:0603WAF7501T5E</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
@@ -956,7 +1083,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>15ff0b12-663c-4d16-a2a0-dea70092669f</tstamps>
     </comp>
-    <comp ref="R26">
+    <comp ref="R23">
       <value>7.5kΩ</value>
       <footprint>My_Personal_Footprints_Library:0603WAF7501T5E</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
@@ -983,56 +1110,82 @@
       <tstamps>66562076-3335-4615-b52d-03eb6888f30d</tstamps>
     </comp>
     <comp ref="SW1">
-      <value>BOOT</value>
-      <footprint>My_Personal_Footprints_Library:SW_1TS005F-2500-5001</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20180720/C255812_0808C7D708FD1FB7246546D29134BBAD.pdf</datasheet>
-      <description>Circuit:SPST Actuator Style:Round Button Operating Force:250gf Mounting Style:Brick nogging Switch Length:6mm Switch Width:6mm Switch Height:5mm Strike Gundam:不带 Contact Current:50mA Voltage Rating (DC):12V Power Rating:0.6W Insulation Resistance:100MΩ Ac</description>
+      <value>~</value>
+      <footprint>My_Personal_Footprints_Library:KMR211NGLFS</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20211209/3EBDA2FC8F99CA5B8B2AE6B679EE7E99.pdf</datasheet>
+      <description>Circuit:SPST - normally open Actuator Style:Round Button Operating Force:120gf Mounting Style:Standing paste Contact Current:50mA Voltage Rating (DC):32V Pin Style:Gullwing Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C</description>
       <fields>
-        <field name="Manufacturer Part">1TS005F-2500-5001</field>
-        <field name="Manufacturer">HYP(鸿源精密)</field>
-        <field name="Supplier Part">C255812</field>
+        <field name="Manufacturer Part">KMR211NGLFS</field>
+        <field name="Manufacturer">C&amp;K</field>
+        <field name="Supplier Part">C221676</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">6*6*5mm 立贴 轻触开关</field>
-        <field name="Footprint">My_Personal_Footprints_Library:SW_1TS005F-2500-5001</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20180720/C255812_0808C7D708FD1FB7246546D29134BBAD.pdf</field>
-        <field name="Description">Circuit:SPST Actuator Style:Round Button Operating Force:250gf Mounting Style:Brick nogging Switch Length:6mm Switch Width:6mm Switch Height:5mm Strike Gundam:不带 Contact Current:50mA Voltage Rating (DC):12V Power Rating:0.6W Insulation Resistance:100MΩ Ac</field>
+        <field name="LCSC Part Name">KMR211NGLFS</field>
+        <field name="Footprint">My_Personal_Footprints_Library:KMR211NGLFS</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20211209/3EBDA2FC8F99CA5B8B2AE6B679EE7E99.pdf</field>
+        <field name="Description">Circuit:SPST - normally open Actuator Style:Round Button Operating Force:120gf Mounting Style:Standing paste Contact Current:50mA Voltage Rating (DC):32V Pin Style:Gullwing Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C</field>
       </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="1TS005F-2500-5001" description="Circuit:SPST Actuator Style:Round Button Operating Force:250gf Mounting Style:Brick nogging Switch Length:6mm Switch Width:6mm Switch Height:5mm Strike Gundam:不带 Contact Current:50mA Voltage Rating (DC):12V Power Rating:0.6W Insulation Resistance:100MΩ Ac"/>
-      <property name="Manufacturer Part" value="1TS005F-2500-5001"/>
-      <property name="Manufacturer" value="HYP(鸿源精密)"/>
-      <property name="Supplier Part" value="C255812"/>
+      <libsource lib="My_Personal_Symbols_Library" part="KMR211NGLFS" description="Circuit:SPST - normally open Actuator Style:Round Button Operating Force:120gf Mounting Style:Standing paste Contact Current:50mA Voltage Rating (DC):32V Pin Style:Gullwing Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C"/>
+      <property name="Manufacturer Part" value="KMR211NGLFS"/>
+      <property name="Manufacturer" value="C&amp;K"/>
+      <property name="Supplier Part" value="C221676"/>
       <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="6*6*5mm 立贴 轻触开关"/>
+      <property name="LCSC Part Name" value="KMR211NGLFS"/>
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>98a9a811-0056-4317-a5e7-e8b62bfe2cd6</tstamps>
+      <tstamps>626c9df3-0473-402c-bc6b-2e8f3b62e22f</tstamps>
     </comp>
     <comp ref="SW2">
-      <value>RESET</value>
-      <footprint>My_Personal_Footprints_Library:SW_1TS005F-2500-5001</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20180720/C255812_0808C7D708FD1FB7246546D29134BBAD.pdf</datasheet>
-      <description>Circuit:SPST Actuator Style:Round Button Operating Force:250gf Mounting Style:Brick nogging Switch Length:6mm Switch Width:6mm Switch Height:5mm Strike Gundam:不带 Contact Current:50mA Voltage Rating (DC):12V Power Rating:0.6W Insulation Resistance:100MΩ Ac</description>
+      <value>~</value>
+      <footprint>My_Personal_Footprints_Library:KMR211NGLFS</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20211209/3EBDA2FC8F99CA5B8B2AE6B679EE7E99.pdf</datasheet>
+      <description>Circuit:SPST - normally open Actuator Style:Round Button Operating Force:120gf Mounting Style:Standing paste Contact Current:50mA Voltage Rating (DC):32V Pin Style:Gullwing Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C</description>
       <fields>
-        <field name="Manufacturer Part">1TS005F-2500-5001</field>
-        <field name="Manufacturer">HYP(鸿源精密)</field>
-        <field name="Supplier Part">C255812</field>
+        <field name="Manufacturer Part">KMR211NGLFS</field>
+        <field name="Manufacturer">C&amp;K</field>
+        <field name="Supplier Part">C221676</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">6*6*5mm 立贴 轻触开关</field>
-        <field name="Footprint">My_Personal_Footprints_Library:SW_1TS005F-2500-5001</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20180720/C255812_0808C7D708FD1FB7246546D29134BBAD.pdf</field>
-        <field name="Description">Circuit:SPST Actuator Style:Round Button Operating Force:250gf Mounting Style:Brick nogging Switch Length:6mm Switch Width:6mm Switch Height:5mm Strike Gundam:不带 Contact Current:50mA Voltage Rating (DC):12V Power Rating:0.6W Insulation Resistance:100MΩ Ac</field>
+        <field name="LCSC Part Name">KMR211NGLFS</field>
+        <field name="Footprint">My_Personal_Footprints_Library:KMR211NGLFS</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20211209/3EBDA2FC8F99CA5B8B2AE6B679EE7E99.pdf</field>
+        <field name="Description">Circuit:SPST - normally open Actuator Style:Round Button Operating Force:120gf Mounting Style:Standing paste Contact Current:50mA Voltage Rating (DC):32V Pin Style:Gullwing Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C</field>
       </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="1TS005F-2500-5001" description="Circuit:SPST Actuator Style:Round Button Operating Force:250gf Mounting Style:Brick nogging Switch Length:6mm Switch Width:6mm Switch Height:5mm Strike Gundam:不带 Contact Current:50mA Voltage Rating (DC):12V Power Rating:0.6W Insulation Resistance:100MΩ Ac"/>
-      <property name="Manufacturer Part" value="1TS005F-2500-5001"/>
-      <property name="Manufacturer" value="HYP(鸿源精密)"/>
-      <property name="Supplier Part" value="C255812"/>
+      <libsource lib="My_Personal_Symbols_Library" part="KMR211NGLFS" description="Circuit:SPST - normally open Actuator Style:Round Button Operating Force:120gf Mounting Style:Standing paste Contact Current:50mA Voltage Rating (DC):32V Pin Style:Gullwing Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C"/>
+      <property name="Manufacturer Part" value="KMR211NGLFS"/>
+      <property name="Manufacturer" value="C&amp;K"/>
+      <property name="Supplier Part" value="C221676"/>
       <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="6*6*5mm 立贴 轻触开关"/>
+      <property name="LCSC Part Name" value="KMR211NGLFS"/>
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>20eea55d-5325-488a-96d3-a4c315165399</tstamps>
+      <tstamps>087a5fe2-87f8-4568-8cfb-aa36d8ba13d9</tstamps>
+    </comp>
+    <comp ref="SW3">
+      <value>SPDT</value>
+      <footprint>My_Personal_Footprints_Library:SS-12F49-G050</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20210810/8EE9A98137DF7BB1D8E3F63CA237DFBB.pdf</datasheet>
+      <description>Circuit:SPDT Actuator Style:Rectangular columnar Pin Style:PCPin Switch Length:12.1mm Switch Width:5.9mm Switch Height:14mm Mounting Style:Straight Actuator Color:Black Current Rating (DC):1A Voltage Rating (DC):24V Mechanical Life:1万次 Operating Temperatu</description>
+      <fields>
+        <field name="Manufacturer Part">SS-12F49-G050</field>
+        <field name="Manufacturer">G-Switch(品赞)</field>
+        <field name="Supplier Part">C2876010</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">柄长5mm 直插两档 滑动开关</field>
+        <field name="Footprint">My_Personal_Footprints_Library:SS-12F49-G050</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210810/8EE9A98137DF7BB1D8E3F63CA237DFBB.pdf</field>
+        <field name="Description">Circuit:SPDT Actuator Style:Rectangular columnar Pin Style:PCPin Switch Length:12.1mm Switch Width:5.9mm Switch Height:14mm Mounting Style:Straight Actuator Color:Black Current Rating (DC):1A Voltage Rating (DC):24V Mechanical Life:1万次 Operating Temperatu</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="SS-12F49-G050" description="Circuit:SPDT Actuator Style:Rectangular columnar Pin Style:PCPin Switch Length:12.1mm Switch Width:5.9mm Switch Height:14mm Mounting Style:Straight Actuator Color:Black Current Rating (DC):1A Voltage Rating (DC):24V Mechanical Life:1万次 Operating Temperatu"/>
+      <property name="Manufacturer Part" value="SS-12F49-G050"/>
+      <property name="Manufacturer" value="G-Switch(品赞)"/>
+      <property name="Supplier Part" value="C2876010"/>
+      <property name="Supplier" value="LCSC"/>
+      <property name="LCSC Part Name" value="柄长5mm 直插两档 滑动开关"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>94679196-8e70-4c16-a63b-cb3a6a686eed</tstamps>
     </comp>
     <comp ref="TP1">
       <value>TestPoint</value>
@@ -1135,30 +1288,30 @@
       <tstamps>3526da5f-5877-41cf-8674-faf639500776</tstamps>
     </comp>
     <comp ref="U2">
-      <value>Screw_Terminal_KF301_1x02</value>
-      <footprint>My_Personal_Footprints_Library:Screw_Terminal_KF301_1x02</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20230317/03A5B5FC229D6F9225E8F51DA1A4E80A.pdf</datasheet>
-      <description>Structure:1x2P Pitch:5mm Color:Blue Mounting Style:Straight Current Rating (Max):17A Voltage Rating (Max):250V Number of Pins:2P Number of Rows:1 Wire Gauge - AWG:14~22 Wire Gauge - AWG:14~22 Wire Gauge - mm2:1.5 Wire Gauge - mm2:1.5 Number of PINs Per Ro</description>
+      <value>~</value>
+      <footprint>My_Personal_Footprints_Library:CONN-TH_S2B-PH-K-S-GW</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20181010/C265101_22107ACC4D8714694FDA2DD97145FA81.pdf</datasheet>
+      <description>Pins Structure:1x2P Pitch:2mm Mounting Style:Right-Angle Reference Series:PH Number of Pins:2P Number of Rows:1 Number of PINs Per Row:2 Row Spacing:- Current Rating (Max):2A Contact Material:Brass Contact Plating:Tin Operating Temperature Range:-25°C~+85°C</description>
       <fields>
-        <field name="Manufacturer Part">KF301-5.0-2P</field>
-        <field name="Manufacturer">KEFA(科发)</field>
-        <field name="Supplier Part">C474881</field>
+        <field name="Manufacturer Part">S2B-PH-K-S-GW</field>
+        <field name="Manufacturer">JST</field>
+        <field name="Supplier Part">C157932</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">5mm 1x2P 排数:1 每排P数:2 直插</field>
-        <field name="Footprint">My_Personal_Footprints_Library:Screw_Terminal_KF301_1x02</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20230317/03A5B5FC229D6F9225E8F51DA1A4E80A.pdf</field>
-        <field name="Description">Structure:1x2P Pitch:5mm Color:Blue Mounting Style:Straight Current Rating (Max):17A Voltage Rating (Max):250V Number of Pins:2P Number of Rows:1 Wire Gauge - AWG:14~22 Wire Gauge - AWG:14~22 Wire Gauge - mm2:1.5 Wire Gauge - mm2:1.5 Number of PINs Per Ro</field>
+        <field name="LCSC Part Name">1x2P 间距:2mm 弯插 系列:PH</field>
+        <field name="Footprint">My_Personal_Footprints_Library:CONN-TH_S2B-PH-K-S-GW</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20181010/C265101_22107ACC4D8714694FDA2DD97145FA81.pdf</field>
+        <field name="Description">Pins Structure:1x2P Pitch:2mm Mounting Style:Right-Angle Reference Series:PH Number of Pins:2P Number of Rows:1 Number of PINs Per Row:2 Row Spacing:- Current Rating (Max):2A Contact Material:Brass Contact Plating:Tin Operating Temperature Range:-25°C~+85°C</field>
       </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="KF301-5.0-2P" description="Structure:1x2P Pitch:5mm Color:Blue Mounting Style:Straight Current Rating (Max):17A Voltage Rating (Max):250V Number of Pins:2P Number of Rows:1 Wire Gauge - AWG:14~22 Wire Gauge - AWG:14~22 Wire Gauge - mm2:1.5 Wire Gauge - mm2:1.5 Number of PINs Per Ro"/>
-      <property name="Manufacturer Part" value="KF301-5.0-2P"/>
-      <property name="Manufacturer" value="KEFA(科发)"/>
-      <property name="Supplier Part" value="C474881"/>
+      <libsource lib="My_Personal_Symbols_Library" part="S2B-PH-K-S-GW" description="Pins Structure:1x2P Pitch:2mm Mounting Style:Right-Angle Reference Series:PH Number of Pins:2P Number of Rows:1 Number of PINs Per Row:2 Row Spacing:- Current Rating (Max):2A Contact Material:Brass Contact Plating:Tin Operating Temperature Range:-25°C~+85°C"/>
+      <property name="Manufacturer Part" value="S2B-PH-K-S-GW"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="Supplier Part" value="C157932"/>
       <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="5mm 1x2P 排数:1 每排P数:2 直插"/>
+      <property name="LCSC Part Name" value="1x2P 间距:2mm 弯插 系列:PH"/>
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>60970abf-33b0-4226-b544-a0ea1c2e359e</tstamps>
+      <tstamps>83906afe-82fe-4361-8c17-39f251889e75</tstamps>
     </comp>
     <comp ref="U3">
       <value>CP2102N-Axx-xQFN28</value>
@@ -1179,7 +1332,22 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d345399c-0310-4663-8408-1dd834493936</tstamps>
     </comp>
-    <comp ref="U9">
+    <comp ref="U4">
+      <value>DFR0819</value>
+      <footprint>My_Personal_Footprints_Library:DFR0819</footprint>
+      <description>RTC DFR0819</description>
+      <fields>
+        <field name="Footprint">My_Personal_Footprints_Library:DFR0819</field>
+        <field name="Datasheet"/>
+        <field name="Description">RTC DFR0819</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="DFR0819" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2373447-2a44-4b38-9fab-02a62a665b73</tstamps>
+    </comp>
+    <comp ref="U6">
       <value>~</value>
       <footprint>My_Personal_Footprints_Library:WIFI-SMD_ESP32-WROVER-E-N4R8</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20241030/69A66968DE36EDB45130F1579BF46A5B.pdf</datasheet>
@@ -1204,7 +1372,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e6bd852e-938e-4854-bb14-7547dd73abff</tstamps>
     </comp>
-    <comp ref="U10">
+    <comp ref="U7">
       <value>USB-C_Connector</value>
       <footprint>My_Personal_Footprints_Library:USB3.1C16PFSMT</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20210305/C167321_3BB79E85CEB6874BF587E64926D16F83.pdf</datasheet>
@@ -1230,395 +1398,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>290bbd1e-1b92-47c5-9f1f-d030427fc928</tstamps>
     </comp>
-    <comp ref="U11">
-      <value>TPS3839G33DBZR</value>
-      <footprint>My_Personal_Footprints_Library:TPS3839G33DBZR</footprint>
-      <datasheet>https://www.ti.com/cn/lit/gpn/tps3839</datasheet>
-      <description>ChipType:Simple reset/Power-on reset Output Type:推挽 Reset Active Level:低电平有效 Threshold Voltage:3.08V Number of Voltages Monitored:1 Reset Timeout:120ms Operating Temperature:-40°C~+85°C@(TA) Operating Temperature:-40°C~+85°C@(TA)</description>
-      <fields>
-        <field name="Manufacturer Part">TPS3839G33DBZR</field>
-        <field name="Manufacturer">TI(德州仪器)</field>
-        <field name="Supplier Part">C485802</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">TPS3839G33DBZR</field>
-        <field name="Footprint">My_Personal_Footprints_Library:TPS3839G33DBZR</field>
-        <field name="Datasheet">https://www.ti.com/cn/lit/gpn/tps3839</field>
-        <field name="Description">ChipType:Simple reset/Power-on reset Output Type:推挽 Reset Active Level:低电平有效 Threshold Voltage:3.08V Number of Voltages Monitored:1 Reset Timeout:120ms Operating Temperature:-40°C~+85°C@(TA) Operating Temperature:-40°C~+85°C@(TA)</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="TPS3839G33DBZR" description="ChipType:Simple reset/Power-on reset Output Type:推挽 Reset Active Level:低电平有效 Threshold Voltage:3.08V Number of Voltages Monitored:1 Reset Timeout:120ms Operating Temperature:-40°C~+85°C@(TA) Operating Temperature:-40°C~+85°C@(TA)"/>
-      <property name="Manufacturer Part" value="TPS3839G33DBZR"/>
-      <property name="Manufacturer" value="TI(德州仪器)"/>
-      <property name="Supplier Part" value="C485802"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="TPS3839G33DBZR"/>
-      <property name="Sheetname" value="Root"/>
-      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>61e94c23-7397-48c6-be7e-beaa5bb3b7fa</tstamps>
-    </comp>
-    <comp ref="C11">
-      <value>10uF ±10% 25V</value>
-      <footprint>My_Personal_Footprints_Library:CAP_10uF_CL21A106KAYNNNE</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf</datasheet>
-      <description>Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:</description>
-      <fields>
-        <field name="Manufacturer Part">CL21A106KAYNNNE</field>
-        <field name="Manufacturer">SAMSUNG(三星)</field>
-        <field name="Supplier Part">C15850</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">10uF ±10% 25V</field>
-        <field name="Footprint">My_Personal_Footprints_Library:CAP_10uF_CL21A106KAYNNNE</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf</field>
-        <field name="Description">Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:</field>
-      </fields>
-      <libsource lib="" part="CL21A106KAYNNNE_1" description="Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:"/>
-      <property name="Manufacturer Part" value="CL21A106KAYNNNE"/>
-      <property name="Manufacturer" value="SAMSUNG(三星)"/>
-      <property name="Supplier Part" value="C15850"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="10uF ±10% 25V"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>f3e1f7b4-c4e2-438a-b806-9f068ef1864f</tstamps>
-    </comp>
-    <comp ref="C12">
-      <value>22nF</value>
-      <footprint>My_Personal_Footprints_Library:CAP_22nF_0402B223K500NT</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C486355_26A10D38EF8C2A5C37091D0039909270.pdf</datasheet>
-      <description>Capacitance:22nF Tolerance:±10% Tolerance:±10% Voltage Rating:50V Temperature Coefficient:X7R</description>
-      <fields>
-        <field name="Manufacturer Part">0402B223K500NT</field>
-        <field name="Manufacturer">FH(风华)</field>
-        <field name="Supplier Part">C1532</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">22nF ±10% 50V</field>
-        <field name="Footprint">My_Personal_Footprints_Library:CAP_22nF_0402B223K500NT</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C486355_26A10D38EF8C2A5C37091D0039909270.pdf</field>
-        <field name="Description">Capacitance:22nF Tolerance:±10% Tolerance:±10% Voltage Rating:50V Temperature Coefficient:X7R</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="0402B223K500NT" description="Capacitance:22nF Tolerance:±10% Tolerance:±10% Voltage Rating:50V Temperature Coefficient:X7R"/>
-      <property name="Manufacturer Part" value="0402B223K500NT"/>
-      <property name="Manufacturer" value="FH(风华)"/>
-      <property name="Supplier Part" value="C1532"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="22nF ±10% 50V"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>e0929cbc-6ed1-4d0e-9788-6a9160c7b045</tstamps>
-    </comp>
-    <comp ref="C13">
-      <value>2.2uF ±10% 25V</value>
-      <footprint>My_Personal_Footprints_Library:CAP_2.2uF_GRM155R61E225KE11D</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20190531/C385032_AE390FF415271BC6A7223A7F56F516ED.pdf</datasheet>
-      <description>Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:</description>
-      <fields>
-        <field name="Manufacturer Part">GRM155R61E225KE11D</field>
-        <field name="Manufacturer">muRata(村田)</field>
-        <field name="Supplier Part">C385032</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">2.2uF ±10% 25V</field>
-        <field name="Footprint">My_Personal_Footprints_Library:CAP_2.2uF_GRM155R61E225KE11D</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20190531/C385032_AE390FF415271BC6A7223A7F56F516ED.pdf</field>
-        <field name="Description">Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="GRM155R61E225KE11D" description="Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:"/>
-      <property name="Manufacturer Part" value="GRM155R61E225KE11D"/>
-      <property name="Manufacturer" value="muRata(村田)"/>
-      <property name="Supplier Part" value="C385032"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="2.2uF ±10% 25V"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>bb713c86-9c11-4731-a86f-7816dab78af7</tstamps>
-    </comp>
-    <comp ref="C14">
-      <value>22uF ±20% 6.3V</value>
-      <footprint>My_Personal_Footprints_Library:CM05X5R226M06AH080</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20211010/C2836678_DF50997D4C3D82358B3700D75A0D3B5B.pdf</datasheet>
-      <description>Capacitance: Tolerance:±20% Tolerance:±20% Voltage Rated: Temperature Coefficient:</description>
-      <fields>
-        <field name="Manufacturer Part">CM05X5R226M06AH080</field>
-        <field name="Manufacturer">Kyocera AVX</field>
-        <field name="Supplier Part">C919306</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">22uF ±20% 6.3V</field>
-        <field name="Footprint">My_Personal_Footprints_Library:CM05X5R226M06AH080</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20211010/C2836678_DF50997D4C3D82358B3700D75A0D3B5B.pdf</field>
-        <field name="Description">Capacitance: Tolerance:±20% Tolerance:±20% Voltage Rated: Temperature Coefficient:</field>
-      </fields>
-      <libsource lib="" part="CM05X5R226M06AH080_1" description="Capacitance: Tolerance:±20% Tolerance:±20% Voltage Rated: Temperature Coefficient:"/>
-      <property name="Manufacturer Part" value="CM05X5R226M06AH080"/>
-      <property name="Manufacturer" value="Kyocera AVX"/>
-      <property name="Supplier Part" value="C919306"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="22uF ±20% 6.3V"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>5491cbe5-b610-4000-8d8f-ba4892ef4661</tstamps>
-    </comp>
-    <comp ref="LED1">
-      <value>RED</value>
-      <footprint>My_Personal_Footprints_Library:LED0603-RD_RED</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20250213/F9766CE804AF391355DCDD48DB3E0DAB.pdf</datasheet>
-      <description>Lamp Holder Type:- Illumination Color:Red Voltage - Forward(Vf):2.3V Voltage - Forward(Vf):2.3V Power(Watts):50mW Forward Current:20mA Wavelength - Dominant:620nm~630nm Wavelength - Dominant:620nm~630nm Peak Wavelength:625nm Diode Configuration:- Lens Col</description>
-      <fields>
-        <field name="Manufacturer Part">XL-1608SURC-06</field>
-        <field name="Manufacturer">XINGLIGHT(成兴光)</field>
-        <field name="Supplier Part">C965799</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">XL-1608SURC-06</field>
-        <field name="Footprint">My_Personal_Footprints_Library:LED0603-RD_RED</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20250213/F9766CE804AF391355DCDD48DB3E0DAB.pdf</field>
-        <field name="Description">Lamp Holder Type:- Illumination Color:Red Voltage - Forward(Vf):2.3V Voltage - Forward(Vf):2.3V Power(Watts):50mW Forward Current:20mA Wavelength - Dominant:620nm~630nm Wavelength - Dominant:620nm~630nm Peak Wavelength:625nm Diode Configuration:- Lens Col</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="XL-1608SURC-06" description="Lamp Holder Type:- Illumination Color:Red Voltage - Forward(Vf):2.3V Voltage - Forward(Vf):2.3V Power(Watts):50mW Forward Current:20mA Wavelength - Dominant:620nm~630nm Wavelength - Dominant:620nm~630nm Peak Wavelength:625nm Diode Configuration:- Lens Col"/>
-      <property name="Manufacturer Part" value="XL-1608SURC-06"/>
-      <property name="Manufacturer" value="XINGLIGHT(成兴光)"/>
-      <property name="Supplier Part" value="C965799"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="XL-1608SURC-06"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>208302d8-0ccb-4b1b-950e-6a1b2bc4eb3a</tstamps>
-    </comp>
-    <comp ref="LED2">
-      <value>EMERALD</value>
-      <footprint>My_Personal_Footprints_Library:LED_EMERALD_20mA_FC-D1608UGK-520D10</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84267_04BA7703640BAC111D09F5EFB971FBF3.pdf</datasheet>
-      <description>Illumination Color:Emerald Voltage - Forward(Vf):2.6V~3.6V Voltage - Forward(Vf):2.6V~3.6V Power(Watts):72mW Forward Current:20mA Wavelength - Dominant:515nm~530nm Wavelength - Dominant:515nm~530nm Lens Color:- Luminous Intensity:330mcd~900mcd Luminous In</description>
-      <fields>
-        <field name="Manufacturer Part">NCD0603G1</field>
-        <field name="Manufacturer">国星光电</field>
-        <field name="Supplier Part">C84267</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name"/>
-        <field name="Footprint">My_Personal_Footprints_Library:LED_EMERALD_20mA_FC-D1608UGK-520D10</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84267_04BA7703640BAC111D09F5EFB971FBF3.pdf</field>
-        <field name="Description">Illumination Color:Emerald Voltage - Forward(Vf):2.6V~3.6V Voltage - Forward(Vf):2.6V~3.6V Power(Watts):72mW Forward Current:20mA Wavelength - Dominant:515nm~530nm Wavelength - Dominant:515nm~530nm Lens Color:- Luminous Intensity:330mcd~900mcd Luminous In</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="FC-D1608UGK-520D10" description="Illumination Color:Emerald Voltage - Forward(Vf):2.6V~3.6V Voltage - Forward(Vf):2.6V~3.6V Power(Watts):72mW Forward Current:20mA Wavelength - Dominant:515nm~530nm Wavelength - Dominant:515nm~530nm Lens Color:- Luminous Intensity:330mcd~900mcd Luminous In"/>
-      <property name="Manufacturer Part" value="NCD0603G1"/>
-      <property name="Manufacturer" value="国星光电"/>
-      <property name="Supplier Part" value="C84267"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value=""/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>e3979d76-83c9-4ed9-8b6a-664de4bc29a7</tstamps>
-    </comp>
-    <comp ref="L_B-CH1">
-      <value>47uH±20% - 680mA</value>
-      <footprint>My_Personal_Footprints_Library:ind_47uH_LPS4018-473MRC</footprint>
-      <description>Tolerance:±20% Tolerance:±20% Ratings:AEC-Q200</description>
-      <fields>
-        <field name="Manufacturer Part">LPS4018-473MRC</field>
-        <field name="Manufacturer">Coilcraft(线艺)</field>
-        <field name="Supplier Part">C5189599</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">47uH±20% - 680mA</field>
-        <field name="Footprint">My_Personal_Footprints_Library:ind_47uH_LPS4018-473MRC</field>
-        <field name="Datasheet"/>
-        <field name="Description">Tolerance:±20% Tolerance:±20% Ratings:AEC-Q200</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="LPS4018-473MRC" description="Tolerance:±20% Tolerance:±20% Ratings:AEC-Q200"/>
-      <property name="Manufacturer Part" value="LPS4018-473MRC"/>
-      <property name="Manufacturer" value="Coilcraft(线艺)"/>
-      <property name="Supplier Part" value="C5189599"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="47uH±20% - 680mA"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>06644c02-12df-49ad-845a-15ec5b7e9515</tstamps>
-    </comp>
-    <comp ref="R10">
-      <value>10kΩ ±1% 62.5mW</value>
-      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
-      <description>Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <fields>
-        <field name="Manufacturer Part">0402WGF1002TCE</field>
-        <field name="Manufacturer">UNI-ROYAL(厚声)</field>
-        <field name="Supplier Part">C25744</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">10kΩ ±1% 62.5mW 厚膜电阻</field>
-        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="0402WGF1002TCE"/>
-      <property name="Manufacturer" value="UNI-ROYAL(厚声)"/>
-      <property name="Supplier Part" value="C25744"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="10kΩ ±1% 62.5mW 厚膜电阻"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>d3376bf3-8942-4fbe-b814-35459495d777</tstamps>
-    </comp>
-    <comp ref="R11">
-      <value>3kΩ ±1% 62.5mW</value>
-      <footprint>My_Personal_Footprints_Library:FRC04002F3001TS</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20211221/925EC7D7225764EE0046F22065062C87.pdf</datasheet>
-      <description>Type:Thick Film Resistors Resistance:3kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <fields>
-        <field name="Manufacturer Part">FRC0402F3001TS</field>
-        <field name="Manufacturer">FOJAN(富捷)</field>
-        <field name="Supplier Part">C2909355</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">3kΩ ±1% 62.5mW 厚膜电阻</field>
-        <field name="Footprint">My_Personal_Footprints_Library:FRC04002F3001TS</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20211221/925EC7D7225764EE0046F22065062C87.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance:3kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-      </fields>
-      <libsource lib="" part="FRC0402F3001TS_1" description="Type:Thick Film Resistors Resistance:3kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="FRC0402F3001TS"/>
-      <property name="Manufacturer" value="FOJAN(富捷)"/>
-      <property name="Supplier Part" value="C2909355"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="3kΩ ±1% 62.5mW 厚膜电阻"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>200f4693-6c58-44f5-b1eb-52b3cbcc2d65</tstamps>
-    </comp>
-    <comp ref="R12">
-      <value>604Ω</value>
-      <footprint>My_Personal_Footprints_Library:RTT066040FTP</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20191219/C158410_884373A5B7E1BC76BF57BC45A946C093.pdf</datasheet>
-      <description>Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <fields>
-        <field name="Manufacturer Part">RTT066040FTP</field>
-        <field name="Manufacturer">RALEC(旺诠)</field>
-        <field name="Supplier Part">C159502</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">604Ω ±1% 250mW</field>
-        <field name="Footprint">My_Personal_Footprints_Library:RTT066040FTP</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20191219/C158410_884373A5B7E1BC76BF57BC45A946C093.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="RTT066040FTP" description="Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="RTT066040FTP"/>
-      <property name="Manufacturer" value="RALEC(旺诠)"/>
-      <property name="Supplier Part" value="C159502"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="604Ω ±1% 250mW"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>41d647b1-2422-43b0-bc46-78ed923b9b62</tstamps>
-    </comp>
-    <comp ref="R13">
-      <value>604Ω</value>
-      <footprint>My_Personal_Footprints_Library:RTT066040FTP</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20191219/C158410_884373A5B7E1BC76BF57BC45A946C093.pdf</datasheet>
-      <description>Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <fields>
-        <field name="Manufacturer Part">RTT066040FTP</field>
-        <field name="Manufacturer">RALEC(旺诠)</field>
-        <field name="Supplier Part">C159502</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">604Ω ±1% 250mW</field>
-        <field name="Footprint">My_Personal_Footprints_Library:RTT066040FTP</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20191219/C158410_884373A5B7E1BC76BF57BC45A946C093.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="RTT066040FTP" description="Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="RTT066040FTP"/>
-      <property name="Manufacturer" value="RALEC(旺诠)"/>
-      <property name="Supplier Part" value="C159502"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="604Ω ±1% 250mW"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>9553af88-2ba3-47ae-8f3e-b28e2fda1816</tstamps>
-    </comp>
-    <comp ref="R14">
-      <value>1.78MΩ ±1% 62.5mW</value>
-      <footprint>My_Personal_Footprints_Library:RC0402FR-071M78L</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200715/C477227_DA40C8834A99D05F647DA888D556AF60.pdf</datasheet>
-      <description>Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <fields>
-        <field name="Manufacturer Part">RC0402FR-071M78L</field>
-        <field name="Manufacturer">YAGEO(国巨)</field>
-        <field name="Supplier Part">C477227</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">厚膜电阻 1.78MΩ ±1% 62.5mW</field>
-        <field name="Footprint">My_Personal_Footprints_Library:RC0402FR-071M78L</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200715/C477227_DA40C8834A99D05F647DA888D556AF60.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-      </fields>
-      <libsource lib="" part="RC0402FR-071M78L_1" description="Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="RC0402FR-071M78L"/>
-      <property name="Manufacturer" value="YAGEO(国巨)"/>
-      <property name="Supplier Part" value="C477227"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="厚膜电阻 1.78MΩ ±1% 62.5mW"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>905a60b0-4440-422e-88bc-cba698773dcd</tstamps>
-    </comp>
-    <comp ref="R15">
-      <value>887kΩ</value>
-      <footprint>My_Personal_Footprints_Library:RC0402FR-07887KL</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20181009/C309620_DA5935B6E1D48212CB7A533FE518B3C2.pdf</datasheet>
-      <description>Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <fields>
-        <field name="Manufacturer Part">RC0402FR-07887KL</field>
-        <field name="Manufacturer">YAGEO(国巨)</field>
-        <field name="Supplier Part">C137930</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">887kΩ ±1% 62.5mW</field>
-        <field name="Footprint">My_Personal_Footprints_Library:RC0402FR-07887KL</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20181009/C309620_DA5935B6E1D48212CB7A533FE518B3C2.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="RC0402FR-07887KL" description="Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="RC0402FR-07887KL"/>
-      <property name="Manufacturer" value="YAGEO(国巨)"/>
-      <property name="Supplier Part" value="C137930"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="887kΩ ±1% 62.5mW"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>485ffd7d-b2c3-45cc-82b0-5a9e07224f6c</tstamps>
-    </comp>
-    <comp ref="U7">
-      <value>LTC4121EUD#TRPBF</value>
-      <footprint>My_Personal_Footprints_Library:LTC4121EUD#TRPBF</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20221018/01DFF3A73A845B8ECF70EBFA80000D27.pdf</datasheet>
-      <description>Supply Voltage:40V Supply Voltage:40V Maximum Charge Current:400mA Type of Battery:多化学 Operating Temperature:-40°C~+125°C Operating Temperature:-40°C~+125°C</description>
-      <fields>
-        <field name="Manufacturer Part">LTC4121EUD#TRPBF</field>
-        <field name="Manufacturer">ADI(亚德诺)</field>
-        <field name="Supplier Part">C687336</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">LTC4121EUD#TRPBF</field>
-        <field name="Footprint">My_Personal_Footprints_Library:LTC4121EUD#TRPBF</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20221018/01DFF3A73A845B8ECF70EBFA80000D27.pdf</field>
-        <field name="Description">Supply Voltage:40V Supply Voltage:40V Maximum Charge Current:400mA Type of Battery:多化学 Operating Temperature:-40°C~+125°C Operating Temperature:-40°C~+125°C</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="LTC4121EUD#TRPBF" description="Supply Voltage:40V Supply Voltage:40V Maximum Charge Current:400mA Type of Battery:多化学 Operating Temperature:-40°C~+125°C Operating Temperature:-40°C~+125°C"/>
-      <property name="Manufacturer Part" value="LTC4121EUD#TRPBF"/>
-      <property name="Manufacturer" value="ADI(亚德诺)"/>
-      <property name="Supplier Part" value="C687336"/>
-      <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="LTC4121EUD#TRPBF"/>
-      <property name="Sheetname" value="Battery_Charger_LiFePO4_3.6V"/>
-      <property name="Sheetfile" value="Battery_charger_LiFePo4.kicad_sch"/>
-      <sheetpath names="/Battery_Charger_LiFePO4_3.6V/" tstamps="/019682df-0a47-4c4c-9672-8fce28c60460/"/>
-      <tstamps>0fa22ab7-9dc3-40ad-8741-da26515eaf90</tstamps>
-    </comp>
     <comp ref="Q3">
       <value>N-MOSFET-ENH-2N7002</value>
       <footprint>My_Personal_Footprints_Library:2N7002</footprint>
@@ -1642,7 +1421,7 @@
       <property name="LCSC Part Name" value="1个N沟道 耐压:60V 电流:115mA"/>
       <property name="Sheetname" value="Battery_Voltage_Monitor_with_MOSFETS"/>
       <property name="Sheetfile" value="Battery_Voltage_Monitor_with_MOSFETS.kicad_sch"/>
-      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0/"/>
+      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/55e03eb4-45c0-417f-b828-ae972a1a241c/"/>
       <tstamps>9f27b479-6e6a-4379-b826-a9e3c633d4e6</tstamps>
     </comp>
     <comp ref="Q4">
@@ -1668,10 +1447,10 @@
       <property name="LCSC Part Name" value="1个P沟道 耐压:50V 电流:130mA"/>
       <property name="Sheetname" value="Battery_Voltage_Monitor_with_MOSFETS"/>
       <property name="Sheetfile" value="Battery_Voltage_Monitor_with_MOSFETS.kicad_sch"/>
-      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0/"/>
-      <tstamps>f6fac631-0a84-4a9e-95bd-122054b460c8</tstamps>
+      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/55e03eb4-45c0-417f-b828-ae972a1a241c/"/>
+      <tstamps>567d26af-0cf7-472f-8e28-45e384426a8c</tstamps>
     </comp>
-    <comp ref="R16">
+    <comp ref="R13">
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <fields>
@@ -1686,10 +1465,10 @@
       <property name="Sheetfile" value="Battery_Voltage_Monitor_with_MOSFETS.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0/"/>
+      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/55e03eb4-45c0-417f-b828-ae972a1a241c/"/>
       <tstamps>4675a444-536a-450c-9a93-4ac617c1c317</tstamps>
     </comp>
-    <comp ref="R17">
+    <comp ref="R14">
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <fields>
@@ -1704,10 +1483,10 @@
       <property name="Sheetfile" value="Battery_Voltage_Monitor_with_MOSFETS.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0/"/>
+      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/55e03eb4-45c0-417f-b828-ae972a1a241c/"/>
       <tstamps>199177db-53a4-4556-8488-c3c119e7df80</tstamps>
     </comp>
-    <comp ref="R18">
+    <comp ref="R15">
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <fields>
@@ -1722,10 +1501,10 @@
       <property name="Sheetfile" value="Battery_Voltage_Monitor_with_MOSFETS.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0/"/>
+      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/55e03eb4-45c0-417f-b828-ae972a1a241c/"/>
       <tstamps>9ffefc1a-578c-4b37-80d3-cb84958a76f2</tstamps>
     </comp>
-    <comp ref="R19">
+    <comp ref="R16">
       <value>100</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <fields>
@@ -1740,10 +1519,10 @@
       <property name="Sheetfile" value="Battery_Voltage_Monitor_with_MOSFETS.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0/"/>
+      <sheetpath names="/Battery_Voltage_Monitor_with_MOSFETS/" tstamps="/55e03eb4-45c0-417f-b828-ae972a1a241c/"/>
       <tstamps>f2f184c9-ed37-40c2-9879-ef36b6fb72cf</tstamps>
     </comp>
-    <comp ref="C15">
+    <comp ref="C11">
       <value>10uF ±10% 10V</value>
       <footprint>My_Personal_Footprints_Library:CL10A106KP8NNNC</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf</datasheet>
@@ -1766,10 +1545,10 @@
       <property name="LCSC Part Name" value="10uF ±10% 10V"/>
       <property name="Sheetname" value="Buck-Boost3.3V"/>
       <property name="Sheetfile" value="Buck-Boost3.3V.kicad_sch"/>
-      <sheetpath names="/Buck-Boost3.3V/" tstamps="/7efd7115-3e45-40c0-b344-3c012cbc13c1/"/>
+      <sheetpath names="/Buck-Boost3.3V/" tstamps="/bd1333f1-cd43-4d31-a242-4960306cc242/"/>
       <tstamps>676788a1-b2c3-40ad-853c-ec7f0bc58feb</tstamps>
     </comp>
-    <comp ref="C16">
+    <comp ref="C12">
       <value>104</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
@@ -1784,10 +1563,10 @@
       <property name="Sheetfile" value="Buck-Boost3.3V.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Buck-Boost3.3V/" tstamps="/7efd7115-3e45-40c0-b344-3c012cbc13c1/"/>
+      <sheetpath names="/Buck-Boost3.3V/" tstamps="/bd1333f1-cd43-4d31-a242-4960306cc242/"/>
       <tstamps>e9f755c0-7f1c-4414-aa66-d24e9a49fac9</tstamps>
     </comp>
-    <comp ref="C17">
+    <comp ref="C13">
       <value>10uF ±10% 10V</value>
       <footprint>My_Personal_Footprints_Library:CL10A106KP8NNNC</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf</datasheet>
@@ -1810,10 +1589,10 @@
       <property name="LCSC Part Name" value="10uF ±10% 10V"/>
       <property name="Sheetname" value="Buck-Boost3.3V"/>
       <property name="Sheetfile" value="Buck-Boost3.3V.kicad_sch"/>
-      <sheetpath names="/Buck-Boost3.3V/" tstamps="/7efd7115-3e45-40c0-b344-3c012cbc13c1/"/>
+      <sheetpath names="/Buck-Boost3.3V/" tstamps="/bd1333f1-cd43-4d31-a242-4960306cc242/"/>
       <tstamps>b2ae0525-a018-498e-82d3-33b1ed17722f</tstamps>
     </comp>
-    <comp ref="C18">
+    <comp ref="C14">
       <value>4.7uF</value>
       <footprint>My_Personal_Footprints_Library:CL10A475KP8NNNC</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf</datasheet>
@@ -1836,7 +1615,7 @@
       <property name="LCSC Part Name" value="4.7uF ±10% 10V"/>
       <property name="Sheetname" value="Buck-Boost3.3V"/>
       <property name="Sheetfile" value="Buck-Boost3.3V.kicad_sch"/>
-      <sheetpath names="/Buck-Boost3.3V/" tstamps="/7efd7115-3e45-40c0-b344-3c012cbc13c1/"/>
+      <sheetpath names="/Buck-Boost3.3V/" tstamps="/bd1333f1-cd43-4d31-a242-4960306cc242/"/>
       <tstamps>97746d76-c659-42a0-b481-1d887b5f6638</tstamps>
     </comp>
     <comp ref="L_B-B1">
@@ -1862,10 +1641,10 @@
       <property name="LCSC Part Name" value="2.2uH ±20% 3.2A"/>
       <property name="Sheetname" value="Buck-Boost3.3V"/>
       <property name="Sheetfile" value="Buck-Boost3.3V.kicad_sch"/>
-      <sheetpath names="/Buck-Boost3.3V/" tstamps="/7efd7115-3e45-40c0-b344-3c012cbc13c1/"/>
+      <sheetpath names="/Buck-Boost3.3V/" tstamps="/bd1333f1-cd43-4d31-a242-4960306cc242/"/>
       <tstamps>cbf066e6-4dcc-4983-84b6-2126e96a7daa</tstamps>
     </comp>
-    <comp ref="R20">
+    <comp ref="R17">
       <value>220Ω</value>
       <footprint>My_Personal_Footprints_Library:0603WAJ0221T5E</footprint>
       <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
@@ -1890,7 +1669,7 @@
       <property name="REF" value="C1226"/>
       <property name="Sheetname" value="Buck-Boost3.3V"/>
       <property name="Sheetfile" value="Buck-Boost3.3V.kicad_sch"/>
-      <sheetpath names="/Buck-Boost3.3V/" tstamps="/7efd7115-3e45-40c0-b344-3c012cbc13c1/"/>
+      <sheetpath names="/Buck-Boost3.3V/" tstamps="/bd1333f1-cd43-4d31-a242-4960306cc242/"/>
       <tstamps>511ca9c8-6650-4c3b-aff6-289b99268c09</tstamps>
     </comp>
     <comp ref="U5">
@@ -1916,8 +1695,122 @@
       <property name="LCSC Part Name" value="高效率单电感升降压转换器"/>
       <property name="Sheetname" value="Buck-Boost3.3V"/>
       <property name="Sheetfile" value="Buck-Boost3.3V.kicad_sch"/>
-      <sheetpath names="/Buck-Boost3.3V/" tstamps="/7efd7115-3e45-40c0-b344-3c012cbc13c1/"/>
+      <sheetpath names="/Buck-Boost3.3V/" tstamps="/bd1333f1-cd43-4d31-a242-4960306cc242/"/>
       <tstamps>405a5b62-9fd9-4999-bc54-ba90bffe4757</tstamps>
+    </comp>
+    <comp ref="Q6">
+      <value>P-MOSFET-ENH-BSS84LT1G</value>
+      <footprint>My_Personal_Footprints_Library:BSS84LT1G</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20160910/1473490307635.PDF</datasheet>
+      <description>Type:1个PChannel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Power Dissipation (Pd): Drain Source On Resistance (RDS(on)@Vgs,Id):10Ω@5V,100mA Gate Threshold Voltage (Vgs(th)@Id):2V@250uA Input Capacitance (Ciss@Vds):30pF@5V Operating Temper</description>
+      <fields>
+        <field name="Manufacturer Part">BSS84LT1G</field>
+        <field name="Manufacturer">onsemi(安森美)</field>
+        <field name="Supplier Part">C82079</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">1个P沟道 耐压:50V 电流:130mA</field>
+        <field name="Footprint">My_Personal_Footprints_Library:BSS84LT1G</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20160910/1473490307635.PDF</field>
+        <field name="Description">Type:1个PChannel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Power Dissipation (Pd): Drain Source On Resistance (RDS(on)@Vgs,Id):10Ω@5V,100mA Gate Threshold Voltage (Vgs(th)@Id):2V@250uA Input Capacitance (Ciss@Vds):30pF@5V Operating Temper</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="BSS84LT1G" description="Type:1个PChannel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Power Dissipation (Pd): Drain Source On Resistance (RDS(on)@Vgs,Id):10Ω@5V,100mA Gate Threshold Voltage (Vgs(th)@Id):2V@250uA Input Capacitance (Ciss@Vds):30pF@5V Operating Temper"/>
+      <property name="Manufacturer Part" value="BSS84LT1G"/>
+      <property name="Manufacturer" value="onsemi(安森美)"/>
+      <property name="Supplier Part" value="C82079"/>
+      <property name="Supplier" value="LCSC"/>
+      <property name="LCSC Part Name" value="1个P沟道 耐压:50V 电流:130mA"/>
+      <property name="Sheetname" value="micro_SD-CARD_enable"/>
+      <property name="Sheetfile" value="micro_SD-CARD_enable.kicad_sch"/>
+      <sheetpath names="/micro_SD-CARD_enable/" tstamps="/b05cfee3-cdbd-4ba0-a586-ca5aad6ef209/"/>
+      <tstamps>c065f1a1-afe4-4439-b6cf-608606f74564</tstamps>
+    </comp>
+    <comp ref="Q7">
+      <value>N-MOSFET-ENH-2N7002</value>
+      <footprint>My_Personal_Footprints_Library:2N7002</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20171228/C164913_15144413269051213916.pdf</datasheet>
+      <description>Type:1 N-Channel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Drain Source On Resistance (RDS(on)@Vgs,Id):5Ω@10V Power Dissipation (Pd):225mW Gate Threshold Voltage (Vgs(th)@Id):2.5V@250uA Input Capacitance (Ciss@Vds):50pF Reverse Transfer</description>
+      <fields>
+        <field name="Manufacturer Part">2N7002</field>
+        <field name="Manufacturer">CJ(江苏长电/长晶)</field>
+        <field name="Supplier Part">C8545</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">1个N沟道 耐压:60V 电流:115mA</field>
+        <field name="Footprint">My_Personal_Footprints_Library:2N7002</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20171228/C164913_15144413269051213916.pdf</field>
+        <field name="Description">Type:1 N-Channel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Drain Source On Resistance (RDS(on)@Vgs,Id):5Ω@10V Power Dissipation (Pd):225mW Gate Threshold Voltage (Vgs(th)@Id):2.5V@250uA Input Capacitance (Ciss@Vds):50pF Reverse Transfer</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="2N7002" description="Type:1 N-Channel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Drain Source On Resistance (RDS(on)@Vgs,Id):5Ω@10V Power Dissipation (Pd):225mW Gate Threshold Voltage (Vgs(th)@Id):2.5V@250uA Input Capacitance (Ciss@Vds):50pF Reverse Transfer"/>
+      <property name="Manufacturer Part" value="2N7002"/>
+      <property name="Manufacturer" value="CJ(江苏长电/长晶)"/>
+      <property name="Supplier Part" value="C8545"/>
+      <property name="Supplier" value="LCSC"/>
+      <property name="LCSC Part Name" value="1个N沟道 耐压:60V 电流:115mA"/>
+      <property name="Sheetname" value="micro_SD-CARD_enable"/>
+      <property name="Sheetfile" value="micro_SD-CARD_enable.kicad_sch"/>
+      <sheetpath names="/micro_SD-CARD_enable/" tstamps="/b05cfee3-cdbd-4ba0-a586-ca5aad6ef209/"/>
+      <tstamps>4932f830-47b8-4f2d-b59d-a3937c29a5a1</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="REF">C17408</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="REF" value="C17408"/>
+      <property name="Sheetname" value="micro_SD-CARD_enable"/>
+      <property name="Sheetfile" value="micro_SD-CARD_enable.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/micro_SD-CARD_enable/" tstamps="/b05cfee3-cdbd-4ba0-a586-ca5aad6ef209/"/>
+      <tstamps>d54f2d72-5168-4484-bbe8-17c22796cb1b</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="REF">C17414</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="REF" value="C17414"/>
+      <property name="Sheetname" value="micro_SD-CARD_enable"/>
+      <property name="Sheetfile" value="micro_SD-CARD_enable.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/micro_SD-CARD_enable/" tstamps="/b05cfee3-cdbd-4ba0-a586-ca5aad6ef209/"/>
+      <tstamps>5d36ea87-7408-4a35-a21f-915e912c409f</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>4.7kΩ ±1% 100mW</value>
+      <footprint>My_Personal_Footprints_Library:0603WAF4701T5E</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</datasheet>
+      <description>Type:Thick Film Resistors Resistance:4.7kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
+      <fields>
+        <field name="Manufacturer Part">0603WAF4701T5E</field>
+        <field name="Manufacturer">UNI-ROYAL(厚声)</field>
+        <field name="Supplier Part">C23162</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">4.7kΩ ±1% 100mW</field>
+        <field name="Footprint">My_Personal_Footprints_Library:0603WAF4701T5E</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</field>
+        <field name="Description">Type:Thick Film Resistors Resistance:4.7kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="0603WAF4701T5E" description="Type:Thick Film Resistors Resistance:4.7kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
+      <property name="Manufacturer Part" value="0603WAF4701T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL(厚声)"/>
+      <property name="Supplier Part" value="C23162"/>
+      <property name="Supplier" value="LCSC"/>
+      <property name="LCSC Part Name" value="4.7kΩ ±1% 100mW"/>
+      <property name="Sheetname" value="micro_SD-CARD_enable"/>
+      <property name="Sheetfile" value="micro_SD-CARD_enable.kicad_sch"/>
+      <sheetpath names="/micro_SD-CARD_enable/" tstamps="/b05cfee3-cdbd-4ba0-a586-ca5aad6ef209/"/>
+      <tstamps>1cbfbd15-2818-4439-9179-bad4dab36f7b</tstamps>
     </comp>
   </components>
   <libparts>
@@ -1961,26 +1854,6 @@
         <pin num="2" name="2" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="" part="CL21A106KAYNNNE_1">
-      <description>Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf</docs>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">10uF</field>
-        <field name="Footprint">CAP_10uF_CL21A106KAYNNNE:C0805</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf</field>
-        <field name="Description">Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:</field>
-        <field name="Manufacturer Part">CL21A106KAYNNNE</field>
-        <field name="Manufacturer">SAMSUNG(三星)</field>
-        <field name="Supplier Part">C15850</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">10uF ±10% 25V</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
-      </pins>
-    </libpart>
     <libpart lib="" part="CL21A226MAQNNNE_1">
       <description>Capacitance: Tolerance:±20% Tolerance:±20% Voltage Rated: Temperature Coefficient:</description>
       <docs>https://atta.szlcsc.com/upload/public/pdf/source/20160218/1457707763339.pdf</docs>
@@ -2001,64 +1874,28 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="" part="CM05X5R226M06AH080_1">
-      <description>Capacitance: Tolerance:±20% Tolerance:±20% Voltage Rated: Temperature Coefficient:</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20211010/C2836678_DF50997D4C3D82358B3700D75A0D3B5B.pdf</docs>
+    <libpart lib="" part="Header-Female-2.54_1x6_1">
+      <description>Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-</description>
+      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20210301/C2718488_F4427B881E42CAA8DDB0B1C12B3A522C.pdf</docs>
       <fields>
-        <field name="Reference">C</field>
-        <field name="Value">22uF</field>
-        <field name="Footprint">CAP_22uF_CM05X5R226M06AH080:C0402</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20211010/C2836678_DF50997D4C3D82358B3700D75A0D3B5B.pdf</field>
-        <field name="Description">Capacitance: Tolerance:±20% Tolerance:±20% Voltage Rated: Temperature Coefficient:</field>
-        <field name="Manufacturer Part">CM05X5R226M06AH080</field>
-        <field name="Manufacturer">Kyocera AVX</field>
-        <field name="Supplier Part">C919306</field>
+        <field name="Reference">P</field>
+        <field name="Value"/>
+        <field name="Footprint">Header-Female-2.54_1x6:HDR-TH_6P-P2.54-V-F</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210301/C2718488_F4427B881E42CAA8DDB0B1C12B3A522C.pdf</field>
+        <field name="Description">Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-</field>
+        <field name="Manufacturer Part">2.54-1*6P母</field>
+        <field name="Manufacturer">BOOMELE(博穆精密)</field>
+        <field name="Supplier Part">C40877</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">22uF ±20% 6.3V</field>
+        <field name="LCSC Part Name">间距:2.54mm 1x6P 直插</field>
       </fields>
       <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="" part="FRC0402F3001TS_1">
-      <description>Type:Thick Film Resistors Resistance:3kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20211221/925EC7D7225764EE0046F22065062C87.pdf</docs>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">3kΩ</field>
-        <field name="Footprint">RES_3K_1_TOL_FRC04002F3001TS:R0402</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20211221/925EC7D7225764EE0046F22065062C87.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance:3kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-        <field name="Manufacturer Part">FRC0402F3001TS</field>
-        <field name="Manufacturer">FOJAN(富捷)</field>
-        <field name="Supplier Part">C2909355</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">3kΩ ±1% 62.5mW 厚膜电阻</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="" part="RC0402FR-071M78L_1">
-      <description>Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20200715/C477227_DA40C8834A99D05F647DA888D556AF60.pdf</docs>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">1.78MΩ</field>
-        <field name="Footprint">RES_1.78M_1_TOL_RC0402FR-071M78L:R0402</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200715/C477227_DA40C8834A99D05F647DA888D556AF60.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-        <field name="Manufacturer Part">RC0402FR-071M78L</field>
-        <field name="Manufacturer">YAGEO(国巨)</field>
-        <field name="Supplier Part">C477227</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">厚膜电阻 1.78MΩ ±1% 62.5mW</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="" part="USB3.1C16PFSMT_1">
@@ -2150,27 +1987,6 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="D_Schottky">
-      <description>Schottky diode</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>TO-???*</fp>
-        <fp>*_Diode_*</fp>
-        <fp>*SingleDiode*</fp>
-        <fp>D_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">D_Schottky</field>
-        <field name="Footprint"/>
-        <field name="Datasheet">~</field>
-        <field name="Description">Schottky diode</field>
-      </fields>
-      <pins>
-        <pin num="1" name="K" type="passive"/>
-        <pin num="2" name="A" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Device" part="R">
       <description>Resistor</description>
       <docs>~</docs>
@@ -2248,26 +2064,6 @@
         <field name="Description">Mounting Hole without connection</field>
       </fields>
     </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="0402B223K500NT">
-      <description>Capacitance:22nF Tolerance:±10% Tolerance:±10% Voltage Rating:50V Temperature Coefficient:X7R</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C486355_26A10D38EF8C2A5C37091D0039909270.pdf</docs>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">22nF</field>
-        <field name="Footprint">CAP_22nF_0402B223K500NT:C0402</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C486355_26A10D38EF8C2A5C37091D0039909270.pdf</field>
-        <field name="Description">Capacitance:22nF Tolerance:±10% Tolerance:±10% Voltage Rating:50V Temperature Coefficient:X7R</field>
-        <field name="Manufacturer Part">0402B223K500NT</field>
-        <field name="Manufacturer">FH(风华)</field>
-        <field name="Supplier Part">C1532</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">22nF ±10% 50V</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
-      </pins>
-    </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="0402WGF1002TCE">
       <description>Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
       <docs>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</docs>
@@ -2286,6 +2082,26 @@
       <pins>
         <pin num="1" name="1" type="input"/>
         <pin num="2" name="2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="My_Personal_Symbols_Library" part="0603WAF4701T5E">
+      <description>Type:Thick Film Resistors Resistance:4.7kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
+      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">4.7kΩ</field>
+        <field name="Footprint">RES_4K7_0603WAF4701T5E:R0603</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf</field>
+        <field name="Description">Type:Thick Film Resistors Resistance:4.7kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
+        <field name="Manufacturer Part">0603WAF4701T5E</field>
+        <field name="Manufacturer">UNI-ROYAL(厚声)</field>
+        <field name="Supplier Part">C23162</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">4.7kΩ ±1% 100mW 厚膜电阻</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="0603WAF7501T5E">
@@ -2326,28 +2142,6 @@
       <pins>
         <pin num="1" name="1" type="input"/>
         <pin num="2" name="2" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="1TS005F-2500-5001">
-      <description>Circuit:SPST Actuator Style:Round Button Operating Force:250gf Mounting Style:Brick nogging Switch Length:6mm Switch Width:6mm Switch Height:5mm Strike Gundam:不带 Contact Current:50mA Voltage Rating (DC):12V Power Rating:0.6W Insulation Resistance:100MΩ Ac</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20180720/C255812_0808C7D708FD1FB7246546D29134BBAD.pdf</docs>
-      <fields>
-        <field name="Reference">SW</field>
-        <field name="Value"/>
-        <field name="Footprint">SW_1TS005F-2500-5001:KEY-SMD_4P-L6.0-W6.0-P4.50-LS10.0</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20180720/C255812_0808C7D708FD1FB7246546D29134BBAD.pdf</field>
-        <field name="Description">Circuit:SPST Actuator Style:Round Button Operating Force:250gf Mounting Style:Brick nogging Switch Length:6mm Switch Width:6mm Switch Height:5mm Strike Gundam:不带 Contact Current:50mA Voltage Rating (DC):12V Power Rating:0.6W Insulation Resistance:100MΩ Ac</field>
-        <field name="Manufacturer Part">1TS005F-2500-5001</field>
-        <field name="Manufacturer">HYP(鸿源精密)</field>
-        <field name="Supplier Part">C255812</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">6*6*5mm 立贴 轻触开关</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
-        <pin num="3" name="3" type="input"/>
-        <pin num="4" name="4" type="input"/>
       </pins>
     </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="2N7002">
@@ -2408,9 +2202,9 @@
         <field name="LCSC Part Name">1个P沟道 耐压:50V 电流:130mA</field>
       </fields>
       <pins>
-        <pin num="1" name="G" type="bidirectional"/>
-        <pin num="2" name="S" type="bidirectional"/>
-        <pin num="3" name="D" type="bidirectional"/>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="CL10A475KP8NNNC">
@@ -2453,6 +2247,24 @@
         <pin num="2" name="2" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="My_Personal_Symbols_Library" part="DFR0819">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="SCL" type="passive"/>
+        <pin num="4" name="SDA" type="passive"/>
+        <pin num="5" name="INT" type="passive"/>
+        <pin num="6" name="RST" type="passive"/>
+        <pin num="7" name="32K" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="DMP1045U-7">
       <description>Type:1 Piece P-Channel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Drain Source On Resistance (RDS(on)@Vgs,Id):31mΩ@4.5V,4A Power Dissipation (Pd): Gate Threshold Voltage (Vgs(th)@Id):1V@250uA Total Gate Charge (Qg@Vgs):15.8nC@4.5V Input C</description>
       <docs>https://atta.szlcsc.com/upload/public/pdf/source/20180725/C177033_EFAD3680968319EA3CC6226C29CAC432.pdf</docs>
@@ -2474,44 +2286,25 @@
         <pin num="3" name="D" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="FC-D1608UGK-520D10">
-      <description>Illumination Color:Emerald Voltage - Forward(Vf):2.6V~3.6V Voltage - Forward(Vf):2.6V~3.6V Power(Watts):72mW Forward Current:20mA Wavelength - Dominant:515nm~530nm Wavelength - Dominant:515nm~530nm Lens Color:- Luminous Intensity:330mcd~900mcd Luminous In</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84267_04BA7703640BAC111D09F5EFB971FBF3.pdf</docs>
+    <libpart lib="My_Personal_Symbols_Library" part="E6C0606RGBC3UDA">
+      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20220330/8DE12FB9881A833E867FD7AF6894B416.pdf</docs>
       <fields>
         <field name="Reference">LED</field>
         <field name="Value"/>
-        <field name="Footprint">LED_EMERALD_20mA_FC-D1608UGK-520D10:LED0603-RD_1</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84267_04BA7703640BAC111D09F5EFB971FBF3.pdf</field>
-        <field name="Description">Illumination Color:Emerald Voltage - Forward(Vf):2.6V~3.6V Voltage - Forward(Vf):2.6V~3.6V Power(Watts):72mW Forward Current:20mA Wavelength - Dominant:515nm~530nm Wavelength - Dominant:515nm~530nm Lens Color:- Luminous Intensity:330mcd~900mcd Luminous In</field>
-        <field name="Manufacturer Part">NCD0603G1</field>
-        <field name="Manufacturer">国星光电</field>
-        <field name="Supplier Part">C84267</field>
+        <field name="Footprint">LED_RGB_E6C0606RGBC3UDA:LED-ARRAY-SMD_4P-L1.6-W1.6_SY-PB2333RGBC-010F</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20220330/8DE12FB9881A833E867FD7AF6894B416.pdf</field>
+        <field name="Description"/>
+        <field name="Manufacturer Part">E6C0606RGBC3UDA</field>
+        <field name="Manufacturer">ekinglux(亿晶源)</field>
+        <field name="Supplier Part">C375569</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name"/>
+        <field name="LCSC Part Name">RGB三色</field>
       </fields>
       <pins>
-        <pin num="1" name="K" type="bidirectional"/>
-        <pin num="2" name="A" type="bidirectional"/>
-      </pins>
-    </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="GRM155R61E225KE11D">
-      <description>Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20190531/C385032_AE390FF415271BC6A7223A7F56F516ED.pdf</docs>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">2.2uF</field>
-        <field name="Footprint">CAP_2.2uF_GRM155R61E225KE11D:C0402</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20190531/C385032_AE390FF415271BC6A7223A7F56F516ED.pdf</field>
-        <field name="Description">Capacitance: Tolerance:±10% Tolerance:±10% Voltage Rated: Temperature Coefficient:</field>
-        <field name="Manufacturer Part">GRM155R61E225KE11D</field>
-        <field name="Manufacturer">muRata(村田)</field>
-        <field name="Supplier Part">C385032</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">2.2uF ±10% 25V</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
+        <pin num="1" name="B" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+        <pin num="3" name="G" type="passive"/>
+        <pin num="4" name="R" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="Header-Female-2.54_1x2">
@@ -2576,142 +2369,89 @@
         <pin num="4" name="4" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="Header-Female-2.54_1x6">
-      <description>Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20210301/C2718488_F4427B881E42CAA8DDB0B1C12B3A522C.pdf</docs>
+    <libpart lib="My_Personal_Symbols_Library" part="KMR211NGLFS">
+      <description>Circuit:SPST - normally open Actuator Style:Round Button Operating Force:120gf Mounting Style:Standing paste Contact Current:50mA Voltage Rating (DC):32V Pin Style:Gullwing Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C</description>
+      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20211209/3EBDA2FC8F99CA5B8B2AE6B679EE7E99.pdf</docs>
       <fields>
-        <field name="Reference">P</field>
+        <field name="Reference">SW</field>
         <field name="Value"/>
-        <field name="Footprint">Header-Female-2.54_1x6:HDR-TH_6P-P2.54-V-F</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210301/C2718488_F4427B881E42CAA8DDB0B1C12B3A522C.pdf</field>
-        <field name="Description">Holes Structure:1x6P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:6P Insulation Height:- Contact Material:- Contact Plating:-</field>
-        <field name="Manufacturer Part">2.54-1*6P母</field>
-        <field name="Manufacturer">BOOMELE(博穆精密)</field>
-        <field name="Supplier Part">C40877</field>
+        <field name="Footprint">SW_Button_KMR211NGLFS:SW-SMD_4P-L4.2-W2.8-P1.60-LS4.6-TR</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20211209/3EBDA2FC8F99CA5B8B2AE6B679EE7E99.pdf</field>
+        <field name="Description">Circuit:SPST - normally open Actuator Style:Round Button Operating Force:120gf Mounting Style:Standing paste Contact Current:50mA Voltage Rating (DC):32V Pin Style:Gullwing Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C</field>
+        <field name="Manufacturer Part">KMR211NGLFS</field>
+        <field name="Manufacturer">C&amp;K</field>
+        <field name="Supplier Part">C221676</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">间距:2.54mm 1x6P 直插</field>
+        <field name="LCSC Part Name">KMR211NGLFS</field>
       </fields>
       <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="bidirectional"/>
-        <pin num="3" name="3" type="bidirectional"/>
-        <pin num="4" name="4" type="bidirectional"/>
-        <pin num="5" name="5" type="input"/>
-        <pin num="6" name="6" type="input"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="KF301-5.0-2P">
-      <description>Structure:1x2P Pitch:5mm Color:Blue Mounting Style:Straight Current Rating (Max):17A Voltage Rating (Max):250V Number of Pins:2P Number of Rows:1 Wire Gauge - AWG:14~22 Wire Gauge - AWG:14~22 Wire Gauge - mm2:1.5 Wire Gauge - mm2:1.5 Number of PINs Per Ro</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20230317/03A5B5FC229D6F9225E8F51DA1A4E80A.pdf</docs>
+    <libpart lib="My_Personal_Symbols_Library" part="RB168MM-40TR">
+      <description>Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V</description>
+      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20200911/C509936_2B70D2FEE0E72B02658D34F3D27F66D8.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value"/>
+        <field name="Footprint">Schottky_Diode_RB168MM-40TR:SOD-123FL_L2.6-W1.6-LS3.5-RD</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200911/C509936_2B70D2FEE0E72B02658D34F3D27F66D8.pdf</field>
+        <field name="Description">Diode Configuration:Independent Type Forward Voltage (Vf@If):600mV@1A Reverse Voltage (Vr):40V Rectified Current:1A Reverse Leakage Current (Ir):50nA@40V</field>
+        <field name="Manufacturer Part">RB168MM-40TR</field>
+        <field name="Manufacturer">ROHM(罗姆)</field>
+        <field name="Supplier Part">C509936</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">电压:40V 电流:1A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="My_Personal_Symbols_Library" part="S2B-PH-K-S-GW">
+      <description>Pins Structure:1x2P Pitch:2mm Mounting Style:Right-Angle Reference Series:PH Number of Pins:2P Number of Rows:1 Number of PINs Per Row:2 Row Spacing:- Current Rating (Max):2A Contact Material:Brass Contact Plating:Tin Operating Temperature Range:-25°C~+85°C</description>
+      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20181010/C265101_22107ACC4D8714694FDA2DD97145FA81.pdf</docs>
       <fields>
         <field name="Reference">U</field>
         <field name="Value"/>
-        <field name="Footprint">Screw_Terminal_KF301_1x02:CONN-TH_P5.00_KF301-5.0-2P</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20230317/03A5B5FC229D6F9225E8F51DA1A4E80A.pdf</field>
-        <field name="Description">Structure:1x2P Pitch:5mm Color:Blue Mounting Style:Straight Current Rating (Max):17A Voltage Rating (Max):250V Number of Pins:2P Number of Rows:1 Wire Gauge - AWG:14~22 Wire Gauge - AWG:14~22 Wire Gauge - mm2:1.5 Wire Gauge - mm2:1.5 Number of PINs Per Ro</field>
-        <field name="Manufacturer Part">KF301-5.0-2P</field>
-        <field name="Manufacturer">KEFA(科发)</field>
-        <field name="Supplier Part">C474881</field>
+        <field name="Footprint">S2B-PH-K-S-GW:CONN-TH_S2B-PH-K-S-GW</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20181010/C265101_22107ACC4D8714694FDA2DD97145FA81.pdf</field>
+        <field name="Description">Pins Structure:1x2P Pitch:2mm Mounting Style:Right-Angle Reference Series:PH Number of Pins:2P Number of Rows:1 Number of PINs Per Row:2 Row Spacing:- Current Rating (Max):2A Contact Material:Brass Contact Plating:Tin Operating Temperature Range:-25°C~+85°C</field>
+        <field name="Manufacturer Part">S2B-PH-K-S-GW</field>
+        <field name="Manufacturer">JST</field>
+        <field name="Supplier Part">C157932</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">5mm 1x2P 排数:1 每排P数:2 直插</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="LPS4018-473MRC">
-      <description>Tolerance:±20% Tolerance:±20% Ratings:AEC-Q200</description>
-      <fields>
-        <field name="Reference">L</field>
-        <field name="Value"/>
-        <field name="Footprint">ind_47uH_LPS4018-473MRC:IND-SMD_L3.9-W3.9-1</field>
-        <field name="Datasheet"/>
-        <field name="Description">Tolerance:±20% Tolerance:±20% Ratings:AEC-Q200</field>
-        <field name="Manufacturer Part">LPS4018-473MRC</field>
-        <field name="Manufacturer">Coilcraft(线艺)</field>
-        <field name="Supplier Part">C5189599</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">±20%</field>
+        <field name="LCSC Part Name">1x2P 间距:2mm 弯插 系列:PH</field>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="LTC4121EUD#TRPBF">
-      <description>Supply Voltage:40V Supply Voltage:40V Maximum Charge Current:400mA Type of Battery:多化学 Operating Temperature:-40°C~+125°C Operating Temperature:-40°C~+125°C</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20221018/01DFF3A73A845B8ECF70EBFA80000D27.pdf</docs>
+    <libpart lib="My_Personal_Symbols_Library" part="SS-12F49-G050">
+      <description>Circuit:SPDT Actuator Style:Rectangular columnar Pin Style:PCPin Switch Length:12.1mm Switch Width:5.9mm Switch Height:14mm Mounting Style:Straight Actuator Color:Black Current Rating (DC):1A Voltage Rating (DC):24V Mechanical Life:1万次 Operating Temperatu</description>
+      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20210810/8EE9A98137DF7BB1D8E3F63CA237DFBB.pdf</docs>
       <fields>
-        <field name="Reference">U</field>
+        <field name="Reference">SW</field>
         <field name="Value"/>
-        <field name="Footprint">ProLib_pcs_LTC4121EUD_2025-04-30:QFN-16_L3.0-W3.0-P0.50-BL-EP1.5</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20221018/01DFF3A73A845B8ECF70EBFA80000D27.pdf</field>
-        <field name="Description">Supply Voltage:40V Supply Voltage:40V Maximum Charge Current:400mA Type of Battery:多化学 Operating Temperature:-40°C~+125°C Operating Temperature:-40°C~+125°C</field>
-        <field name="Manufacturer Part">LTC4121EUD#TRPBF</field>
-        <field name="Manufacturer">ADI(亚德诺)</field>
-        <field name="Supplier Part">C687336</field>
+        <field name="Footprint">SPDT_SW_1A_SS-12F49-G050:SW-TH_SS-12F45-GXXX</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210810/8EE9A98137DF7BB1D8E3F63CA237DFBB.pdf</field>
+        <field name="Description">Circuit:SPDT Actuator Style:Rectangular columnar Pin Style:PCPin Switch Length:12.1mm Switch Width:5.9mm Switch Height:14mm Mounting Style:Straight Actuator Color:Black Current Rating (DC):1A Voltage Rating (DC):24V Mechanical Life:1万次 Operating Temperatu</field>
+        <field name="Manufacturer Part">SS-12F49-G050</field>
+        <field name="Manufacturer">G-Switch(品赞)</field>
+        <field name="Supplier Part">C2876010</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">LTC4121EUD#TRPBF</field>
+        <field name="LCSC Part Name">柄长5mm 直插两档 滑动开关</field>
       </fields>
       <pins>
-        <pin num="1" name="INTVcc" type="bidirectional"/>
-        <pin num="2" name="BOOST" type="bidirectional"/>
-        <pin num="3" name="IN" type="input"/>
-        <pin num="4" name="SW" type="bidirectional"/>
-        <pin num="5" name="GND" type="power_in"/>
-        <pin num="6" name="MPPT" type="bidirectional"/>
-        <pin num="7" name="FREQ" type="input"/>
-        <pin num="8" name="CHGSNS" type="bidirectional"/>
-        <pin num="9" name="BAT" type="output"/>
-        <pin num="10" name="FB" type="bidirectional"/>
-        <pin num="11" name="FBG" type="bidirectional"/>
-        <pin num="12" name="NTC" type="input"/>
-        <pin num="13" name="PROG" type="bidirectional"/>
-        <pin num="14" name="CHRG#" type="bidirectional"/>
-        <pin num="15" name="FAULT#" type="bidirectional"/>
-        <pin num="16" name="RUN" type="input"/>
-        <pin num="17" name="GND" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="RC0402FR-07887KL">
-      <description>Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20181009/C309620_DA5935B6E1D48212CB7A533FE518B3C2.pdf</docs>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">887kΩ</field>
-        <field name="Footprint">RES_887K_1_TOL_RC0402FR-07887KL:R0402</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20181009/C309620_DA5935B6E1D48212CB7A533FE518B3C2.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-        <field name="Manufacturer Part">RC0402FR-07887KL</field>
-        <field name="Manufacturer">YAGEO(国巨)</field>
-        <field name="Supplier Part">C137930</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">厚膜电阻 887kΩ ±1% 62.5mW</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="RTT066040FTP">
-      <description>Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20191219/C158410_884373A5B7E1BC76BF57BC45A946C093.pdf</docs>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">604Ω</field>
-        <field name="Footprint">RES_604_1_TOL_RTT066040FTP:R1206</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20191219/C158410_884373A5B7E1BC76BF57BC45A946C093.pdf</field>
-        <field name="Description">Type:Thick Film Resistors Resistance: Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C</field>
-        <field name="Manufacturer Part">RTT066040FTP</field>
-        <field name="Manufacturer">RALEC(旺诠)</field>
-        <field name="Supplier Part">C159502</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">厚膜电阻 604Ω ±1% 250mW</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="SWPA4018S2R2MT">
@@ -2753,7 +2493,7 @@
         <pin num="1" name="DAT2" type="bidirectional"/>
         <pin num="2" name="CD/DAT3" type="bidirectional"/>
         <pin num="3" name="CMD" type="bidirectional"/>
-        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="4" name="VDD" type="passive"/>
         <pin num="5" name="CLX" type="input"/>
         <pin num="6" name="VSS" type="power_in"/>
         <pin num="7" name="DAT0" type="bidirectional"/>
@@ -2763,27 +2503,6 @@
         <pin num="12" name="12" type="power_in"/>
         <pin num="13" name="13" type="power_in"/>
         <pin num="CD" name="CD" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="TPS3839G33DBZR">
-      <description>ChipType:Simple reset/Power-on reset Output Type:推挽 Reset Active Level:低电平有效 Threshold Voltage:3.08V Number of Voltages Monitored:1 Reset Timeout:120ms Operating Temperature:-40°C~+85°C@(TA) Operating Temperature:-40°C~+85°C@(TA)</description>
-      <docs>https://www.ti.com/cn/lit/gpn/tps3839</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value"/>
-        <field name="Footprint">ProLib_pcs_TPS3839G33DBZR_2025-05-15:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR</field>
-        <field name="Datasheet">https://www.ti.com/cn/lit/gpn/tps3839</field>
-        <field name="Description">ChipType:Simple reset/Power-on reset Output Type:推挽 Reset Active Level:低电平有效 Threshold Voltage:3.08V Number of Voltages Monitored:1 Reset Timeout:120ms Operating Temperature:-40°C~+85°C@(TA) Operating Temperature:-40°C~+85°C@(TA)</field>
-        <field name="Manufacturer Part">TPS3839G33DBZR</field>
-        <field name="Manufacturer">TI(德州仪器)</field>
-        <field name="Supplier Part">C485802</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">TPS3839G33DBZR</field>
-      </fields>
-      <pins>
-        <pin num="1" name="GND" type="input"/>
-        <pin num="2" name="RESET#" type="output"/>
-        <pin num="3" name="VDD" type="input"/>
       </pins>
     </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="TPS63001DRCR">
@@ -2871,26 +2590,6 @@
         <pin num="39" name="GND" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="XL-1608SURC-06">
-      <description>Lamp Holder Type:- Illumination Color:Red Voltage - Forward(Vf):2.3V Voltage - Forward(Vf):2.3V Power(Watts):50mW Forward Current:20mA Wavelength - Dominant:620nm~630nm Wavelength - Dominant:620nm~630nm Peak Wavelength:625nm Diode Configuration:- Lens Col</description>
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20250213/F9766CE804AF391355DCDD48DB3E0DAB.pdf</docs>
-      <fields>
-        <field name="Reference">LED</field>
-        <field name="Value"/>
-        <field name="Footprint">LED_RED_20mA_XL-1608SURC-06:LED0603-RD_RED</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20250213/F9766CE804AF391355DCDD48DB3E0DAB.pdf</field>
-        <field name="Description">Lamp Holder Type:- Illumination Color:Red Voltage - Forward(Vf):2.3V Voltage - Forward(Vf):2.3V Power(Watts):50mW Forward Current:20mA Wavelength - Dominant:620nm~630nm Wavelength - Dominant:620nm~630nm Peak Wavelength:625nm Diode Configuration:- Lens Col</field>
-        <field name="Manufacturer Part">XL-1608SURC-06</field>
-        <field name="Manufacturer">XINGLIGHT(成兴光)</field>
-        <field name="Supplier Part">C965799</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">XL-1608SURC-06</field>
-      </fields>
-      <pins>
-        <pin num="1" name="K" type="bidirectional"/>
-        <pin num="2" name="A" type="bidirectional"/>
-      </pins>
-    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
@@ -2911,57 +2610,60 @@
   </libraries>
   <nets>
     <net code="1" name="+3V3" class="Default">
-      <node ref="C10" pin="2" pintype="passive"/>
-      <node ref="C17" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="C18" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="C13" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="C14" pin="2" pinfunction="2" pintype="input"/>
       <node ref="C4" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="C9" pin="1" pintype="passive"/>
-      <node ref="CARD1" pin="4" pinfunction="VDD" pintype="power_in"/>
       <node ref="H2" pin="2" pinfunction="2" pintype="input"/>
       <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
       <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H4" pin="3" pinfunction="3" pintype="input"/>
+      <node ref="H5" pin="4" pinfunction="4" pintype="passive"/>
       <node ref="H8" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="LED1" pin="2" pinfunction="+" pintype="passive"/>
+      <node ref="Q6" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R17" pin="2" pinfunction="2" pintype="input"/>
       <node ref="R2" pin="2" pintype="passive"/>
-      <node ref="R20" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R21" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R22" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R23" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R24" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R25" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R26" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R25" pin="2" pintype="passive"/>
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="VDD" pintype="power_in"/>
       <node ref="U3" pin="7" pinfunction="VREGIN" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="VCC" pintype="passive"/>
       <node ref="U5" pin="1" pinfunction="VOUT" pintype="passive"/>
       <node ref="U5" pin="10" pinfunction="FB" pintype="passive"/>
-      <node ref="U9" pin="2" pinfunction="3V3" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="3V3" pintype="power_in"/>
     </net>
-    <net code="2" name="/Battery_Charger_LiFePO4_3.6V/Battery_Charger_OUTPUT" class="Default">
-      <node ref="C14" pin="2" pinfunction="2" pintype="input"/>
+    <net code="2" name="/Battery_Voltage_Monitor_with_MOSFETS/V_Batt_Monitor_INPUT" class="Default">
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="Q4" pin="2" pinfunction="S" pintype="bidirectional"/>
-      <node ref="R15" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="R16" pin="2" pintype="passive"/>
-      <node ref="U11" pin="3" pinfunction="VDD" pintype="input"/>
-      <node ref="U2" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="U7" pin="9" pinfunction="BAT" pintype="output"/>
+      <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="3" name="/Buck-Boost3.3V/Buck-Boost_EN" class="Default">
-      <node ref="U11" pin="2" pinfunction="RESET#" pintype="output"/>
-      <node ref="U5" pin="6" pinfunction="EN" pintype="input"/>
-    </net>
-    <net code="4" name="/Buck-Boost3.3V/Buck-Boost_INPUT" class="Default">
-      <node ref="C15" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="C16" pin="1" pintype="passive"/>
-      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+    <net code="3" name="/Buck-Boost3.3V/Buck-Boost_INPUT" class="Default">
+      <node ref="C11" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="C" pintype="passive"/>
       <node ref="Q5" pin="2" pinfunction="S" pintype="input"/>
       <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="5" pinfunction="VIN" pintype="input"/>
+      <node ref="U5" pin="6" pinfunction="EN" pintype="input"/>
       <node ref="U5" pin="7" pinfunction="PS/SYNC" pintype="input"/>
       <node ref="U5" pin="8" pinfunction="VINA" pintype="input"/>
+    </net>
+    <net code="4" name="/micro_SD-CARD_enable/3V3_Input_to_micro_SD-CARD" class="Default">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="CARD1" pin="4" pinfunction="VDD" pintype="passive"/>
+      <node ref="Q6" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R18" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R19" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R20" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R21" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R22" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R23" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R26" pin="2" pinfunction="2" pintype="passive"/>
     </net>
     <net code="5" name="D+" class="Default">
       <node ref="U1" pin="4" pinfunction="I/O2" pintype="passive"/>
@@ -2974,97 +2676,97 @@
     <net code="7" name="D2" class="Default">
       <node ref="CARD1" pin="7" pinfunction="DAT0" pintype="bidirectional"/>
       <node ref="H1" pin="3" pinfunction="3" pintype="input"/>
-      <node ref="R23" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="U9" pin="24" pinfunction="IO2" pintype="bidirectional"/>
+      <node ref="R20" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U6" pin="24" pinfunction="IO2" pintype="bidirectional"/>
     </net>
     <net code="8" name="D4" class="Default">
-      <node ref="H3" pin="3" pinfunction="3" pintype="input"/>
-      <node ref="U9" pin="26" pinfunction="IO4" pintype="bidirectional"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="U6" pin="26" pinfunction="IO4" pintype="bidirectional"/>
     </net>
     <net code="9" name="D5" class="Default">
-      <node ref="H5" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="U9" pin="29" pinfunction="IO5" pintype="bidirectional"/>
+      <node ref="H5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="29" pinfunction="IO5" pintype="bidirectional"/>
     </net>
     <net code="10" name="D12" class="Default">
       <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="U9" pin="14" pinfunction="IO12" pintype="bidirectional"/>
+      <node ref="U6" pin="14" pinfunction="IO12" pintype="bidirectional"/>
     </net>
     <net code="11" name="D13" class="Default">
       <node ref="H2" pin="3" pinfunction="3" pintype="input"/>
-      <node ref="U9" pin="16" pinfunction="IO13" pintype="bidirectional"/>
+      <node ref="U6" pin="16" pinfunction="IO13" pintype="bidirectional"/>
     </net>
     <net code="12" name="D14" class="Default">
       <node ref="CARD1" pin="5" pinfunction="CLX" pintype="input"/>
       <node ref="H4" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R22" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="U9" pin="13" pinfunction="IO14" pintype="bidirectional"/>
+      <node ref="R19" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U6" pin="13" pinfunction="IO14" pintype="bidirectional"/>
     </net>
     <net code="13" name="D15" class="Default">
       <node ref="CARD1" pin="3" pinfunction="CMD" pintype="bidirectional"/>
       <node ref="H1" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R21" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="U9" pin="23" pinfunction="IO15" pintype="bidirectional"/>
+      <node ref="R18" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U6" pin="23" pinfunction="IO15" pintype="bidirectional"/>
     </net>
     <net code="14" name="D18" class="Default">
-      <node ref="H5" pin="2" pinfunction="2" pintype="bidirectional"/>
-      <node ref="U9" pin="30" pinfunction="IO18" pintype="bidirectional"/>
+      <node ref="H5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U6" pin="30" pinfunction="IO18" pintype="bidirectional"/>
     </net>
     <net code="15" name="D19" class="Default">
-      <node ref="H5" pin="3" pinfunction="3" pintype="bidirectional"/>
-      <node ref="U9" pin="31" pinfunction="IO19" pintype="bidirectional"/>
+      <node ref="H5" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U6" pin="31" pinfunction="IO19" pintype="bidirectional"/>
     </net>
     <net code="16" name="D21" class="Default">
-      <node ref="H5" pin="4" pinfunction="4" pintype="bidirectional"/>
-      <node ref="U9" pin="33" pinfunction="IO21" pintype="bidirectional"/>
+      <node ref="U4" pin="4" pinfunction="SDA" pintype="passive"/>
+      <node ref="U6" pin="33" pinfunction="IO21" pintype="bidirectional"/>
     </net>
     <net code="17" name="D22" class="Default">
-      <node ref="H5" pin="5" pinfunction="5" pintype="input"/>
-      <node ref="U9" pin="36" pinfunction="IO22" pintype="bidirectional"/>
+      <node ref="U4" pin="3" pinfunction="SCL" pintype="passive"/>
+      <node ref="U6" pin="36" pinfunction="IO22" pintype="bidirectional"/>
     </net>
     <net code="18" name="D23" class="Default">
-      <node ref="H5" pin="6" pinfunction="6" pintype="input"/>
-      <node ref="U9" pin="37" pinfunction="IO23" pintype="bidirectional"/>
+      <node ref="H5" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="U6" pin="37" pinfunction="IO23" pintype="bidirectional"/>
     </net>
     <net code="19" name="D25" class="Default">
-      <node ref="R19" pin="2" pintype="passive"/>
-      <node ref="U9" pin="10" pinfunction="IO25" pintype="bidirectional"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U6" pin="10" pinfunction="IO25" pintype="bidirectional"/>
     </net>
     <net code="20" name="D26" class="Default">
-      <node ref="H4" pin="4" pinfunction="4" pintype="input"/>
-      <node ref="U9" pin="11" pinfunction="IO26" pintype="bidirectional"/>
+      <node ref="R12" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U6" pin="11" pinfunction="IO26" pintype="bidirectional"/>
     </net>
     <net code="21" name="D27" class="Default">
-      <node ref="H4" pin="3" pinfunction="3" pintype="input"/>
-      <node ref="U9" pin="12" pinfunction="IO27" pintype="bidirectional"/>
+      <node ref="R11" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U6" pin="12" pinfunction="IO27" pintype="bidirectional"/>
     </net>
     <net code="22" name="D32" class="Default">
-      <node ref="H6" pin="3" pinfunction="3" pintype="bidirectional"/>
-      <node ref="U9" pin="8" pinfunction="IO32" pintype="bidirectional"/>
+      <node ref="H6" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="IO32" pintype="bidirectional"/>
     </net>
     <net code="23" name="D33" class="Default">
-      <node ref="H6" pin="2" pinfunction="2" pintype="bidirectional"/>
-      <node ref="U9" pin="9" pinfunction="IO33" pintype="bidirectional"/>
+      <node ref="R10" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="U6" pin="9" pinfunction="IO33" pintype="bidirectional"/>
     </net>
     <net code="24" name="D34" class="Default">
-      <node ref="C19" pin="1" pintype="passive"/>
-      <node ref="R17" pin="1" pintype="passive"/>
-      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
       <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U9" pin="6" pinfunction="IO34" pintype="input"/>
+      <node ref="U6" pin="6" pinfunction="IO34" pintype="input"/>
     </net>
     <net code="25" name="D35" class="Default">
-      <node ref="H6" pin="4" pinfunction="4" pintype="bidirectional"/>
-      <node ref="U9" pin="7" pinfunction="IO35" pintype="input"/>
+      <node ref="H6" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="U6" pin="7" pinfunction="IO35" pintype="input"/>
     </net>
     <net code="26" name="DN" class="Default">
       <node ref="U1" pin="1" pinfunction="I/O1" pintype="passive"/>
-      <node ref="U10" pin="A7" pinfunction="DN1" pintype="bidirectional"/>
-      <node ref="U10" pin="B7" pinfunction="DN2" pintype="bidirectional"/>
+      <node ref="U7" pin="A7" pinfunction="DN1" pintype="bidirectional"/>
+      <node ref="U7" pin="B7" pinfunction="DN2" pintype="bidirectional"/>
     </net>
     <net code="27" name="DP" class="Default">
       <node ref="U1" pin="3" pinfunction="I/O2" pintype="passive"/>
-      <node ref="U10" pin="A6" pinfunction="DP1" pintype="bidirectional"/>
-      <node ref="U10" pin="B6" pinfunction="DP2" pintype="bidirectional"/>
+      <node ref="U7" pin="A6" pinfunction="DP1" pintype="bidirectional"/>
+      <node ref="U7" pin="B6" pinfunction="DP2" pintype="bidirectional"/>
     </net>
     <net code="28" name="DTR" class="Default">
       <node ref="Q2" pin="1" pinfunction="E" pintype="input"/>
@@ -3077,35 +2779,27 @@
       <node ref="C6" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="Q1" pin="3" pinfunction="C" pintype="input"/>
       <node ref="R2" pin="1" pintype="passive"/>
-      <node ref="SW2" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="SW2" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="U9" pin="3" pinfunction="EN" pintype="input"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW2" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="EN" pintype="input"/>
     </net>
     <net code="30" name="EXT_5V" class="Default">
-      <node ref="C11" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="C" pintype="passive"/>
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="H6" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="H7" pin="1" pinfunction="1" pintype="input"/>
       <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R1" pin="2" pintype="passive"/>
-      <node ref="R10" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R12" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R13" pin="2" pinfunction="2" pintype="input"/>
       <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U7" pin="16" pinfunction="RUN" pintype="input"/>
-      <node ref="U7" pin="3" pinfunction="IN" pintype="input"/>
     </net>
     <net code="31" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="C13" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1" pintype="input"/>
       <node ref="C14" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="C15" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="C16" pin="2" pintype="passive"/>
-      <node ref="C17" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="C18" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="C3" pin="1" pinfunction="1" pintype="input"/>
       <node ref="C4" pin="1" pinfunction="1" pintype="passive"/>
@@ -3120,79 +2814,81 @@
       <node ref="CARD1" pin="13" pinfunction="13" pintype="power_in"/>
       <node ref="CARD1" pin="6" pinfunction="VSS" pintype="power_in"/>
       <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H3" pin="2" pinfunction="2" pintype="input"/>
       <node ref="H3" pin="4" pinfunction="4" pintype="input"/>
-      <node ref="H6" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="H6" pin="5" pinfunction="5" pintype="input"/>
-      <node ref="H6" pin="6" pinfunction="6" pintype="input"/>
+      <node ref="H4" pin="4" pinfunction="4" pintype="input"/>
+      <node ref="H5" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="H6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="H6" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="H6" pin="6" pinfunction="6" pintype="passive"/>
       <node ref="H7" pin="2" pinfunction="2" pintype="input"/>
       <node ref="H8" pin="2" pinfunction="2" pintype="input"/>
       <node ref="Q3" pin="2" pinfunction="S" pintype="input"/>
+      <node ref="Q7" pin="2" pinfunction="S" pintype="input"/>
       <node ref="R1" pin="1" pintype="passive"/>
-      <node ref="R11" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="R18" pin="1" pintype="passive"/>
-      <node ref="R20" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R26" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
-      <node ref="SW1" pin="3" pinfunction="3" pintype="input"/>
-      <node ref="SW1" pin="4" pinfunction="4" pintype="input"/>
-      <node ref="SW2" pin="3" pinfunction="3" pintype="input"/>
-      <node ref="SW2" pin="4" pinfunction="4" pintype="input"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW1" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW2" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="SW3" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="SW3" pin="5" pinfunction="5" pintype="passive"/>
       <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="GND" pintype="passive"/>
-      <node ref="U10" pin="0" pinfunction="0" pintype="power_in"/>
-      <node ref="U10" pin="A1" pinfunction="GND" pintype="power_in"/>
-      <node ref="U10" pin="A12" pinfunction="GND" pintype="power_in"/>
-      <node ref="U11" pin="1" pinfunction="GND" pintype="input"/>
-      <node ref="U2" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="U2" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U3" pin="29" pinfunction="GND" pintype="passive"/>
       <node ref="U3" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND" pintype="passive"/>
       <node ref="U5" pin="11" pinfunction="PAD" pintype="power_in"/>
       <node ref="U5" pin="3" pinfunction="PGND" pintype="power_in"/>
       <node ref="U5" pin="9" pinfunction="GND" pintype="power_in"/>
-      <node ref="U7" pin="12" pinfunction="NTC" pintype="input"/>
-      <node ref="U7" pin="17" pinfunction="GND" pintype="power_in"/>
-      <node ref="U7" pin="5" pinfunction="GND" pintype="power_in"/>
-      <node ref="U7" pin="7" pinfunction="FREQ" pintype="input"/>
-      <node ref="U9" pin="1" pinfunction="GND" pintype="power_in"/>
-      <node ref="U9" pin="15" pinfunction="GND" pintype="power_in"/>
-      <node ref="U9" pin="38" pinfunction="GND" pintype="power_in"/>
-      <node ref="U9" pin="39" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="15" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="38" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="39" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="0" pinfunction="0" pintype="power_in"/>
+      <node ref="U7" pin="A1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="A12" pinfunction="GND" pintype="power_in"/>
     </net>
     <net code="32" name="IO0" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
-      <node ref="H3" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="H3" pin="3" pinfunction="3" pintype="input"/>
       <node ref="Q2" pin="3" pinfunction="C" pintype="input"/>
-      <node ref="SW1" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="SW1" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="U9" pin="25" pinfunction="IO0" pintype="bidirectional"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U6" pin="25" pinfunction="IO0" pintype="bidirectional"/>
     </net>
     <net code="33" name="Net-(CARD1-CD/DAT3)" class="Default">
       <node ref="CARD1" pin="2" pinfunction="CD/DAT3" pintype="bidirectional"/>
-      <node ref="R25" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R22" pin="1" pinfunction="1" pintype="input"/>
     </net>
     <net code="34" name="Net-(CARD1-DAT1)" class="Default">
       <node ref="CARD1" pin="8" pinfunction="DAT1" pintype="bidirectional"/>
-      <node ref="R26" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R23" pin="1" pinfunction="1" pintype="input"/>
     </net>
     <net code="35" name="Net-(CARD1-DAT2)" class="Default">
       <node ref="CARD1" pin="1" pinfunction="DAT2" pintype="bidirectional"/>
-      <node ref="R24" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R21" pin="1" pinfunction="1" pintype="input"/>
     </net>
-    <net code="36" name="Net-(LED1-A)" class="Default">
-      <node ref="LED1" pin="2" pinfunction="A" pintype="bidirectional"/>
-      <node ref="R12" pin="1" pinfunction="1" pintype="input"/>
+    <net code="36" name="Net-(D2-C)" class="Default">
+      <node ref="D2" pin="1" pinfunction="C" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
     </net>
-    <net code="37" name="Net-(LED1-K)" class="Default">
-      <node ref="LED1" pin="1" pinfunction="K" pintype="bidirectional"/>
-      <node ref="U7" pin="15" pinfunction="FAULT#" pintype="bidirectional"/>
+    <net code="37" name="Net-(LED1-B)" class="Default">
+      <node ref="LED1" pin="1" pinfunction="B" pintype="passive"/>
+      <node ref="R11" pin="2" pinfunction="2" pintype="input"/>
     </net>
-    <net code="38" name="Net-(LED2-A)" class="Default">
-      <node ref="LED2" pin="2" pinfunction="A" pintype="bidirectional"/>
-      <node ref="R13" pin="1" pinfunction="1" pintype="input"/>
+    <net code="38" name="Net-(LED1-G)" class="Default">
+      <node ref="LED1" pin="3" pinfunction="G" pintype="passive"/>
+      <node ref="R12" pin="2" pinfunction="2" pintype="input"/>
     </net>
-    <net code="39" name="Net-(LED2-K)" class="Default">
-      <node ref="LED2" pin="1" pinfunction="K" pintype="bidirectional"/>
-      <node ref="U7" pin="14" pinfunction="CHRG#" pintype="bidirectional"/>
+    <net code="39" name="Net-(LED1-R)" class="Default">
+      <node ref="LED1" pin="4" pinfunction="R" pintype="passive"/>
+      <node ref="R10" pin="1" pinfunction="1" pintype="input"/>
     </net>
     <net code="40" name="Net-(Q1-B)" class="Default">
       <node ref="Q1" pin="2" pinfunction="B" pintype="input"/>
@@ -3204,196 +2900,183 @@
     </net>
     <net code="42" name="Net-(Q3-D)" class="Default">
       <node ref="Q3" pin="3" pinfunction="D" pintype="input"/>
-      <node ref="Q4" pin="1" pinfunction="G" pintype="bidirectional"/>
-      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="G" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
     </net>
     <net code="43" name="Net-(Q3-G)" class="Default">
       <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
     </net>
     <net code="44" name="Net-(Q4-D)" class="Default">
-      <node ref="Q4" pin="3" pinfunction="D" pintype="bidirectional"/>
-      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
     </net>
-    <net code="45" name="Net-(R5-Pad1)" class="Default">
+    <net code="45" name="Net-(Q6-G)" class="Default">
+      <node ref="Q6" pin="1" pinfunction="G" pintype="passive"/>
+      <node ref="Q7" pin="3" pinfunction="D" pintype="input"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(Q7-G)" class="Default">
+      <node ref="Q7" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(R5-Pad1)" class="Default">
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
     </net>
-    <net code="46" name="Net-(U3-VBUS)" class="Default">
+    <net code="48" name="Net-(U3-VBUS)" class="Default">
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U3" pin="8" pinfunction="VBUS" pintype="input"/>
     </net>
-    <net code="47" name="Net-(U3-~{RST})" class="Default">
+    <net code="49" name="Net-(U3-~{RST})" class="Default">
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="U3" pin="9" pinfunction="~{RST}" pintype="input"/>
     </net>
-    <net code="48" name="Net-(U3-~{SUSPEND})" class="Default">
+    <net code="50" name="Net-(U3-~{SUSPEND})" class="Default">
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="U3" pin="11" pinfunction="~{SUSPEND}" pintype="output"/>
     </net>
-    <net code="49" name="Net-(U5-L1)" class="Default">
+    <net code="51" name="Net-(U5-L1)" class="Default">
       <node ref="L_B-B1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="4" pinfunction="L1" pintype="bidirectional"/>
     </net>
-    <net code="50" name="Net-(U5-L2)" class="Default">
+    <net code="52" name="Net-(U5-L2)" class="Default">
       <node ref="L_B-B1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U5" pin="2" pinfunction="L2" pintype="bidirectional"/>
     </net>
-    <net code="51" name="Net-(U7-BOOST)" class="Default">
-      <node ref="C12" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="U7" pin="2" pinfunction="BOOST" pintype="bidirectional"/>
-    </net>
-    <net code="52" name="Net-(U7-CHGSNS)" class="Default">
-      <node ref="L_B-CH1" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="U7" pin="8" pinfunction="CHGSNS" pintype="bidirectional"/>
-    </net>
-    <net code="53" name="Net-(U7-FB)" class="Default">
-      <node ref="R14" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="R15" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="U7" pin="10" pinfunction="FB" pintype="bidirectional"/>
-    </net>
-    <net code="54" name="Net-(U7-FBG)" class="Default">
-      <node ref="R14" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="U7" pin="11" pinfunction="FBG" pintype="bidirectional"/>
-    </net>
-    <net code="55" name="Net-(U7-INTVcc)" class="Default">
-      <node ref="C13" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="U7" pin="1" pinfunction="INTVcc" pintype="bidirectional"/>
-    </net>
-    <net code="56" name="Net-(U7-MPPT)" class="Default">
-      <node ref="R10" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="U7" pin="6" pinfunction="MPPT" pintype="bidirectional"/>
-    </net>
-    <net code="57" name="Net-(U7-PROG)" class="Default">
-      <node ref="R11" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="U7" pin="13" pinfunction="PROG" pintype="bidirectional"/>
-    </net>
-    <net code="58" name="Net-(U7-SW)" class="Default">
-      <node ref="C12" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="L_B-CH1" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U7" pin="4" pinfunction="SW" pintype="bidirectional"/>
-    </net>
-    <net code="59" name="RTS" class="Default">
+    <net code="53" name="RTS" class="Default">
       <node ref="Q1" pin="1" pinfunction="E" pintype="input"/>
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U3" pin="24" pinfunction="~{RTS}" pintype="output"/>
     </net>
-    <net code="60" name="RXD0" class="Default">
+    <net code="54" name="RXD0" class="Default">
       <node ref="U3" pin="26" pinfunction="TXD" pintype="output"/>
-      <node ref="U9" pin="34" pinfunction="RXD0" pintype="bidirectional"/>
+      <node ref="U6" pin="34" pinfunction="RXD0" pintype="bidirectional"/>
     </net>
-    <net code="61" name="TXD0" class="Default">
+    <net code="55" name="TXD0" class="Default">
       <node ref="U3" pin="25" pinfunction="RXD" pintype="input"/>
-      <node ref="U9" pin="35" pinfunction="TXD0" pintype="bidirectional"/>
+      <node ref="U6" pin="35" pinfunction="TXD0" pintype="bidirectional"/>
     </net>
-    <net code="62" name="VBAT" class="Default">
-      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+    <net code="56" name="VBAT" class="Default">
       <node ref="Q5" pin="3" pinfunction="D" pintype="input"/>
+      <node ref="SW3" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="63" name="VBUS" class="Default">
+    <net code="57" name="VBUS" class="Default">
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="VBUS" pintype="passive"/>
-      <node ref="U10" pin="A4" pinfunction="VBUS" pintype="passive"/>
-      <node ref="U10" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="U7" pin="A4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="U7" pin="A9" pinfunction="VBUS" pintype="passive"/>
     </net>
-    <net code="64" name="unconnected-(CARD1-PadCD)" class="Default">
+    <net code="58" name="unconnected-(CARD1-PadCD)" class="Default">
       <node ref="CARD1" pin="CD" pinfunction="CD" pintype="input+no_connect"/>
     </net>
-    <net code="65" name="unconnected-(U3-CHR0-Pad15)" class="Default">
+    <net code="59" name="unconnected-(SW3-Pad3)" class="Default">
+      <node ref="SW3" pin="3" pinfunction="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U3-CHR0-Pad15)" class="Default">
       <node ref="U3" pin="15" pinfunction="CHR0" pintype="output+no_connect"/>
     </net>
-    <net code="66" name="unconnected-(U3-CHR1-Pad14)" class="Default">
+    <net code="61" name="unconnected-(U3-CHR1-Pad14)" class="Default">
       <node ref="U3" pin="14" pinfunction="CHR1" pintype="output+no_connect"/>
     </net>
-    <net code="67" name="unconnected-(U3-CHREN-Pad13)" class="Default">
+    <net code="62" name="unconnected-(U3-CHREN-Pad13)" class="Default">
       <node ref="U3" pin="13" pinfunction="CHREN" pintype="output+no_connect"/>
     </net>
-    <net code="68" name="unconnected-(U3-GPIO.4-Pad22)" class="Default">
+    <net code="63" name="unconnected-(U3-GPIO.4-Pad22)" class="Default">
       <node ref="U3" pin="22" pinfunction="GPIO.4" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="69" name="unconnected-(U3-GPIO.5-Pad21)" class="Default">
+    <net code="64" name="unconnected-(U3-GPIO.5-Pad21)" class="Default">
       <node ref="U3" pin="21" pinfunction="GPIO.5" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="70" name="unconnected-(U3-GPIO.6-Pad20)" class="Default">
+    <net code="65" name="unconnected-(U3-GPIO.6-Pad20)" class="Default">
       <node ref="U3" pin="20" pinfunction="GPIO.6" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="71" name="unconnected-(U3-NC-Pad10)" class="Default">
+    <net code="66" name="unconnected-(U3-NC-Pad10)" class="Default">
       <node ref="U3" pin="10" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="72" name="unconnected-(U3-RS485/GPIO.2-Pad17)" class="Default">
+    <net code="67" name="unconnected-(U3-RS485/GPIO.2-Pad17)" class="Default">
       <node ref="U3" pin="17" pinfunction="RS485/GPIO.2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="73" name="unconnected-(U3-SUSPEND-Pad12)" class="Default">
+    <net code="68" name="unconnected-(U3-SUSPEND-Pad12)" class="Default">
       <node ref="U3" pin="12" pinfunction="SUSPEND" pintype="output+no_connect"/>
     </net>
-    <net code="74" name="unconnected-(U3-~{CTS}-Pad23)" class="Default">
+    <net code="69" name="unconnected-(U3-~{CTS}-Pad23)" class="Default">
       <node ref="U3" pin="23" pinfunction="~{CTS}" pintype="input+no_connect"/>
     </net>
-    <net code="75" name="unconnected-(U3-~{DCD}-Pad1)" class="Default">
+    <net code="70" name="unconnected-(U3-~{DCD}-Pad1)" class="Default">
       <node ref="U3" pin="1" pinfunction="~{DCD}" pintype="input+no_connect"/>
     </net>
-    <net code="76" name="unconnected-(U3-~{DSR}-Pad27)" class="Default">
+    <net code="71" name="unconnected-(U3-~{DSR}-Pad27)" class="Default">
       <node ref="U3" pin="27" pinfunction="~{DSR}" pintype="input+no_connect"/>
     </net>
-    <net code="77" name="unconnected-(U3-~{RI}/CLK-Pad2)" class="Default">
+    <net code="72" name="unconnected-(U3-~{RI}/CLK-Pad2)" class="Default">
       <node ref="U3" pin="2" pinfunction="~{RI}/CLK" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="78" name="unconnected-(U3-~{RXT}/GPIO.1-Pad18)" class="Default">
+    <net code="73" name="unconnected-(U3-~{RXT}/GPIO.1-Pad18)" class="Default">
       <node ref="U3" pin="18" pinfunction="~{RXT}/GPIO.1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="79" name="unconnected-(U3-~{TXT}/GPIO.0-Pad19)" class="Default">
+    <net code="74" name="unconnected-(U3-~{TXT}/GPIO.0-Pad19)" class="Default">
       <node ref="U3" pin="19" pinfunction="~{TXT}/GPIO.0" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="80" name="unconnected-(U3-~{WAKEUP}/GPIO.3-Pad16)" class="Default">
+    <net code="75" name="unconnected-(U3-~{WAKEUP}/GPIO.3-Pad16)" class="Default">
       <node ref="U3" pin="16" pinfunction="~{WAKEUP}/GPIO.3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="81" name="unconnected-(U9-NC-Pad17)" class="Default">
-      <node ref="U9" pin="17" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="76" name="unconnected-(U4-32K-Pad7)" class="Default">
+      <node ref="U4" pin="7" pinfunction="32K" pintype="passive+no_connect"/>
     </net>
-    <net code="82" name="unconnected-(U9-NC-Pad18)" class="Default">
-      <node ref="U9" pin="18" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="77" name="unconnected-(U4-INT-Pad5)" class="Default">
+      <node ref="U4" pin="5" pinfunction="INT" pintype="passive+no_connect"/>
     </net>
-    <net code="83" name="unconnected-(U9-NC-Pad19)" class="Default">
-      <node ref="U9" pin="19" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="78" name="unconnected-(U4-RST-Pad6)" class="Default">
+      <node ref="U4" pin="6" pinfunction="RST" pintype="passive+no_connect"/>
     </net>
-    <net code="84" name="unconnected-(U9-NC-Pad20)" class="Default">
-      <node ref="U9" pin="20" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="79" name="unconnected-(U6-NC-Pad17)" class="Default">
+      <node ref="U6" pin="17" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="85" name="unconnected-(U9-NC-Pad21)" class="Default">
-      <node ref="U9" pin="21" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="80" name="unconnected-(U6-NC-Pad18)" class="Default">
+      <node ref="U6" pin="18" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="86" name="unconnected-(U9-NC-Pad22)" class="Default">
-      <node ref="U9" pin="22" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="81" name="unconnected-(U6-NC-Pad19)" class="Default">
+      <node ref="U6" pin="19" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="87" name="unconnected-(U9-NC-Pad27)" class="Default">
-      <node ref="U9" pin="27" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="82" name="unconnected-(U6-NC-Pad20)" class="Default">
+      <node ref="U6" pin="20" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="88" name="unconnected-(U9-NC-Pad28)" class="Default">
-      <node ref="U9" pin="28" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="83" name="unconnected-(U6-NC-Pad21)" class="Default">
+      <node ref="U6" pin="21" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="89" name="unconnected-(U9-NC-Pad32)" class="Default">
-      <node ref="U9" pin="32" pinfunction="NC" pintype="unspecified+no_connect"/>
+    <net code="84" name="unconnected-(U6-NC-Pad22)" class="Default">
+      <node ref="U6" pin="22" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="90" name="unconnected-(U9-SENSOR_VN-Pad5)" class="Default">
-      <node ref="U9" pin="5" pinfunction="SENSOR_VN" pintype="input+no_connect"/>
+    <net code="85" name="unconnected-(U6-NC-Pad27)" class="Default">
+      <node ref="U6" pin="27" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="91" name="unconnected-(U9-SENSOR_VP-Pad4)" class="Default">
-      <node ref="U9" pin="4" pinfunction="SENSOR_VP" pintype="input+no_connect"/>
+    <net code="86" name="unconnected-(U6-NC-Pad28)" class="Default">
+      <node ref="U6" pin="28" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="92" name="unconnected-(U10-CC1-PadA5)" class="Default">
-      <node ref="U10" pin="A5" pinfunction="CC1" pintype="bidirectional+no_connect"/>
+    <net code="87" name="unconnected-(U6-NC-Pad32)" class="Default">
+      <node ref="U6" pin="32" pinfunction="NC" pintype="unspecified+no_connect"/>
     </net>
-    <net code="93" name="unconnected-(U10-CC2-PadB5)" class="Default">
-      <node ref="U10" pin="B5" pinfunction="CC2" pintype="bidirectional+no_connect"/>
+    <net code="88" name="unconnected-(U6-SENSOR_VN-Pad5)" class="Default">
+      <node ref="U6" pin="5" pinfunction="SENSOR_VN" pintype="input+no_connect"/>
     </net>
-    <net code="94" name="unconnected-(U10-SBU1-PadA8)" class="Default">
-      <node ref="U10" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
+    <net code="89" name="unconnected-(U6-SENSOR_VP-Pad4)" class="Default">
+      <node ref="U6" pin="4" pinfunction="SENSOR_VP" pintype="input+no_connect"/>
     </net>
-    <net code="95" name="unconnected-(U10-SBU2-PadB8)" class="Default">
-      <node ref="U10" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
+    <net code="90" name="unconnected-(U7-CC1-PadA5)" class="Default">
+      <node ref="U7" pin="A5" pinfunction="CC1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(U7-CC2-PadB5)" class="Default">
+      <node ref="U7" pin="B5" pinfunction="CC2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(U7-SBU1-PadA8)" class="Default">
+      <node ref="U7" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(U7-SBU2-PadB8)" class="Default">
+      <node ref="U7" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
     </net>
   </nets>
 </export>

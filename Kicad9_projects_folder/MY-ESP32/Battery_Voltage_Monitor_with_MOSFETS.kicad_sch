@@ -741,7 +741,7 @@
 						(type none)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "G"
@@ -759,7 +759,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 2.54 5.08 270)
 					(length 2.54)
 					(name "D"
@@ -777,7 +777,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 2.54 -5.08 90)
 					(length 2.54)
 					(name "S"
@@ -799,240 +799,240 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "R_divider_up"
+	(text "R_divider_down"
 		(exclude_from_sim no)
-		(at 105.918 86.106 0)
+		(at 116.078 127.762 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "30a3ef4c-78c3-4100-85fa-14ca0fbfa16b")
+		(uuid "38157529-f959-4632-83df-74833cc694a3")
+	)
+	(text "R_divider_up"
+		(exclude_from_sim no)
+		(at 116.078 102.616 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a9d24146-b00e-46fb-b272-bca4c1a9d7d1")
 	)
 	(text "R_protection"
 		(exclude_from_sim no)
-		(at 181.61 103.124 0)
+		(at 191.77 119.634 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "47bd4c70-e3e7-4c0e-81b5-edd95799d02c")
-	)
-	(text "R_divider_down"
-		(exclude_from_sim no)
-		(at 105.918 111.252 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c729fac9-10ae-4956-b5a1-37da60dc728c")
+		(uuid "b35a27cb-6eaf-43bc-8d92-c653ecaf9e72")
 	)
 	(junction
-		(at 207.01 58.42)
+		(at 125.73 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "00127439-faea-4b6b-9c0e-2e37d872a570")
+		(uuid "405cfcc8-6e43-4633-8b73-2612054c0057")
 	)
 	(junction
-		(at 115.57 99.06)
+		(at 217.17 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b18577f0-2423-40a1-a58f-e3ae7f55a344")
+		(uuid "c7a53c5e-f378-4080-aab3-9adbb232785d")
 	)
 	(junction
-		(at 115.57 40.64)
+		(at 125.73 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fa0f0e01-66ea-4bcd-95bb-d6099753e43f")
+		(uuid "f3ca8ac7-54dc-4719-b443-1e9f0aa565eb")
 	)
 	(wire
 		(pts
-			(xy 207.01 58.42) (xy 207.01 54.61)
+			(xy 102.87 57.15) (xy 125.73 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "070330f7-2dda-480d-91e2-f1b0669880ac")
+		(uuid "04112723-667f-42cb-96ee-0c8a1d1f45dd")
 	)
 	(wire
 		(pts
-			(xy 185.42 99.06) (xy 199.39 99.06)
+			(xy 125.73 132.08) (xy 125.73 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b5732b2-4de9-4f06-a4ba-f4bca86dbb83")
+		(uuid "060c6e1a-39d6-4011-bda0-d1c285d4541f")
 	)
 	(wire
 		(pts
-			(xy 115.57 90.17) (xy 115.57 99.06)
+			(xy 125.73 57.15) (xy 125.73 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "34932892-8a65-40d5-852a-74732a578ebe")
+		(uuid "06e1b94c-56f9-4a3c-a609-429d9ba37737")
 	)
 	(wire
 		(pts
-			(xy 115.57 40.64) (xy 207.01 40.64)
+			(xy 217.17 74.93) (xy 217.17 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "42faf76d-1906-43b4-81a3-87d49bc087fc")
+		(uuid "0a5ada70-279a-4ca8-bdff-2f085ec97f31")
 	)
 	(wire
 		(pts
-			(xy 115.57 40.64) (xy 115.57 53.34)
+			(xy 133.35 74.93) (xy 217.17 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "681fa6c9-d1d6-466c-bb26-9205dd0bbf19")
+		(uuid "0ddeeb0d-666a-44de-8792-c5bc0349cea7")
 	)
 	(wire
 		(pts
-			(xy 123.19 58.42) (xy 207.01 58.42)
+			(xy 125.73 115.57) (xy 125.73 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "73e2a4fd-d1e4-4d8e-8b5c-221803dd1b28")
+		(uuid "0eb4ead2-1b7b-4819-b246-173b9889d74e")
 	)
 	(wire
 		(pts
-			(xy 207.01 104.14) (xy 207.01 127)
+			(xy 125.73 80.01) (xy 125.73 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "85d5f1ef-b9d4-4c5f-87e9-cbe4781e11c1")
+		(uuid "3cd7ec39-c58c-4183-a8f6-0392c36d32da")
 	)
 	(wire
 		(pts
-			(xy 168.91 99.06) (xy 177.8 99.06)
+			(xy 125.73 106.68) (xy 125.73 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "884e766b-3770-47a0-8f3d-49d4e3f5b910")
+		(uuid "513bc6ab-4a6f-42cd-9e0d-795b69637a2a")
 	)
 	(wire
 		(pts
-			(xy 115.57 63.5) (xy 115.57 82.55)
+			(xy 195.58 115.57) (xy 209.55 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e1a243e-dbb0-4730-ae23-6918c7ddf278")
+		(uuid "8d45c5a8-f52b-46b1-8cce-d33b393d326d")
 	)
 	(wire
 		(pts
-			(xy 115.57 99.06) (xy 115.57 107.95)
+			(xy 217.17 120.65) (xy 217.17 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90a7a9ae-c6f9-442b-a18a-a2aee3b15980")
+		(uuid "96cf4d0d-050b-44d5-ab55-6d4e89f74dd5")
 	)
 	(wire
 		(pts
-			(xy 207.01 40.64) (xy 207.01 46.99)
+			(xy 217.17 74.93) (xy 217.17 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c5535458-2d88-4cd5-9fbd-76b72ca36aa5")
+		(uuid "9f8e5558-deee-4a15-ae7e-6bcbaf85b454")
 	)
 	(wire
 		(pts
-			(xy 92.71 40.64) (xy 115.57 40.64)
+			(xy 179.07 115.57) (xy 187.96 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d429d384-d8e2-42ad-abac-15c38a5d6627")
+		(uuid "a6071861-3edb-43c9-98af-3f14e0830fd3")
 	)
 	(wire
 		(pts
-			(xy 115.57 115.57) (xy 115.57 125.73)
+			(xy 68.58 115.57) (xy 125.73 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d60061b6-8009-4146-8f1e-0649220f7539")
+		(uuid "bf24b76c-df24-4dad-8668-dc692354c5c0")
 	)
 	(wire
 		(pts
-			(xy 58.42 99.06) (xy 115.57 99.06)
+			(xy 125.73 57.15) (xy 217.17 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dad2df6d-daba-4ec9-a68b-068e2de1f365")
+		(uuid "c11ba660-913f-42a5-b287-c21566400676")
 	)
 	(wire
 		(pts
-			(xy 207.01 58.42) (xy 207.01 93.98)
+			(xy 217.17 57.15) (xy 217.17 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e0df1e53-6362-452f-a024-8d15c750a287")
-	)
-	(hierarchical_label "logic_0-3.3V_CTRL_INPUT"
-		(shape input)
-		(at 168.91 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b61ddfbe-e5d2-4024-9365-b8789fa5b5b4")
+		(uuid "d9a7ac9d-46da-4665-ad2f-e78cda608fcb")
 	)
 	(hierarchical_label "Half_V_Batt_Monitor_OUTPUT"
 		(shape input)
-		(at 58.42 99.06 180)
+		(at 68.58 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "e9afbf66-69e8-44ea-a153-aaf2687cd457")
+		(uuid "1f976c13-42a8-4349-83c3-abcdbb39bdbe")
+	)
+	(hierarchical_label "logic_0-3.3V_CTRL_INPUT"
+		(shape input)
+		(at 179.07 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55649b9a-750e-4b64-b19c-0a6f68d0c6bc")
 	)
 	(hierarchical_label "V_Batt_Monitor_INPUT"
 		(shape input)
-		(at 92.71 40.64 180)
+		(at 102.87 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f481a9cc-e824-4055-990d-1c59ef0df01a")
+		(uuid "97d41473-23f2-40b8-88bc-266cdfe86a0d")
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 115.57 86.36 180)
+		(at 125.73 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1040,8 +1040,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "199177db-53a4-4556-8488-c3c119e7df80")
-		(property "Reference" "R17"
-			(at 118.11 85.0899 0)
+		(property "Reference" "R14"
+			(at 128.27 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1050,7 +1050,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 118.11 87.6299 0)
+			(at 128.27 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1059,7 +1059,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 117.348 86.36 90)
+			(at 127.508 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1068,7 +1068,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 86.36 0)
+			(at 125.73 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1077,7 +1077,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 86.36 0)
+			(at 125.73 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1085,7 +1085,7 @@
 			)
 		)
 		(property "REF" "C17414"
-			(at 115.57 86.36 0)
+			(at 125.73 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1101,8 +1101,8 @@
 		)
 		(instances
 			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0"
-					(reference "R17")
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/55e03eb4-45c0-417f-b828-ae972a1a241c"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -1110,7 +1110,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 207.01 50.8 180)
+		(at 217.17 67.31 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1118,8 +1118,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4675a444-536a-450c-9a93-4ac617c1c317")
-		(property "Reference" "R16"
-			(at 209.55 49.5299 0)
+		(property "Reference" "R13"
+			(at 219.71 66.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1128,7 +1128,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 209.55 52.0699 0)
+			(at 219.71 68.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1137,7 +1137,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 208.788 50.8 90)
+			(at 218.948 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1146,7 +1146,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 50.8 0)
+			(at 217.17 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1155,7 +1155,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 207.01 50.8 0)
+			(at 217.17 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1163,7 +1163,7 @@
 			)
 		)
 		(property "REF" "C17414"
-			(at 207.01 50.8 0)
+			(at 217.17 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1179,8 +1179,126 @@
 		)
 		(instances
 			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0"
-					(reference "R16")
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/55e03eb4-45c0-417f-b828-ae972a1a241c"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "My_Personal_Symbols_Library:BSS84LT1G")
+		(at 128.27 74.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "567d26af-0cf7-472f-8e28-45e384426a8c")
+		(property "Reference" "Q4"
+			(at 120.65 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "P-MOSFET-ENH-BSS84LT1G"
+			(at 120.65 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "My_Personal_Footprints_Library:BSS84LT1G"
+			(at 127.508 100.076 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20160910/1473490307635.PDF"
+			(at 128.27 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Type:1个PChannel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Power Dissipation (Pd): Drain Source On Resistance (RDS(on)@Vgs,Id):10Ω@5V,100mA Gate Threshold Voltage (Vgs(th)@Id):2V@250uA Input Capacitance (Ciss@Vds):30pF@5V Operating Temper"
+			(at 126.746 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "BSS84LT1G"
+			(at 128.016 58.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "onsemi(安森美)"
+			(at 127.254 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C82079"
+			(at 128.016 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 128.27 51.562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "1个P沟道 耐压:50V 电流:130mA"
+			(at 127.762 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a12feaa-df61-42d2-83b8-a8899953ef5d")
+		)
+		(pin "3"
+			(uuid "8e1e69da-31ba-4833-b6a9-2e2f2795c96e")
+		)
+		(pin "2"
+			(uuid "346ef35f-db0b-47e1-9769-dd53c904c6d1")
+		)
+		(instances
+			(project "MY-ESP32"
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/55e03eb4-45c0-417f-b828-ae972a1a241c"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -1189,7 +1307,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 207.01 127 0)
+		(at 217.17 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1197,8 +1315,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d081306-c95a-4479-bd7c-0bba8c6f02a6")
-		(property "Reference" "#PWR046"
-			(at 207.01 133.35 0)
+		(property "Reference" "#PWR049"
+			(at 217.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1207,7 +1325,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 207.01 132.08 0)
+			(at 217.17 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1215,7 +1333,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 127 0)
+			(at 217.17 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1224,7 +1342,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 127 0)
+			(at 217.17 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1233,7 +1351,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 207.01 127 0)
+			(at 217.17 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1246,8 +1364,8 @@
 		)
 		(instances
 			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0"
-					(reference "#PWR046")
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/55e03eb4-45c0-417f-b828-ae972a1a241c"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -1256,16 +1374,16 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 115.57 125.73 0)
+		(at 125.73 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "96982180-f026-4cf4-9d33-9b22cbfcb0c6")
-		(property "Reference" "#PWR045"
-			(at 115.57 132.08 0)
+		(uuid "952523f2-6960-42dd-9dff-414f42c7a977")
+		(property "Reference" "#PWR046"
+			(at 125.73 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1274,7 +1392,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 130.81 0)
+			(at 125.73 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1282,7 +1400,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 125.73 0)
+			(at 125.73 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1291,7 +1409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 125.73 0)
+			(at 125.73 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1300,7 +1418,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 125.73 0)
+			(at 125.73 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1309,12 +1427,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "41e42f80-d7bc-467d-a68b-03e1de2e4831")
+			(uuid "c720417e-3f99-4e06-ba2a-8224512bd29a")
 		)
 		(instances
 			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0"
-					(reference "#PWR045")
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/55e03eb4-45c0-417f-b828-ae972a1a241c"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -1322,7 +1440,7 @@
 	)
 	(symbol
 		(lib_id "My_Personal_Symbols_Library:2N7002")
-		(at 204.47 99.06 0)
+		(at 214.63 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1331,7 +1449,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f27b479-6e6a-4379-b826-a9e3c633d4e6")
 		(property "Reference" "Q3"
-			(at 212.09 98.4249 0)
+			(at 222.25 114.9349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1340,7 +1458,7 @@
 			)
 		)
 		(property "Value" "N-MOSFET-ENH-2N7002"
-			(at 212.09 100.33 0)
+			(at 222.25 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1349,7 +1467,7 @@
 			)
 		)
 		(property "Footprint" "My_Personal_Footprints_Library:2N7002"
-			(at 207.518 70.612 0)
+			(at 217.678 87.122 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1358,7 +1476,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20171228/C164913_15144413269051213916.pdf"
-			(at 202.946 79.756 0)
+			(at 213.106 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1367,7 +1485,7 @@
 			)
 		)
 		(property "Description" "Type:1 N-Channel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Drain Source On Resistance (RDS(on)@Vgs,Id):5Ω@10V Power Dissipation (Pd):225mW Gate Threshold Voltage (Vgs(th)@Id):2.5V@250uA Input Capacitance (Ciss@Vds):50pF Reverse Transfer"
-			(at 204.216 74.676 0)
+			(at 214.376 91.186 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1376,7 +1494,7 @@
 			)
 		)
 		(property "Manufacturer Part" "2N7002"
-			(at 204.978 113.792 0)
+			(at 215.138 130.302 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1385,7 +1503,7 @@
 			)
 		)
 		(property "Manufacturer" "CJ(江苏长电/长晶)"
-			(at 206.248 130.302 0)
+			(at 216.408 146.812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1394,7 +1512,7 @@
 			)
 		)
 		(property "Supplier Part" "C8545"
-			(at 205.232 117.348 0)
+			(at 215.392 133.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +1521,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 205.232 125.222 0)
+			(at 215.392 141.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1412,7 +1530,7 @@
 			)
 		)
 		(property "LCSC Part Name" "1个N沟道 耐压:60V 电流:115mA"
-			(at 204.978 83.058 0)
+			(at 215.138 99.568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1431,7 +1549,7 @@
 		)
 		(instances
 			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0"
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/55e03eb4-45c0-417f-b828-ae972a1a241c"
 					(reference "Q3")
 					(unit 1)
 				)
@@ -1440,15 +1558,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 115.57 111.76 180)
+		(at 125.73 128.27 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "9ffefc1a-578c-4b37-80d3-cb84958a76f2")
-		(property "Reference" "R18"
-			(at 118.11 110.4899 0)
+		(property "Reference" "R15"
+			(at 128.27 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1457,7 +1575,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 118.11 113.0299 0)
+			(at 128.27 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1466,7 +1584,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 117.348 111.76 90)
+			(at 127.508 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1475,7 +1593,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 111.76 0)
+			(at 125.73 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1484,7 +1602,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 111.76 0)
+			(at 125.73 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1492,7 +1610,7 @@
 			)
 		)
 		(property "REF" "C17414"
-			(at 115.57 111.76 0)
+			(at 125.73 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1508,8 +1626,8 @@
 		)
 		(instances
 			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0"
-					(reference "R18")
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/55e03eb4-45c0-417f-b828-ae972a1a241c"
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -1517,7 +1635,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 181.61 99.06 270)
+		(at 191.77 115.57 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1525,8 +1643,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2f184c9-ed37-40c2-9879-ef36b6fb72cf")
-		(property "Reference" "R19"
-			(at 181.61 92.71 90)
+		(property "Reference" "R16"
+			(at 191.77 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1534,7 +1652,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 181.61 95.25 90)
+			(at 191.77 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1542,7 +1660,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 181.61 97.282 90)
+			(at 191.77 113.792 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1551,7 +1669,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 99.06 0)
+			(at 191.77 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1560,7 +1678,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 99.06 0)
+			(at 191.77 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1568,7 +1686,7 @@
 			)
 		)
 		(property "REF" "C17408"
-			(at 181.61 99.06 0)
+			(at 191.77 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1584,126 +1702,8 @@
 		)
 		(instances
 			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My_Personal_Symbols_Library:BSS84LT1G")
-		(at 118.11 58.42 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6fac631-0a84-4a9e-95bd-122054b460c8")
-		(property "Reference" "Q4"
-			(at 110.49 57.7849 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "P-MOSFET-ENH-BSS84LT1G"
-			(at 110.49 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "My_Personal_Footprints_Library:BSS84LT1G"
-			(at 117.348 83.566 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20160910/1473490307635.PDF"
-			(at 118.11 87.376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Type:1个PChannel Drain Source Voltage (Vdss): Continuous Drain Current (Id): Power Dissipation (Pd): Drain Source On Resistance (RDS(on)@Vgs,Id):10Ω@5V,100mA Gate Threshold Voltage (Vgs(th)@Id):2V@250uA Input Capacitance (Ciss@Vds):30pF@5V Operating Temper"
-			(at 116.586 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "BSS84LT1G"
-			(at 117.856 42.418 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "onsemi(安森美)"
-			(at 117.094 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C82079"
-			(at 117.856 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 118.11 35.052 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "1个P沟道 耐压:50V 电流:130mA"
-			(at 117.602 73.406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "cc1b90b2-dfb6-4e7b-8ffb-90c8babd196b")
-		)
-		(pin "2"
-			(uuid "f7f324ee-5d87-47bd-80a5-c4f6a01e009c")
-		)
-		(pin "1"
-			(uuid "609ce135-1f6d-49c8-8587-580170f26d2f")
-		)
-		(instances
-			(project "MY-ESP32"
-				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/c1b111d2-5f69-4acb-9937-8a3e8f5ceef0"
-					(reference "Q4")
+				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/55e03eb4-45c0-417f-b828-ae972a1a241c"
+					(reference "R16")
 					(unit 1)
 				)
 			)

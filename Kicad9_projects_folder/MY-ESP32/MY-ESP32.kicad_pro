@@ -705,16 +705,16 @@
       "Root"
     ],
     [
-      "019682df-0a47-4c4c-9672-8fce28c60460",
-      "Battery_Charger_LiFePO4_3.6V"
-    ],
-    [
-      "c1b111d2-5f69-4acb-9937-8a3e8f5ceef0",
+      "55e03eb4-45c0-417f-b828-ae972a1a241c",
       "Battery_Voltage_Monitor_with_MOSFETS"
     ],
     [
-      "7efd7115-3e45-40c0-b344-3c012cbc13c1",
+      "bd1333f1-cd43-4d31-a242-4960306cc242",
       "Buck-Boost3.3V"
+    ],
+    [
+      "b05cfee3-cdbd-4ba0-a586-ca5aad6ef209",
+      "micro_SD-CARD_enable"
     ]
   ],
   "text_variables": {}
