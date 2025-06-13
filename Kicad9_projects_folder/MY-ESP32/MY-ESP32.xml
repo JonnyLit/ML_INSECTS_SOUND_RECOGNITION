@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\zord\Documents\Kicad_projects\MY-ESP32\MY-ESP32.kicad_sch</source>
-    <date>2025-06-12T17:30:24+0200</date>
+    <date>2025-06-13T18:58:33+0200</date>
     <tool>Eeschema 9.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -965,7 +965,7 @@
     </comp>
     <comp ref="R10">
       <value>150Ω ±1% 62.5mW</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
       <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504</datasheet>
       <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface</description>
       <fields>
@@ -974,7 +974,7 @@
         <field name="Supplier Part">C138054</field>
         <field name="Supplier"/>
         <field name="LCSC Part Name">150Ω ±1% 62.5mW</field>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
         <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504</field>
         <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface</field>
       </fields>
@@ -991,7 +991,7 @@
     </comp>
     <comp ref="R11">
       <value>36Ω ±1% 62.5mW</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
       <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</datasheet>
       <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</description>
       <fields>
@@ -1000,7 +1000,7 @@
         <field name="Supplier Part">C2906935</field>
         <field name="Supplier"/>
         <field name="LCSC Part Name">36Ω ±1% 62.5mW</field>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
         <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</field>
         <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</field>
       </fields>
@@ -1017,7 +1017,7 @@
     </comp>
     <comp ref="R12">
       <value>36Ω ±1% 62.5mW</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
       <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</datasheet>
       <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</description>
       <fields>
@@ -1026,7 +1026,7 @@
         <field name="Supplier Part">C2906935</field>
         <field name="Supplier"/>
         <field name="LCSC Part Name">36Ω ±1% 62.5mW</field>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
         <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</field>
         <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</field>
       </fields>

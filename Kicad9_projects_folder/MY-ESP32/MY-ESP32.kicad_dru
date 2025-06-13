@@ -1,0 +1,8 @@
+(version 1)
+(rule "Physical Hole Clearance"
+  (constraint physical_hole_clearance (min 0.15mm))
+  (condition "A.Type == 'Pad'"))
+
+ (rule "Physical Hole Clearance"
+  (constraint physical_hole_clearance (min 0mm))
+  (layer "In2.Cu"))

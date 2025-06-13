@@ -1,7 +1,7 @@
 (export (version "E")
   (design
     (source "C:\\Users\\zord\\Documents\\Kicad_projects\\MY-ESP32\\MY-ESP32.kicad_sch")
-    (date "2025-06-12T17:01:46+0200")
+    (date "2025-06-13T13:02:35+0200")
     (tool "Eeschema 9.0.1")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block
@@ -937,7 +937,7 @@
       (tstamps "2b7325e3-500e-496e-b52a-90552b24a6b6"))
     (comp (ref "R10")
       (value "150Ω ±1% 62.5mW")
-      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (footprint "My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE")
       (datasheet "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504")
       (description "62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface")
       (fields
@@ -946,7 +946,7 @@
         (field (name "Supplier Part") "C138054")
         (field (name "Supplier"))
         (field (name "LCSC Part Name") "150Ω ±1% 62.5mW")
-        (field (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field (name "Footprint") "My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE")
         (field (name "Datasheet") "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504")
         (field (name "Description") "62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface"))
       (libsource (lib "My_Personal_Symbols_Library") (part "0402WGF1002TCE") (description "Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"))
@@ -961,7 +961,7 @@
       (tstamps "76f65e5f-8f00-4e9b-8af0-bc94ce0de68e"))
     (comp (ref "R11")
       (value "36Ω ±1% 62.5mW")
-      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (footprint "My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE")
       (datasheet "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496")
       (description "62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS")
       (fields
@@ -970,7 +970,7 @@
         (field (name "Supplier Part") "C2906935")
         (field (name "Supplier"))
         (field (name "LCSC Part Name") "36Ω ±1% 62.5mW")
-        (field (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field (name "Footprint") "My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE")
         (field (name "Datasheet") "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496")
         (field (name "Description") "62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS"))
       (libsource (lib "My_Personal_Symbols_Library") (part "0402WGF1002TCE") (description "Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"))
@@ -985,7 +985,7 @@
       (tstamps "cef75ecc-527a-469e-9c17-e3776ed709a7"))
     (comp (ref "R12")
       (value "36Ω ±1% 62.5mW")
-      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (footprint "My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE")
       (datasheet "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496")
       (description "62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS")
       (fields
@@ -994,7 +994,7 @@
         (field (name "Supplier Part") "C2906935")
         (field (name "Supplier"))
         (field (name "LCSC Part Name") "36Ω ±1% 62.5mW")
-        (field (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field (name "Footprint") "My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE")
         (field (name "Datasheet") "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496")
         (field (name "Description") "62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS"))
       (libsource (lib "My_Personal_Symbols_Library") (part "0402WGF1002TCE") (description "Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"))
