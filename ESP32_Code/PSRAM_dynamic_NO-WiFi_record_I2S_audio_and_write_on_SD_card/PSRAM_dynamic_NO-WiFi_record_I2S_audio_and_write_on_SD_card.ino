@@ -47,6 +47,7 @@ String location = "Hive1";
 #define I2S_SCK 2 //2, 32
 #define I2S_PORT I2S_NUM_0
 #define L_R_channel_selector 12
+#define VDD_3V3_MICROPHONE 18
 
 //The following variables have been defined as class members in device.h
 //#define I2S_SAMPLE_RATE   (22050)
@@ -509,6 +510,10 @@ void setup(){
   // Only the left channel of the microphone will be used
   pinMode(L_R_channel_selector, OUTPUT);
   selectLeftChannel();
+
+  //to enable all the gpio ports (for PCB)
+  //pinMode(VDD_3V3_MICROPHONE, OUTPUT);
+  //digitalWrite(VDD_3V3_MICROPHONE, HIGH);
 
   
   // CHECK IF THE AUDIO RECORD SIZE IS BIGGER THAN THE PSRAM MEMORY AVAILABLE (4MB --> cut to 4'000'000 Bytes)

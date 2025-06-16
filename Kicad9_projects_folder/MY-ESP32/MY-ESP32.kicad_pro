@@ -723,6 +723,10 @@
     [
       "6919b8a3-84d4-45ca-a14c-74be4024a5b9",
       "I2C_Connector_Enable"
+    ],
+    [
+      "b3780aea-0409-4b0e-9d6e-ab9fc89bcb41",
+      "3V3_Headers_enable"
     ]
   ],
   "text_variables": {}
