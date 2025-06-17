@@ -8,15 +8,15 @@ C14,4.7uF,My_Personal_Footprints_Library:CL10A475KP8NNNC,C1705
 CARD1,micro SD-CARD TF PUSH,My_Personal_Footprints_Library:TF-SMD_TF-PUSH-micro_SD_card_slot,C393941
 "D1, D2, D3",RB168MM-40TR,My_Personal_Footprints_Library:RB168MM-40TR,C509936
 "H1, H2",Header-Female-2.54_1x3,My_Personal_Footprints_Library:Header-Female-2.54mm_1x3,C146243
-"H5, H6",Header-Female-2.54_1x6,My_Personal_Footprints_Library:Header-Female-2.54_1x6,C40877
-H7,Header-Female-2.54_1x2,My_Personal_Footprints_Library:Header-Female-2.54_1x2,C49661
-H8,Header-Female-2.54_1x2,My_Personal_Footprints_Library:Header-Female-2.54_1x2,C49661
+"H3, H4",Header-Female-2.54_1x6,My_Personal_Footprints_Library:Header-Female-2.54_1x6,C40877
+H5,Header-Female-2.54_1x2,My_Personal_Footprints_Library:Header-Female-2.54_1x2,C49661
+H6,Header-Female-2.54_1x2,My_Personal_Footprints_Library:Header-Female-2.54_1x2,C49661
 "J1, J2",SM04B-SRSS-TB,My_Personal_Footprints_Library:CONN_SM04B-SRSS-TB_JST,
 L_B-B1,2.2uH ±20% 3.2A,My_Personal_Footprints_Library:IND_2.2uH_SWPA4018S2R2MT,C50543
 LED1,E6C0606RGBC3UDA,My_Personal_Footprints_Library:E6C0606RGBC3UDA,C375569
 "Q1, Q2",2N3904S-RTK/PS,My_Personal_Footprints_Library:2n3904S-RTKPS,C18536
-"Q3, Q7, Q10, Q12",N-MOSFET-ENH-2N7002,My_Personal_Footprints_Library:2N7002,C8545
-"Q4, Q8, Q9, Q11",P-MOSFET-ENH-BSS84LT1G,My_Personal_Footprints_Library:BSS84LT1G,C82079
+"Q3, Q6, Q9, Q11",N-MOSFET-ENH-2N7002,My_Personal_Footprints_Library:2N7002,C8545
+"Q4, Q7, Q8, Q10",P-MOSFET-ENH-BSS84LT1G,My_Personal_Footprints_Library:BSS84LT1G,C82079
 Q5,PMOSFET-DMP1045U-7,My_Personal_Footprints_Library:PMOSFET-DMP1045U-7,C177033
 "R1, R2, R7, R8, R9, R13, R14, R15, R25, R29, R32",10K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17414
 R3,22K1,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C2930182

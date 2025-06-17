@@ -1555,7 +1555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1aa8d44-3ceb-4dd5-8c4e-c2248a005d91")
-		(property "Reference" "Q10"
+		(property "Reference" "Q9"
 			(at 200.66 107.9499 0)
 			(effects
 				(font
@@ -1657,7 +1657,7 @@
 		(instances
 			(project "MY-ESP32"
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/6919b8a3-84d4-45ca-a14c-74be4024a5b9"
-					(reference "Q10")
+					(reference "Q9")
 					(unit 1)
 				)
 			)
@@ -1673,7 +1673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "faba1c5a-6de4-46ad-90fa-3c0e3ad56002")
-		(property "Reference" "Q9"
+		(property "Reference" "Q8"
 			(at 99.06 67.3099 0)
 			(effects
 				(font
@@ -1775,7 +1775,7 @@
 		(instances
 			(project "MY-ESP32"
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c/6919b8a3-84d4-45ca-a14c-74be4024a5b9"
-					(reference "Q9")
+					(reference "Q8")
 					(unit 1)
 				)
 			)

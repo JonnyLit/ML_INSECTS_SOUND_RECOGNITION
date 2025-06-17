@@ -14194,8 +14194,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08a81d7c-5311-49ee-8b02-5a9d063dc01b")
-		(property "Reference" "H6"
-			(at 483.87 182.2449 0)
+		(property "Reference" "H4"
+			(at 483.87 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14204,7 +14204,7 @@
 			)
 		)
 		(property "Value" "Header-Female-2.54_1x6"
-			(at 483.87 184.15 0)
+			(at 483.87 184.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14305,7 +14305,7 @@
 		(instances
 			(project "MY-ESP32"
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "H6")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -14588,8 +14588,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15a47836-729b-4df5-82ff-7a6507980757")
-		(property "Reference" "H7"
-			(at 415.29 201.2949 0)
+		(property "Reference" "H5"
+			(at 415.29 200.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14598,7 +14598,7 @@
 			)
 		)
 		(property "Value" "Header-Female-2.54_1x2"
-			(at 415.29 203.2 0)
+			(at 415.29 203.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14687,7 +14687,7 @@
 		(instances
 			(project ""
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "H7")
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -18913,7 +18913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e5a579e-5341-4049-9318-b2822838647e")
-		(property "Reference" "H12"
+		(property "Reference" "H10"
 			(at 38.1 387.3499 0)
 			(effects
 				(font
@@ -18961,7 +18961,7 @@
 		(instances
 			(project "MY-ESP32"
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "H12")
+					(reference "H10")
 					(unit 1)
 				)
 			)
@@ -18978,8 +18978,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ebfb07d-ce6f-49ba-bc19-698b56830fe7")
-		(property "Reference" "H5"
-			(at 415.29 182.2449 0)
+		(property "Reference" "H3"
+			(at 415.29 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18988,7 +18988,7 @@
 			)
 		)
 		(property "Value" "Header-Female-2.54_1x6"
-			(at 415.29 184.15 0)
+			(at 415.29 184.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19089,7 +19089,7 @@
 		(instances
 			(project ""
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "H5")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -19558,7 +19558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98e8e2cb-5584-41ed-8995-e6649ef01118")
-		(property "Reference" "H9"
+		(property "Reference" "H7"
 			(at 38.1 360.6799 0)
 			(effects
 				(font
@@ -19606,7 +19606,7 @@
 		(instances
 			(project "MY-ESP32"
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "H9")
+					(reference "H7")
 					(unit 1)
 				)
 			)
@@ -19622,7 +19622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a63b2f8-401a-4604-8c6d-c9ccbc45f4aa")
-		(property "Reference" "H10"
+		(property "Reference" "H8"
 			(at 38.1 369.5699 0)
 			(effects
 				(font
@@ -19670,7 +19670,7 @@
 		(instances
 			(project "MY-ESP32"
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "H10")
+					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -19911,8 +19911,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a12620c6-9209-4555-b1b0-9c57d70709ef")
-		(property "Reference" "H8"
-			(at 483.87 201.2949 0)
+		(property "Reference" "H6"
+			(at 483.87 200.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19921,7 +19921,7 @@
 			)
 		)
 		(property "Value" "Header-Female-2.54_1x2"
-			(at 483.87 203.2 0)
+			(at 483.87 203.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20010,7 +20010,7 @@
 		(instances
 			(project ""
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "H8")
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -22435,7 +22435,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc597bed-3c2d-4d46-ba8d-bf6a47ca4536")
-		(property "Reference" "H11"
+		(property "Reference" "H9"
 			(at 38.1 378.4599 0)
 			(effects
 				(font
@@ -22483,7 +22483,7 @@
 		(instances
 			(project "MY-ESP32"
 				(path "/d6d8d651-8dd4-45a4-bd17-f84a87bbb30c"
-					(reference "H11")
+					(reference "H9")
 					(unit 1)
 				)
 			)
