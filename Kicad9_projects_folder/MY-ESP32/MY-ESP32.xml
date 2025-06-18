@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\zord\Documents\Kicad_projects\MY-ESP32\MY-ESP32.kicad_sch</source>
-    <date>2025-06-17T10:51:47+0200</date>
+    <date>2025-06-18T09:47:14+0200</date>
     <tool>Eeschema 9.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -683,29 +683,30 @@
       <tstamps>d3a3b83d-5f21-4635-880c-e54b87aab46b</tstamps>
     </comp>
     <comp ref="LED1">
-      <value>E6C0606RGBC3UDA</value>
-      <footprint>My_Personal_Footprints_Library:E6C0606RGBC3UDA</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20220330/8DE12FB9881A833E867FD7AF6894B416.pdf</datasheet>
+      <value>TJ-S1615CY6TGLCCSRGB-A5</value>
+      <footprint>My_Personal_Footprints_Library:TJ-S1615CY6TGLCCSRGB-A5</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200618/C601684_45CF7DB80FE0981E5EA474618D8F7AF5.pdf</datasheet>
+      <description>Diode Configuration:Common Cathode Luminous Intensity:G:300mcd~800mcd；B:60mcd~200mcd；R:60mcd~200mcd Viewing Angle:120° Lens Color:Colorless Transparent Lens Installation Method:Positive Stick Operating Temperature:-40°C~+80°C Operating Temperature:-40°C~+80°C</description>
       <fields>
-        <field name="Manufacturer Part">E6C0606RGBC3UDA</field>
-        <field name="Manufacturer">ekinglux(亿晶源)</field>
-        <field name="Supplier Part">C375569</field>
+        <field name="Manufacturer Part">TJ-S1615CY6TGLCCSRGB-A5</field>
+        <field name="Manufacturer">TOGIALED(统佳)</field>
+        <field name="Supplier Part">C601684</field>
         <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">RGB LED</field>
-        <field name="Footprint">My_Personal_Footprints_Library:E6C0606RGBC3UDA</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20220330/8DE12FB9881A833E867FD7AF6894B416.pdf</field>
-        <field name="Description"/>
+        <field name="LCSC Part Name">RGB三色</field>
+        <field name="Footprint">My_Personal_Footprints_Library:TJ-S1615CY6TGLCCSRGB-A5</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200618/C601684_45CF7DB80FE0981E5EA474618D8F7AF5.pdf</field>
+        <field name="Description">Diode Configuration:Common Cathode Luminous Intensity:G:300mcd~800mcd；B:60mcd~200mcd；R:60mcd~200mcd Viewing Angle:120° Lens Color:Colorless Transparent Lens Installation Method:Positive Stick Operating Temperature:-40°C~+80°C Operating Temperature:-40°C~+80°C</field>
       </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="E6C0606RGBC3UDA" description=""/>
-      <property name="Manufacturer Part" value="E6C0606RGBC3UDA"/>
-      <property name="Manufacturer" value="ekinglux(亿晶源)"/>
-      <property name="Supplier Part" value="C375569"/>
+      <libsource lib="My_Personal_Symbols_Library" part="TJ-S1615CY6TGLCCSRGB-A5" description="Diode Configuration:Common Cathode Luminous Intensity:G:300mcd~800mcd；B:60mcd~200mcd；R:60mcd~200mcd Viewing Angle:120° Lens Color:Colorless Transparent Lens Installation Method:Positive Stick Operating Temperature:-40°C~+80°C Operating Temperature:-40°C~+80°C"/>
+      <property name="Manufacturer Part" value="TJ-S1615CY6TGLCCSRGB-A5"/>
+      <property name="Manufacturer" value="TOGIALED(统佳)"/>
+      <property name="Supplier Part" value="C601684"/>
       <property name="Supplier" value="LCSC"/>
-      <property name="LCSC Part Name" value="RGB LED"/>
+      <property name="LCSC Part Name" value="RGB三色"/>
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>967a73f6-1109-43c7-a4ef-c6ec5e5288bb</tstamps>
+      <tstamps>a0456ce1-ea19-4820-9327-c5c3141e2933</tstamps>
     </comp>
     <comp ref="Q1">
       <value>2N3904S-RTK/PS</value>
@@ -947,84 +948,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2b7325e3-500e-496e-b52a-90552b24a6b6</tstamps>
     </comp>
-    <comp ref="R10">
-      <value>150Ω ±1% 62.5mW</value>
-      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
-      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504</datasheet>
-      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface</description>
-      <fields>
-        <field name="Manufacturer Part">RC0402FR-07150RL</field>
-        <field name="Manufacturer">YAGEO </field>
-        <field name="Supplier Part">C138054</field>
-        <field name="Supplier"/>
-        <field name="LCSC Part Name">150Ω ±1% 62.5mW</field>
-        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
-        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504</field>
-        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="RC0402FR-07150RL"/>
-      <property name="Manufacturer" value="YAGEO "/>
-      <property name="Supplier Part" value="C138054"/>
-      <property name="Supplier" value=""/>
-      <property name="LCSC Part Name" value="150Ω ±1% 62.5mW"/>
-      <property name="Sheetname" value="Root"/>
-      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>76f65e5f-8f00-4e9b-8af0-bc94ce0de68e</tstamps>
-    </comp>
-    <comp ref="R11">
-      <value>36Ω ±1% 62.5mW</value>
-      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
-      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</datasheet>
-      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</description>
-      <fields>
-        <field name="Manufacturer Part">FRC0402J360 TS</field>
-        <field name="Manufacturer">FOJAN</field>
-        <field name="Supplier Part">C2906935</field>
-        <field name="Supplier"/>
-        <field name="LCSC Part Name">36Ω ±1% 62.5mW</field>
-        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
-        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</field>
-        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="FRC0402J360 TS"/>
-      <property name="Manufacturer" value="FOJAN"/>
-      <property name="Supplier Part" value="C2906935"/>
-      <property name="Supplier" value=""/>
-      <property name="LCSC Part Name" value="36Ω ±1% 62.5mW"/>
-      <property name="Sheetname" value="Root"/>
-      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>cef75ecc-527a-469e-9c17-e3776ed709a7</tstamps>
-    </comp>
-    <comp ref="R12">
-      <value>36Ω ±1% 62.5mW</value>
-      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
-      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</datasheet>
-      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</description>
-      <fields>
-        <field name="Manufacturer Part">FRC0402J360 TS</field>
-        <field name="Manufacturer">FOJAN</field>
-        <field name="Supplier Part">C2906935</field>
-        <field name="Supplier"/>
-        <field name="LCSC Part Name">36Ω ±1% 62.5mW</field>
-        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
-        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</field>
-        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</field>
-      </fields>
-      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
-      <property name="Manufacturer Part" value="FRC0402J360 TS"/>
-      <property name="Manufacturer" value="FOJAN"/>
-      <property name="Supplier Part" value="C2906935"/>
-      <property name="Supplier" value=""/>
-      <property name="LCSC Part Name" value="36Ω ±1% 62.5mW"/>
-      <property name="Sheetname" value="Root"/>
-      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>bbbbb835-1dea-4f06-a03e-9608d5a21f15</tstamps>
-    </comp>
     <comp ref="R18">
       <value>7.5kΩ</value>
       <footprint>My_Personal_Footprints_Library:0603WAF7501T5E</footprint>
@@ -1180,6 +1103,84 @@
       <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>66562076-3335-4615-b52d-03eb6888f30d</tstamps>
+    </comp>
+    <comp ref="R33">
+      <value>36Ω ±1% 62.5mW</value>
+      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
+      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</datasheet>
+      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</description>
+      <fields>
+        <field name="Manufacturer Part">FRC0402J360 TS</field>
+        <field name="Manufacturer">FOJAN</field>
+        <field name="Supplier Part">C2906935</field>
+        <field name="Supplier"/>
+        <field name="LCSC Part Name">36Ω ±1% 62.5mW</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
+        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</field>
+        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
+      <property name="Manufacturer Part" value="FRC0402J360 TS"/>
+      <property name="Manufacturer" value="FOJAN"/>
+      <property name="Supplier Part" value="C2906935"/>
+      <property name="Supplier" value=""/>
+      <property name="LCSC Part Name" value="36Ω ±1% 62.5mW"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65f55dd4-6f5f-4be6-8ea2-4f3e4f5fd235</tstamps>
+    </comp>
+    <comp ref="R34">
+      <value>36Ω ±1% 62.5mW</value>
+      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
+      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</datasheet>
+      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</description>
+      <fields>
+        <field name="Manufacturer Part">FRC0402J360 TS</field>
+        <field name="Manufacturer">FOJAN</field>
+        <field name="Supplier Part">C2906935</field>
+        <field name="Supplier"/>
+        <field name="LCSC Part Name">36Ω ±1% 62.5mW</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
+        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590207561602666496</field>
+        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±5% 36Ω 0402 Chip Resistor - Surface Mount ROHS</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
+      <property name="Manufacturer Part" value="FRC0402J360 TS"/>
+      <property name="Manufacturer" value="FOJAN"/>
+      <property name="Supplier Part" value="C2906935"/>
+      <property name="Supplier" value=""/>
+      <property name="LCSC Part Name" value="36Ω ±1% 62.5mW"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a5a0723-51cb-4808-9c98-f0c3d9fc53eb</tstamps>
+    </comp>
+    <comp ref="R35">
+      <value>150Ω ±1% 62.5mW</value>
+      <footprint>My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</footprint>
+      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504</datasheet>
+      <description>62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface</description>
+      <fields>
+        <field name="Manufacturer Part">RC0402FR-07150RL</field>
+        <field name="Manufacturer">YAGEO </field>
+        <field name="Supplier Part">C138054</field>
+        <field name="Supplier"/>
+        <field name="LCSC Part Name">150Ω ±1% 62.5mW</field>
+        <field name="Footprint">My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE</field>
+        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899760644501504</field>
+        <field name="Description">62.5mW Thick Film Resistors 50V ±100ppm/℃ ±1% 150Ω 0402 Chip Resistor - Surface</field>
+      </fields>
+      <libsource lib="My_Personal_Symbols_Library" part="0402WGF1002TCE" description="Type:Thick Film Resistors Resistance:10kΩ Tolerance:±1% Tolerance:±1% Power(Watts): Overload Voltage (Max): Temperature Coefficient:±100ppm/°C Temperature Coefficient:±100ppm/°C Operating Temperature Range:-55°C~+155°C Operating Temperature Range:-55°C~+155°C"/>
+      <property name="Manufacturer Part" value="RC0402FR-07150RL"/>
+      <property name="Manufacturer" value="YAGEO "/>
+      <property name="Supplier Part" value="C138054"/>
+      <property name="Supplier" value=""/>
+      <property name="LCSC Part Name" value="150Ω ±1% 62.5mW"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="MY-ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>094031d3-a28b-4217-83fb-9818cf20ddf7</tstamps>
     </comp>
     <comp ref="SW1">
       <value>~</value>
@@ -2636,27 +2637,6 @@
         <pin num="3" name="D" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="My_Personal_Symbols_Library" part="E6C0606RGBC3UDA">
-      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20220330/8DE12FB9881A833E867FD7AF6894B416.pdf</docs>
-      <fields>
-        <field name="Reference">LED</field>
-        <field name="Value"/>
-        <field name="Footprint">LED_RGB_E6C0606RGBC3UDA:LED-ARRAY-SMD_4P-L1.6-W1.6_SY-PB2333RGBC-010F</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20220330/8DE12FB9881A833E867FD7AF6894B416.pdf</field>
-        <field name="Description"/>
-        <field name="Manufacturer Part">E6C0606RGBC3UDA</field>
-        <field name="Manufacturer">ekinglux(亿晶源)</field>
-        <field name="Supplier Part">C375569</field>
-        <field name="Supplier">LCSC</field>
-        <field name="LCSC Part Name">RGB三色</field>
-      </fields>
-      <pins>
-        <pin num="1" name="B" type="passive"/>
-        <pin num="2" name="+" type="passive"/>
-        <pin num="3" name="G" type="passive"/>
-        <pin num="4" name="R" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="Header-Female-2.54_1x2">
       <description>Holes Structure:1x2P Pitch:2.54mm Row Spacing:- Mounting Type:Straight Number of Rows:Plugin Number of Holes:2P Insulation Height:- Contact Material:- Contact Plating:-</description>
       <docs>https://atta.szlcsc.com/upload/public/pdf/source/20210301/C2718488_F4427B881E42CAA8DDB0B1C12B3A522C.pdf</docs>
@@ -2833,6 +2813,28 @@
         <pin num="CD" name="CD" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="My_Personal_Symbols_Library" part="TJ-S1615CY6TGLCCSRGB-A5">
+      <description>Diode Configuration:Common Cathode Luminous Intensity:G:300mcd~800mcd；B:60mcd~200mcd；R:60mcd~200mcd Viewing Angle:120° Lens Color:Colorless Transparent Lens Installation Method:Positive Stick Operating Temperature:-40°C~+80°C Operating Temperature:-40°C~+80°C</description>
+      <docs>https://atta.szlcsc.com/upload/public/pdf/source/20200618/C601684_45CF7DB80FE0981E5EA474618D8F7AF5.pdf</docs>
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Value"/>
+        <field name="Footprint">RGB_LED_comm_cathode_TJ-S1615CY6TGLCCSRGB-A5:LED-ARRAY-SMD_4P-L1.6-W1.5-BL-FD</field>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200618/C601684_45CF7DB80FE0981E5EA474618D8F7AF5.pdf</field>
+        <field name="Description">Diode Configuration:Common Cathode Luminous Intensity:G:300mcd~800mcd；B:60mcd~200mcd；R:60mcd~200mcd Viewing Angle:120° Lens Color:Colorless Transparent Lens Installation Method:Positive Stick Operating Temperature:-40°C~+80°C Operating Temperature:-40°C~+80°C</field>
+        <field name="Manufacturer Part">TJ-S1615CY6TGLCCSRGB-A5</field>
+        <field name="Manufacturer">TOGIALED(统佳)</field>
+        <field name="Supplier Part">C601684</field>
+        <field name="Supplier">LCSC</field>
+        <field name="LCSC Part Name">RGB三色</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="G" type="passive"/>
+        <pin num="4" name="R" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="My_Personal_Symbols_Library" part="TPS63001DRCR">
       <description>Function:Boost type Output Type:Fixed Voltage - Supply:1.8V~5.5V Voltage - Supply:1.8V~5.5V Output Voltage:3.3V Output Voltage:3.3V Output Current:- Frequency - Switching:1.5MHz Frequency - Switching:1.5MHz Operating Temperature:-40°C~+85°C@(TA) Operating T</description>
       <docs>https://www.ti.com/cn/lit/gpn/tps63001</docs>
@@ -2946,7 +2948,6 @@
       <node ref="C9" pin="1" pintype="passive"/>
       <node ref="H4" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="J2" pin="3" pinfunction="3V3" pintype="passive"/>
-      <node ref="LED1" pin="2" pinfunction="+" pintype="passive"/>
       <node ref="Q10" pin="2" pinfunction="S" pintype="passive"/>
       <node ref="Q7" pin="2" pinfunction="S" pintype="passive"/>
       <node ref="Q8" pin="2" pinfunction="S" pintype="passive"/>
@@ -3077,11 +3078,11 @@
       <node ref="U6" pin="10" pinfunction="IO25" pintype="bidirectional"/>
     </net>
     <net code="22" name="D26" class="Default">
-      <node ref="R12" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R33" pin="2" pinfunction="2" pintype="input"/>
       <node ref="U6" pin="11" pinfunction="IO26" pintype="bidirectional"/>
     </net>
     <net code="23" name="D27" class="Default">
-      <node ref="R11" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R34" pin="2" pinfunction="2" pintype="input"/>
       <node ref="U6" pin="12" pinfunction="IO27" pintype="bidirectional"/>
     </net>
     <net code="24" name="D32" class="Default">
@@ -3089,7 +3090,7 @@
       <node ref="U6" pin="8" pinfunction="IO32" pintype="bidirectional"/>
     </net>
     <net code="25" name="D33" class="Default">
-      <node ref="R10" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R35" pin="2" pinfunction="2" pintype="input"/>
       <node ref="U6" pin="9" pinfunction="IO33" pintype="bidirectional"/>
     </net>
     <net code="26" name="D34" class="Default">
@@ -3172,6 +3173,7 @@
       <node ref="J2" pin="4" pinfunction="GND" pintype="passive"/>
       <node ref="J2" pin="5" pinfunction="5" pintype="passive"/>
       <node ref="J2" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="LED1" pin="1" pinfunction="C" pintype="passive"/>
       <node ref="Q11" pin="2" pinfunction="S" pintype="input"/>
       <node ref="Q3" pin="2" pinfunction="S" pintype="input"/>
       <node ref="Q6" pin="2" pinfunction="S" pintype="input"/>
@@ -3235,16 +3237,16 @@
       <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
     </net>
     <net code="39" name="Net-(LED1-B)" class="Default">
-      <node ref="LED1" pin="1" pinfunction="B" pintype="passive"/>
-      <node ref="R11" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="LED1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R34" pin="1" pinfunction="1" pintype="input"/>
     </net>
     <net code="40" name="Net-(LED1-G)" class="Default">
       <node ref="LED1" pin="3" pinfunction="G" pintype="passive"/>
-      <node ref="R12" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R33" pin="1" pinfunction="1" pintype="input"/>
     </net>
     <net code="41" name="Net-(LED1-R)" class="Default">
       <node ref="LED1" pin="4" pinfunction="R" pintype="passive"/>
-      <node ref="R10" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R35" pin="1" pinfunction="1" pintype="input"/>
     </net>
     <net code="42" name="Net-(Q1-B)" class="Default">
       <node ref="Q1" pin="2" pinfunction="B" pintype="input"/>
