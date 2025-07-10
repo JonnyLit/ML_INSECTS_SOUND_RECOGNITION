@@ -1,0 +1,344 @@
+/home/zord/anaconda3/envs/tf-gpu/bin/python /home/zord/PycharmProjects/AI-Belha/main.py 
+2025-07-10 12:40:46.785638: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2025-07-10 12:40:46.785663: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+features_queen_absent.shape: (19774, 32, 44)
+queen_queen_absent.shape: (19774,)
+features_queen_present_newly_accepted.shape: (19717, 32, 44)
+queen_queen_present_newly_accepted.shape: (19717,)
+features_queen_present_original.shape: (19779, 32, 44)
+queen_queen_present_original.shape: (19779,)
+features_queen_present_rejected.shape: (19617, 32, 44)
+queen_queen_present_rejected.shape: (19617,)
+features_unknown.shape: (19789, 32, 44)
+queen_unknown.shape: (19789,)
+Training...
+2025-07-10 12:47:54.320619: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:975] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-07-10 12:47:54.321004: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2025-07-10 12:47:54.321128: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory
+2025-07-10 12:47:54.321247: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory
+2025-07-10 12:47:54.394836: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory
+2025-07-10 12:47:54.394976: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2025-07-10 12:47:54.394993: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-07-10 12:47:54.395361: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+shared_dense_one.shape=8
+shared_dense_two.shape=32
+avg_pool.shape=(None, 32)
+max_pool.shape=(None, 32)
+avg_dense.shape=(None, 32)
+max_dense.shape=(None, 32)
+channel_attention.shape=(None, 32)
+channel_attention.shape=(None, 32)
+channel_attention.shape=(None, 1, 1, 32)
+x.shape=(None, 8, 11, 32)
+avg_pool_spatial.shape=(None, 8, 11, 1)
+max_pool_spatial.shape=(None, 8, 11, 1)
+concat.shape=(None, 8, 11, 2)
+spatial_attention.shape=(None, 8, 11, 1)
+x.shape=(None, 8, 11, 32)
+shared_dense_one.shape=16
+shared_dense_two.shape=64
+avg_pool.shape=(None, 64)
+max_pool.shape=(None, 64)
+avg_dense.shape=(None, 64)
+max_dense.shape=(None, 64)
+channel_attention.shape=(None, 64)
+channel_attention.shape=(None, 64)
+channel_attention.shape=(None, 1, 1, 64)
+x.shape=(None, 4, 6, 64)
+avg_pool_spatial.shape=(None, 4, 6, 1)
+max_pool_spatial.shape=(None, 4, 6, 1)
+concat.shape=(None, 4, 6, 2)
+spatial_attention.shape=(None, 4, 6, 1)
+x.shape=(None, 4, 6, 64)
+shared_dense_one.shape=32
+shared_dense_two.shape=128
+avg_pool.shape=(None, 128)
+max_pool.shape=(None, 128)
+avg_dense.shape=(None, 128)
+max_dense.shape=(None, 128)
+channel_attention.shape=(None, 128)
+channel_attention.shape=(None, 128)
+channel_attention.shape=(None, 1, 1, 128)
+x.shape=(None, 2, 3, 128)
+avg_pool_spatial.shape=(None, 2, 3, 1)
+max_pool_spatial.shape=(None, 2, 3, 1)
+concat.shape=(None, 2, 3, 2)
+spatial_attention.shape=(None, 2, 3, 1)
+x.shape=(None, 2, 3, 128)
+X_train.shape
+69070 32
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(69070, 32, 44, 1) (69070, 1) (29606, 32, 44, 1) (29606, 1)
+le: LabelEncoder()
+after LabelEncoder()
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(69070, 32, 44, 1) (69070, 1) (29606, 32, 44, 1) (29606, 1)
+after Y_train = to_categorical(le.fit_transform(Y_train))
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(69070, 32, 44, 1) (69070, 5) (29606, 32, 44, 1) (29606, 1)
+before model.evaluate and after Y_test = to_categorical(le.fit_transform(Y_test))
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(69070, 32, 44, 1) (69070, 5) (29606, 32, 44, 1) (29606, 5)
+/home/zord/anaconda3/envs/tf-gpu/lib/python3.9/site-packages/sklearn/preprocessing/_label.py:110: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+/home/zord/anaconda3/envs/tf-gpu/lib/python3.9/site-packages/sklearn/preprocessing/_label.py:110: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+2025-07-10 12:47:55.115009: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 166740992 exceeds 10% of free system memory.
+926/926 [==============================] - 16s 16ms/step - loss: 1.6095 - accuracy: 0.2084 - precision: 0.0000e+00 - recall: 0.0000e+00
+after model.evaluate
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(69070, 32, 44, 1) (69070, 5) (29606, 32, 44, 1) (29606, 5)
+Predicted accuracy:  20.84374725818634
+2025-07-10 12:48:11.787749: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 389002240 exceeds 10% of free system memory.
+Epoch 1/110
+1079/1080 [============================>.] - ETA: 0s - loss: 1.0598 - accuracy: 0.5822 - precision: 0.7310 - recall: 0.40042025-07-10 12:49:47.324393: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 166740992 exceeds 10% of free system memory.
+1080/1080 [==============================] - 106s 92ms/step - loss: 1.0597 - accuracy: 0.5822 - precision: 0.7310 - recall: 0.4004 - val_loss: 1.1100 - val_accuracy: 0.6226 - val_precision: 0.6622 - val_recall: 0.5655 - lr: 5.0000e-04
+Epoch 2/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.6494 - accuracy: 0.7649 - precision: 0.8235 - recall: 0.6911 - val_loss: 0.6152 - val_accuracy: 0.7791 - val_precision: 0.8120 - val_recall: 0.7458 - lr: 5.0000e-04
+Epoch 3/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.4815 - accuracy: 0.8313 - precision: 0.8689 - recall: 0.7873 - val_loss: 0.4822 - val_accuracy: 0.8279 - val_precision: 0.8535 - val_recall: 0.8022 - lr: 5.0000e-04
+Epoch 4/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.3771 - accuracy: 0.8701 - precision: 0.8946 - recall: 0.8415 - val_loss: 0.4623 - val_accuracy: 0.8457 - val_precision: 0.8651 - val_recall: 0.8273 - lr: 5.0000e-04
+Epoch 5/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.3086 - accuracy: 0.8950 - precision: 0.9135 - recall: 0.8758 - val_loss: 0.3415 - val_accuracy: 0.8799 - val_precision: 0.8945 - val_recall: 0.8666 - lr: 5.0000e-04
+Epoch 6/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.2558 - accuracy: 0.9133 - precision: 0.9278 - recall: 0.8987 - val_loss: 0.3359 - val_accuracy: 0.8968 - val_precision: 0.9056 - val_recall: 0.8900 - lr: 5.0000e-04
+Epoch 7/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.2246 - accuracy: 0.9244 - precision: 0.9368 - recall: 0.9127 - val_loss: 0.2728 - val_accuracy: 0.9154 - val_precision: 0.9215 - val_recall: 0.9096 - lr: 5.0000e-04
+Epoch 8/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.1965 - accuracy: 0.9345 - precision: 0.9433 - recall: 0.9250 - val_loss: 0.2737 - val_accuracy: 0.9105 - val_precision: 0.9191 - val_recall: 0.9017 - lr: 5.0000e-04
+Epoch 9/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.1699 - accuracy: 0.9439 - precision: 0.9516 - recall: 0.9358 - val_loss: 0.3186 - val_accuracy: 0.9074 - val_precision: 0.9132 - val_recall: 0.9034 - lr: 5.0000e-04
+Epoch 10/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.1575 - accuracy: 0.9482 - precision: 0.9547 - recall: 0.9413 - val_loss: 0.2440 - val_accuracy: 0.9217 - val_precision: 0.9288 - val_recall: 0.9157 - lr: 5.0000e-04
+Epoch 11/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.1404 - accuracy: 0.9542 - precision: 0.9598 - recall: 0.9482 - val_loss: 0.2841 - val_accuracy: 0.9101 - val_precision: 0.9186 - val_recall: 0.9021 - lr: 5.0000e-04
+Epoch 12/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.1300 - accuracy: 0.9580 - precision: 0.9628 - recall: 0.9527 - val_loss: 0.2376 - val_accuracy: 0.9260 - val_precision: 0.9336 - val_recall: 0.9199 - lr: 5.0000e-04
+Epoch 13/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.1176 - accuracy: 0.9615 - precision: 0.9658 - recall: 0.9572 - val_loss: 0.2925 - val_accuracy: 0.9168 - val_precision: 0.9230 - val_recall: 0.9120 - lr: 5.0000e-04
+Epoch 14/110
+1080/1080 [==============================] - 101s 93ms/step - loss: 0.1080 - accuracy: 0.9645 - precision: 0.9684 - recall: 0.9607 - val_loss: 0.2481 - val_accuracy: 0.9286 - val_precision: 0.9357 - val_recall: 0.9213 - lr: 5.0000e-04
+Epoch 15/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.1025 - accuracy: 0.9673 - precision: 0.9710 - recall: 0.9637 - val_loss: 0.2266 - val_accuracy: 0.9381 - val_precision: 0.9426 - val_recall: 0.9335 - lr: 5.0000e-04
+Epoch 16/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0971 - accuracy: 0.9685 - precision: 0.9720 - recall: 0.9652 - val_loss: 0.2707 - val_accuracy: 0.9272 - val_precision: 0.9318 - val_recall: 0.9240 - lr: 5.0000e-04
+Epoch 17/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0886 - accuracy: 0.9713 - precision: 0.9743 - recall: 0.9683 - val_loss: 0.3206 - val_accuracy: 0.9199 - val_precision: 0.9241 - val_recall: 0.9174 - lr: 5.0000e-04
+Epoch 18/110
+1080/1080 [==============================] - 104s 96ms/step - loss: 0.0848 - accuracy: 0.9731 - precision: 0.9760 - recall: 0.9704 - val_loss: 0.2091 - val_accuracy: 0.9408 - val_precision: 0.9458 - val_recall: 0.9371 - lr: 5.0000e-04
+Epoch 19/110
+1080/1080 [==============================] - 104s 96ms/step - loss: 0.0811 - accuracy: 0.9747 - precision: 0.9773 - recall: 0.9722 - val_loss: 0.1852 - val_accuracy: 0.9488 - val_precision: 0.9530 - val_recall: 0.9451 - lr: 5.0000e-04
+Epoch 20/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0782 - accuracy: 0.9750 - precision: 0.9776 - recall: 0.9721 - val_loss: 0.2125 - val_accuracy: 0.9419 - val_precision: 0.9461 - val_recall: 0.9376 - lr: 5.0000e-04
+Epoch 21/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0744 - accuracy: 0.9773 - precision: 0.9796 - recall: 0.9745 - val_loss: 0.1822 - val_accuracy: 0.9506 - val_precision: 0.9543 - val_recall: 0.9480 - lr: 5.0000e-04
+Epoch 22/110
+1080/1080 [==============================] - 102s 94ms/step - loss: 0.0682 - accuracy: 0.9795 - precision: 0.9813 - recall: 0.9771 - val_loss: 0.1829 - val_accuracy: 0.9550 - val_precision: 0.9572 - val_recall: 0.9536 - lr: 5.0000e-04
+Epoch 23/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0650 - accuracy: 0.9800 - precision: 0.9821 - recall: 0.9779 - val_loss: 0.1598 - val_accuracy: 0.9595 - val_precision: 0.9627 - val_recall: 0.9566 - lr: 5.0000e-04
+Epoch 24/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0656 - accuracy: 0.9800 - precision: 0.9818 - recall: 0.9780 - val_loss: 0.1667 - val_accuracy: 0.9583 - val_precision: 0.9605 - val_recall: 0.9566 - lr: 5.0000e-04
+Epoch 25/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0594 - accuracy: 0.9816 - precision: 0.9833 - recall: 0.9796 - val_loss: 0.1464 - val_accuracy: 0.9631 - val_precision: 0.9652 - val_recall: 0.9622 - lr: 5.0000e-04
+Epoch 26/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0598 - accuracy: 0.9823 - precision: 0.9839 - recall: 0.9806 - val_loss: 0.2729 - val_accuracy: 0.9380 - val_precision: 0.9406 - val_recall: 0.9354 - lr: 5.0000e-04
+Epoch 27/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0579 - accuracy: 0.9828 - precision: 0.9844 - recall: 0.9812 - val_loss: 0.2813 - val_accuracy: 0.9421 - val_precision: 0.9441 - val_recall: 0.9409 - lr: 5.0000e-04
+Epoch 28/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0557 - accuracy: 0.9833 - precision: 0.9851 - recall: 0.9819 - val_loss: 0.1901 - val_accuracy: 0.9601 - val_precision: 0.9621 - val_recall: 0.9581 - lr: 5.0000e-04
+Epoch 29/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0551 - accuracy: 0.9833 - precision: 0.9849 - recall: 0.9816 - val_loss: 0.2747 - val_accuracy: 0.9448 - val_precision: 0.9476 - val_recall: 0.9429 - lr: 5.0000e-04
+Epoch 30/110
+1079/1080 [============================>.] - ETA: 0s - loss: 0.0553 - accuracy: 0.9843 - precision: 0.9857 - recall: 0.9827
+Epoch 30: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0554 - accuracy: 0.9843 - precision: 0.9857 - recall: 0.9827 - val_loss: 0.2073 - val_accuracy: 0.9552 - val_precision: 0.9568 - val_recall: 0.9537 - lr: 5.0000e-04
+Epoch 31/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0248 - accuracy: 0.9923 - precision: 0.9928 - recall: 0.9918 - val_loss: 0.1359 - val_accuracy: 0.9710 - val_precision: 0.9721 - val_recall: 0.9703 - lr: 2.5000e-04
+Epoch 32/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0188 - accuracy: 0.9947 - precision: 0.9950 - recall: 0.9943 - val_loss: 0.1628 - val_accuracy: 0.9696 - val_precision: 0.9704 - val_recall: 0.9690 - lr: 2.5000e-04
+Epoch 33/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0196 - accuracy: 0.9942 - precision: 0.9947 - recall: 0.9939 - val_loss: 0.1456 - val_accuracy: 0.9714 - val_precision: 0.9721 - val_recall: 0.9708 - lr: 2.5000e-04
+Epoch 34/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0176 - accuracy: 0.9950 - precision: 0.9952 - recall: 0.9947 - val_loss: 0.1914 - val_accuracy: 0.9711 - val_precision: 0.9716 - val_recall: 0.9708 - lr: 2.5000e-04
+Epoch 35/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0186 - accuracy: 0.9948 - precision: 0.9951 - recall: 0.9945 - val_loss: 0.1746 - val_accuracy: 0.9714 - val_precision: 0.9720 - val_recall: 0.9709 - lr: 2.5000e-04
+Epoch 36/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0191 - accuracy: 0.9951 - precision: 0.9954 - recall: 0.9949 - val_loss: 0.1617 - val_accuracy: 0.9721 - val_precision: 0.9730 - val_recall: 0.9714 - lr: 2.5000e-04
+Epoch 37/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0166 - accuracy: 0.9951 - precision: 0.9955 - recall: 0.9948 - val_loss: 0.1924 - val_accuracy: 0.9720 - val_precision: 0.9724 - val_recall: 0.9716 - lr: 2.5000e-04
+Epoch 38/110
+1080/1080 [==============================] - 99s 91ms/step - loss: 0.0196 - accuracy: 0.9953 - precision: 0.9956 - recall: 0.9952 - val_loss: 0.1680 - val_accuracy: 0.9695 - val_precision: 0.9705 - val_recall: 0.9689 - lr: 2.5000e-04
+Epoch 39/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0186 - accuracy: 0.9954 - precision: 0.9956 - recall: 0.9952 - val_loss: 0.1461 - val_accuracy: 0.9739 - val_precision: 0.9748 - val_recall: 0.9731 - lr: 2.5000e-04
+Epoch 40/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0187 - accuracy: 0.9951 - precision: 0.9955 - recall: 0.9947 - val_loss: 0.1983 - val_accuracy: 0.9702 - val_precision: 0.9711 - val_recall: 0.9691 - lr: 2.5000e-04
+Epoch 41/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0168 - accuracy: 0.9955 - precision: 0.9956 - recall: 0.9952 - val_loss: 0.1691 - val_accuracy: 0.9700 - val_precision: 0.9709 - val_recall: 0.9693 - lr: 2.5000e-04
+Epoch 42/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0184 - accuracy: 0.9954 - precision: 0.9956 - recall: 0.9953 - val_loss: 0.2159 - val_accuracy: 0.9704 - val_precision: 0.9707 - val_recall: 0.9699 - lr: 2.5000e-04
+Epoch 43/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0177 - accuracy: 0.9956 - precision: 0.9958 - recall: 0.9955 - val_loss: 0.1571 - val_accuracy: 0.9722 - val_precision: 0.9733 - val_recall: 0.9716 - lr: 2.5000e-04
+Epoch 44/110
+1079/1080 [============================>.] - ETA: 0s - loss: 0.0154 - accuracy: 0.9960 - precision: 0.9962 - recall: 0.9958
+Epoch 44: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0154 - accuracy: 0.9960 - precision: 0.9962 - recall: 0.9958 - val_loss: 0.1958 - val_accuracy: 0.9703 - val_precision: 0.9709 - val_recall: 0.9701 - lr: 2.5000e-04
+Epoch 45/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0083 - accuracy: 0.9979 - precision: 0.9979 - recall: 0.9978 - val_loss: 0.1931 - val_accuracy: 0.9746 - val_precision: 0.9750 - val_recall: 0.9743 - lr: 1.2500e-04
+Epoch 46/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0069 - accuracy: 0.9983 - precision: 0.9983 - recall: 0.9983 - val_loss: 0.1834 - val_accuracy: 0.9754 - val_precision: 0.9758 - val_recall: 0.9752 - lr: 1.2500e-04
+Epoch 47/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0063 - accuracy: 0.9987 - precision: 0.9987 - recall: 0.9986 - val_loss: 0.1830 - val_accuracy: 0.9761 - val_precision: 0.9767 - val_recall: 0.9760 - lr: 1.2500e-04
+Epoch 48/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0049 - accuracy: 0.9987 - precision: 0.9987 - recall: 0.9986 - val_loss: 0.2122 - val_accuracy: 0.9761 - val_precision: 0.9763 - val_recall: 0.9760 - lr: 1.2500e-04
+Epoch 49/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0042 - accuracy: 0.9988 - precision: 0.9988 - recall: 0.9987 - val_loss: 0.2229 - val_accuracy: 0.9756 - val_precision: 0.9758 - val_recall: 0.9755 - lr: 1.2500e-04
+Epoch 50/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0061 - accuracy: 0.9984 - precision: 0.9984 - recall: 0.9984 - val_loss: 0.2298 - val_accuracy: 0.9745 - val_precision: 0.9746 - val_recall: 0.9745 - lr: 1.2500e-04
+Epoch 51/110
+1080/1080 [==============================] - 103s 96ms/step - loss: 0.0058 - accuracy: 0.9986 - precision: 0.9986 - recall: 0.9986 - val_loss: 0.2445 - val_accuracy: 0.9743 - val_precision: 0.9744 - val_recall: 0.9741 - lr: 1.2500e-04
+Epoch 52/110
+1079/1080 [============================>.] - ETA: 0s - loss: 0.0048 - accuracy: 0.9989 - precision: 0.9989 - recall: 0.9989
+Epoch 52: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+1080/1080 [==============================] - 103s 95ms/step - loss: 0.0048 - accuracy: 0.9989 - precision: 0.9989 - recall: 0.9989 - val_loss: 0.2272 - val_accuracy: 0.9762 - val_precision: 0.9762 - val_recall: 0.9760 - lr: 1.2500e-04
+Epoch 53/110
+1080/1080 [==============================] - 101s 94ms/step - loss: 0.0026 - accuracy: 0.9994 - precision: 0.9994 - recall: 0.9994 - val_loss: 0.2231 - val_accuracy: 0.9771 - val_precision: 0.9774 - val_recall: 0.9769 - lr: 6.2500e-05
+Epoch 54/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0028 - accuracy: 0.9993 - precision: 0.9994 - recall: 0.9993 - val_loss: 0.2328 - val_accuracy: 0.9777 - val_precision: 0.9779 - val_recall: 0.9776 - lr: 6.2500e-05
+Epoch 55/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0021 - accuracy: 0.9995 - precision: 0.9995 - recall: 0.9995 - val_loss: 0.2309 - val_accuracy: 0.9777 - val_precision: 0.9779 - val_recall: 0.9777 - lr: 6.2500e-05
+Epoch 56/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0024 - accuracy: 0.9994 - precision: 0.9994 - recall: 0.9994 - val_loss: 0.2311 - val_accuracy: 0.9778 - val_precision: 0.9780 - val_recall: 0.9777 - lr: 6.2500e-05
+Epoch 57/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0020 - accuracy: 0.9997 - precision: 0.9997 - recall: 0.9997 - val_loss: 0.2503 - val_accuracy: 0.9778 - val_precision: 0.9779 - val_recall: 0.9778 - lr: 6.2500e-05
+Epoch 58/110
+1080/1080 [==============================] - 100s 93ms/step - loss: 0.0018 - accuracy: 0.9996 - precision: 0.9996 - recall: 0.9996 - val_loss: 0.2455 - val_accuracy: 0.9784 - val_precision: 0.9785 - val_recall: 0.9783 - lr: 6.2500e-05
+Epoch 59/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0026 - accuracy: 0.9994 - precision: 0.9994 - recall: 0.9994 - val_loss: 0.2545 - val_accuracy: 0.9781 - val_precision: 0.9782 - val_recall: 0.9781 - lr: 6.2500e-05
+Epoch 60/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0020 - accuracy: 0.9995 - precision: 0.9996 - recall: 0.9995 - val_loss: 0.2721 - val_accuracy: 0.9779 - val_precision: 0.9780 - val_recall: 0.9779 - lr: 6.2500e-05
+Epoch 61/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0017 - accuracy: 0.9997 - precision: 0.9997 - recall: 0.9997 - val_loss: 0.2632 - val_accuracy: 0.9773 - val_precision: 0.9774 - val_recall: 0.9772 - lr: 6.2500e-05
+Epoch 62/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0026 - accuracy: 0.9995 - precision: 0.9995 - recall: 0.9995 - val_loss: 0.2714 - val_accuracy: 0.9765 - val_precision: 0.9767 - val_recall: 0.9765 - lr: 6.2500e-05
+Epoch 63/110
+1079/1080 [============================>.] - ETA: 0s - loss: 0.0020 - accuracy: 0.9996 - precision: 0.9996 - recall: 0.9996
+Epoch 63: ReduceLROnPlateau reducing learning rate to 3.125000148429535e-05.
+1080/1080 [==============================] - 100s 93ms/step - loss: 0.0020 - accuracy: 0.9996 - precision: 0.9996 - recall: 0.9996 - val_loss: 0.2781 - val_accuracy: 0.9775 - val_precision: 0.9777 - val_recall: 0.9775 - lr: 6.2500e-05
+Epoch 64/110
+1080/1080 [==============================] - 99s 91ms/step - loss: 0.0018 - accuracy: 0.9997 - precision: 0.9997 - recall: 0.9997 - val_loss: 0.2758 - val_accuracy: 0.9780 - val_precision: 0.9783 - val_recall: 0.9779 - lr: 3.1250e-05
+Epoch 65/110
+1080/1080 [==============================] - 100s 92ms/step - loss: 0.0020 - accuracy: 0.9996 - precision: 0.9997 - recall: 0.9996 - val_loss: 0.2696 - val_accuracy: 0.9786 - val_precision: 0.9787 - val_recall: 0.9785 - lr: 3.1250e-05
+Epoch 66/110
+1080/1080 [==============================] - 100s 92ms/step - loss: 0.0015 - accuracy: 0.9997 - precision: 0.9997 - recall: 0.9997 - val_loss: 0.2746 - val_accuracy: 0.9783 - val_precision: 0.9785 - val_recall: 0.9783 - lr: 3.1250e-05
+Epoch 67/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0015 - accuracy: 0.9997 - precision: 0.9997 - recall: 0.9997 - val_loss: 0.2789 - val_accuracy: 0.9782 - val_precision: 0.9782 - val_recall: 0.9781 - lr: 3.1250e-05
+Epoch 68/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0016 - accuracy: 0.9997 - precision: 0.9997 - recall: 0.9997 - val_loss: 0.2706 - val_accuracy: 0.9791 - val_precision: 0.9792 - val_recall: 0.9791 - lr: 3.1250e-05
+Epoch 69/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0011 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998 - val_loss: 0.2850 - val_accuracy: 0.9782 - val_precision: 0.9783 - val_recall: 0.9781 - lr: 3.1250e-05
+Epoch 70/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 9.5031e-04 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998 - val_loss: 0.2856 - val_accuracy: 0.9787 - val_precision: 0.9788 - val_recall: 0.9787 - lr: 3.1250e-05
+Epoch 71/110
+1080/1080 [==============================] - 100s 93ms/step - loss: 3.8520e-04 - accuracy: 0.9999 - precision: 0.9999 - recall: 0.9999 - val_loss: 0.2871 - val_accuracy: 0.9784 - val_precision: 0.9785 - val_recall: 0.9784 - lr: 3.1250e-05
+Epoch 72/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0011 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998 - val_loss: 0.2969 - val_accuracy: 0.9782 - val_precision: 0.9783 - val_recall: 0.9782 - lr: 3.1250e-05
+Epoch 73/110
+1079/1080 [============================>.] - ETA: 0s - loss: 8.7312e-04 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998
+Epoch 73: ReduceLROnPlateau reducing learning rate to 1.5625000742147677e-05.
+1080/1080 [==============================] - 99s 92ms/step - loss: 8.7294e-04 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998 - val_loss: 0.2962 - val_accuracy: 0.9783 - val_precision: 0.9783 - val_recall: 0.9783 - lr: 3.1250e-05
+Epoch 74/110
+1080/1080 [==============================] - 101s 93ms/step - loss: 5.7949e-04 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998 - val_loss: 0.2987 - val_accuracy: 0.9787 - val_precision: 0.9787 - val_recall: 0.9787 - lr: 1.5625e-05
+Epoch 75/110
+1080/1080 [==============================] - 101s 94ms/step - loss: 9.8835e-04 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998 - val_loss: 0.3006 - val_accuracy: 0.9788 - val_precision: 0.9788 - val_recall: 0.9787 - lr: 1.5625e-05
+Epoch 76/110
+1080/1080 [==============================] - 103s 95ms/step - loss: 0.0012 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998 - val_loss: 0.3015 - val_accuracy: 0.9786 - val_precision: 0.9788 - val_recall: 0.9786 - lr: 1.5625e-05
+Epoch 77/110
+1080/1080 [==============================] - 99s 92ms/step - loss: 5.2537e-04 - accuracy: 0.9999 - precision: 0.9999 - recall: 0.9999 - val_loss: 0.3099 - val_accuracy: 0.9784 - val_precision: 0.9784 - val_recall: 0.9783 - lr: 1.5625e-05
+Epoch 78/110
+1079/1080 [============================>.] - ETA: 0s - loss: 0.0011 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998
+Epoch 78: ReduceLROnPlateau reducing learning rate to 7.812500371073838e-06.
+1080/1080 [==============================] - 99s 92ms/step - loss: 0.0011 - accuracy: 0.9998 - precision: 0.9998 - recall: 0.9998 - val_loss: 0.3086 - val_accuracy: 0.9785 - val_precision: 0.9787 - val_recall: 0.9785 - lr: 1.5625e-05
+2025-07-10 14:58:45.567955: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 166740992 exceeds 10% of free system memory.
+69070/69070 [==============================] - 157s 2ms/step - loss: 0.2706 - accuracy: 0.9791 - precision: 0.9792 - recall: 0.9791
+Validation Loss: 0.2706, Validation Accuracy: 0.9791, Validation Precision: 0.9792, Validation Recall: 0.9791
+WARNING:tensorflow:Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches (in this case, 69070 batches). You may need to use the repeat() function when building your dataset.
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 19). These functions will not be directly callable after loading.
+2025-07-10 15:01:48.756879: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:362] Ignored output_format.
+2025-07-10 15:01:48.756917: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:365] Ignored drop_control_dependency.
+2025-07-10 15:01:48.758344: I tensorflow/cc/saved_model/reader.cc:43] Reading SavedModel from: /tmp/tmpjugczfqd
+2025-07-10 15:01:48.786394: I tensorflow/cc/saved_model/reader.cc:81] Reading meta graph with tags { serve }
+2025-07-10 15:01:48.786432: I tensorflow/cc/saved_model/reader.cc:122] Reading SavedModel debug info (if present) from: /tmp/tmpjugczfqd
+2025-07-10 15:01:48.848629: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:354] MLIR V1 optimization pass is not enabled
+2025-07-10 15:01:48.872441: I tensorflow/cc/saved_model/loader.cc:228] Restoring SavedModel bundle.
+2025-07-10 15:01:49.408243: I tensorflow/cc/saved_model/loader.cc:212] Running initialization op on SavedModel bundle at path: /tmp/tmpjugczfqd
+2025-07-10 15:01:49.592709: I tensorflow/cc/saved_model/loader.cc:301] SavedModel load for tags { serve }; Status: success: OK. Took 834375 microseconds.
+2025-07-10 15:01:49.921927: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:263] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+Input details: [{'name': 'serving_default_input_1:0', 'index': 0, 'shape': array([ 1, 32, 44,  1], dtype=int32), 'shape_signature': array([-1, 32, 44,  1], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}, 'sparsity_parameters': {}}]
+Output details: [{'name': 'StatefulPartitionedCall:0', 'index': 159, 'shape': array([1, 5], dtype=int32), 'shape_signature': array([-1,  5], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}, 'sparsity_parameters': {}}]
+Training completed in time:  2:13:38.874203
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2025-07-10 15:01:50.661675: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 389002240 exceeds 10% of free system memory.
+2159/2159 [==============================] - 35s 16ms/step - loss: 1.8963e-07 - accuracy: 1.0000 - precision: 1.0000 - recall: 1.0000
+Training Accuracy:  1.0
+926/926 [==============================] - 15s 16ms/step - loss: 0.2706 - accuracy: 0.9791 - precision: 0.9792 - recall: 0.9791
+Testing Accuracy:  0.9790583252906799
+926/926 [==============================] - 15s 16ms/step
+0
+0
+Confusion matrix, without normalization
+[[5740   18   91   27   57]
+ [  25 5846   13   14   18]
+ [  56   13 5815    9   41]
+ [  20   19    5 5831   11]
+ [  60   29   62   32 5754]]
+
+Classification report for MfCCs + CNN for fold1:
+                               precision    recall  f1-score   support
+
+                queen_absent       0.97      0.97      0.97      5933
+queen_present_newly_accepted       0.99      0.99      0.99      5916
+      queen_present_original       0.97      0.98      0.98      5934
+      queen_present_rejected       0.99      0.99      0.99      5886
+           unknown_directory       0.98      0.97      0.97      5937
+
+                    accuracy                           0.98     29606
+                   macro avg       0.98      0.98      0.98     29606
+                weighted avg       0.98      0.98      0.98     29606
+
+rounded_predictions: [0 0 0 ... 3 4 4]
+rounded_labels: [0 0 0 ... 4 4 4]
+Confusion matrix, without normalization
+[[5740   18   91   27   57]
+ [  25 5846   13   14   18]
+ [  56   13 5815    9   41]
+ [  20   19    5 5831   11]
+ [  60   29   62   32 5754]]
+
+Classification report:
+                               precision    recall  f1-score   support
+
+                queen_absent       0.97      0.97      0.97      5933
+queen_present_newly_accepted       0.99      0.99      0.99      5916
+      queen_present_original       0.97      0.98      0.98      5934
+      queen_present_rejected       0.99      0.99      0.99      5886
+           unknown_directory       0.98      0.97      0.97      5937
+
+                    accuracy                           0.98     29606
+                   macro avg       0.98      0.98      0.98     29606
+                weighted avg       0.98      0.98      0.98     29606
+
+Accuracy:  0.9790582989934473
+              precision    recall  f1-score       support
+0              0.972716  0.967470  0.970086   5933.000000
+1              0.986667  0.988168  0.987417   5916.000000
+2              0.971433  0.979946  0.975671   5934.000000
+3              0.986132  0.990656  0.988389   5886.000000
+4              0.978405  0.969176  0.973769   5937.000000
+accuracy       0.979058  0.979058  0.979058      0.979058
+macro avg      0.979071  0.979083  0.979066  29606.000000
+weighted avg   0.979055  0.979058  0.979046  29606.000000
+
+Process finished with exit code 0
