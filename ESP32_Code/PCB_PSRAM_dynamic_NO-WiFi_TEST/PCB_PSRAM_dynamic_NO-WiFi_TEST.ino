@@ -1,15 +1,15 @@
 #include "Arduino.h"
-#include <WiFi.h>
-#include <AsyncMqttClient.h>
+//#include <WiFi.h>
+//#include <AsyncMqttClient.h>
 #include "driver/i2s.h"
-#include <ArduinoJson.h> // Include this for JSON parsing
+//#include <ArduinoJson.h> // Include this for JSON parsing
 #include "device.h"
-#include <time.h>
+//#include <time.h>
 #include <esp_system.h>
 #include <esp_heap_caps.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
-#include "esp_sleep.h"
+//#include "esp_sleep.h"
 #include "sd_read_write.h"
 #include "SD_MMC.h"
 #include "RTClib.h"
@@ -752,6 +752,9 @@ void i2s_record_and_notify(void *arg) {
 }
 
 
+
+/*
+
 // Function to deactivate WiFi
 void deactivate_wifi() {
     print_debug("deactivate_wifi()");
@@ -788,6 +791,10 @@ void setup_wifi(){
 	// Initialize NTP
 	configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
 }
+*/
+
+
+
 
 
 

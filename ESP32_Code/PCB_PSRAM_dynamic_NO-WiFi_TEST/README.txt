@@ -1,3 +1,8 @@
+TEST INFOS TO CHECK IF THE DEV BOARD WORKS CORRECTLY
+
+
+
+
 
 
 
@@ -128,15 +133,30 @@ ________________________________________________________________________________
 
 
 
+
+
+								On Arduino-IDE go to
+
+
+
+
+
+
+File-->Preferences-->Additional boards manager URLs and insert:     https://dl.espressif.com/dl/package_esp32_index.json
+
+as depicted in the image Screen "Arduino-IDE.png".
+
+
+
+For the libraries used see the image "Libraries_installed.png".
+
+For the board configurations, see the image "Board_Arduino-IDE_configuration.png".
+
+
+
 AFTER UPLOADING THE TEST CODE, 'TEST RGB LED', TOGETHER WITH 'TEST H3' AND 'TEST H4' WILL START.
 AFTER THAT, 10 SECONDS WILL ELAPSE TILL THE BATTERY VOLTAGE MONITORING (THE RGB LED WILL TURN WATER-GREEN DURING THE BATTERY MONITORING) AND ALSO A CONSECUTIVE AUDIO RECORDING WILL START.
 THEN, THE NEXT BATTERY MONITORINGS + AUDIO RECORDINGS WILL BE DONE EVERY 10 SECONDS.
-	
-	
-	
-	
-	
-	
 	
 	
 	

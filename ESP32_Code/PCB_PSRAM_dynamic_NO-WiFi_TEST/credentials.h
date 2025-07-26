@@ -3,10 +3,10 @@
 
 
 //WIFI
-const char* ssid_wifi = "iliadbox-616A92";
-const char* password_wifi = "t7bkbq2brbqnzf6tqzmmvc";
-//const char* ssid_wifi = "narzo-50-5G";
-//const char* password_wifi = "w7vufgqm";
+const char* ssid_wifi = "*******";
+const char* password_wifi = "*******";
+//const char* ssid_wifi = "*******";
+//const char* password_wifi = "*******";
 
 
 
