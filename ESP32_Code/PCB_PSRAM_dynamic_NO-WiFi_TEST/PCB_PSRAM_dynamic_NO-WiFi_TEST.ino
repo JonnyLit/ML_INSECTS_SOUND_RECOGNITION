@@ -1091,10 +1091,10 @@ void loop() {
     i2sInit(); // Reinitialize I2S for future recordings
 
 
-
+    unsigned short int sec_after_H2_H3_3V3_ENABLE = 3;
     digitalWrite(BATTERY_MONITOR_ENABLE, HIGH);
     Serial.printf("\n\nWaiting %d seconds before checking the battery voltage and doing a consecutive audio recording . . . .\n\n", TIME_BETWEEN_RECORDINGS);
-    delay(TIME_BETWEEN_RECORDINGS*1000);
+    delay((TIME_BETWEEN_RECORDINGS-sec_after_H2_H3_3V3_ENABLE)*1000);
     get_Battery_Voltage();
 
 
@@ -1107,7 +1107,7 @@ void loop() {
 
     digitalWrite(H2_H3_3V3_ENABLE, LOGIC_H2_H3_3V3_ENABLE_VALUE); // enable H2(so also the microphone) and H3
     digitalWrite(SD_CARD_3V3_ENABLE, LOGIC_SD_CARD_3V3_ENABLE_VALUE); //enable the micro-SD-CARD slot
-
+    delay(sec_after_H2_H3_3V3_ENABLE*1000);
     BaseType_t result = xTaskCreate(i2s_record_and_notify, "i2s_record_and_notify", esp32_device.get_I2S_read_len(), (void*)audio_data, 2, &i2sTaskHandle);
     if (result != pdPASS) {
       Serial.println("Task creation failed");
