@@ -18,8 +18,13 @@ mode = 0 #
          # 5 - CQT without mean spectrogram (input size 513x44)
 
 #some global variables
-class_names= ['queen_absent', 'queen_present_newly_accepted', 'queen_present_original', 'queen_present_rejected', 'unknown_directory']
-target_names= ['queen_absent', 'queen_present_newly_accepted', 'queen_present_original', 'queen_present_rejected', 'unknown_directory']
+#class 0: queen_absent
+#class 1: queen_present_newly_accepted
+#class 2: queen_present_original
+#class 3: queen_present_rejected
+#class 4: unknown_directory
+class_names= ['queen_absent', 'queen_present_newly_accepted', 'queen_present_original', 'queen_present_rejected', 'unknown']
+target_names= ['queen_absent', 'queen_present_newly_accepted', 'queen_present_original', 'queen_present_rejected', 'unknown']
 #we've got five labels, so:
 n_outputs = 5 # originally 2
  #here you can choose value of B:
