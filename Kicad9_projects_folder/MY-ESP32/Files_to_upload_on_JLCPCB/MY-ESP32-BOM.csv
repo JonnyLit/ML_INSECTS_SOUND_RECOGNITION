@@ -1,0 +1,40 @@
+Designator,Comment,Footprint,JLCPCB Part #
+"C1, C2, C5, C7, C8, C9, C10, C12, C15, C16, C17, C18",104,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C49678
+C3,10uF ±10% 16V,My_Personal_Footprints_Library:CAP_10uF_CL21A106KOQNNNE,C1713
+C4,22uF ±20% 25V,My_Personal_Footprints_Library:CAP_22uF_CL21A226MAQNNNE,C45783
+C6,1uF ±10% 50V,My_Personal_Footprints_Library:CL10A105KB8NNNC,C15849
+"C11, C13",10uF ±10% 10V,My_Personal_Footprints_Library:CL10A106KP8NNNC,C19702
+C14,4.7uF,My_Personal_Footprints_Library:CL10A475KP8NNNC,C1705
+CARD1,micro SD-CARD TF PUSH,My_Personal_Footprints_Library:TF-SMD_TF-PUSH-micro_SD_card_slot,C393941
+"D1, D2, D3",RB168MM-40TR,My_Personal_Footprints_Library:RB168MM-40TR,C509936
+"H1, H2",Header-Female-2.54_1x3,My_Personal_Footprints_Library:Header-Female-2.54mm_1x3,C146243
+"H3, H4",Header-Female-2.54_1x6,My_Personal_Footprints_Library:Header-Female-2.54_1x6,C40877
+H5,Header-Female-2.54_1x2,My_Personal_Footprints_Library:Header-Female-2.54_1x2,C49661
+H6,Header-Female-2.54_1x2,My_Personal_Footprints_Library:Header-Female-2.54_1x2,C49661
+"J1, J2",SM04B-SRSS-TB,My_Personal_Footprints_Library:CONN_SM04B-SRSS-TB_JST,
+L_B-B1,2.2uH ±20% 3.2A,My_Personal_Footprints_Library:IND_2.2uH_SWPA4018S2R2MT,C50543
+LED1,TJ-S1615CY6TGLCCSRGB-A5,My_Personal_Footprints_Library:TJ-S1615CY6TGLCCSRGB-A5,C601684
+"Q1, Q2",2N3904S-RTK/PS,My_Personal_Footprints_Library:2n3904S-RTKPS,C18536
+"Q3, Q6, Q9, Q11",N-MOSFET-ENH-2N7002,My_Personal_Footprints_Library:2N7002,C8545
+"Q4, Q7, Q8, Q10",P-MOSFET-ENH-BSS84LT1G,My_Personal_Footprints_Library:BSS84LT1G,C82079
+Q5,PMOSFET-DMP1045U-7,My_Personal_Footprints_Library:PMOSFET-DMP1045U-7,C177033
+"R1, R2, R7, R8, R9, R13, R14, R15, R25, R29, R32",10K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17414
+R3,22K1,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C2930182
+R4,47K5,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C245335
+"R5, R6",1K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17513
+"R16, R24, R26, R31",100,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17408
+R17,220Ω,My_Personal_Footprints_Library:0603WAJ0221T5E,C1226
+"R18, R19, R20, R21, R22, R23",7.5kΩ,My_Personal_Footprints_Library:0603WAF7501T5E,C23234
+"R27, R28, R30",4.7kΩ ±1% 100mW,My_Personal_Footprints_Library:0603WAF4701T5E,C23162
+"R33, R34",36Ω ±1% 62.5mW,My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE,C2906935
+R35,150Ω ±1% 62.5mW,My_Personal_Footprints_Library:RES_10K_0402WGF1002TCE,C138054
+"SW1, SW2",KMR211NGLFS,My_Personal_Footprints_Library:KMR211NGLFS,C221676
+SW3,SPDT,My_Personal_Footprints_Library:SS-12F49-G050,C2876010
+"TP1, TP2, TP3, TP4, TP5",TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+U1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,C2827654
+U2,CONN-TH_S2B-PH-K-S-GW,My_Personal_Footprints_Library:CONN-TH_S2B-PH-K-S-GW,C157932
+U3,CP2102N-Axx-xQFN28,Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm,C964632
+U4,DFR0819,My_Personal_Footprints_Library:DFR0819,
+U5,TPS63001DRCR,My_Personal_Footprints_Library:TPS63001DRCR,C28060
+U6,ESP32-WROVER-E-N4R8,My_Personal_Footprints_Library:WIFI-SMD_ESP32-WROVER-E-N4R8,C967023
+U7,USB4110GFA,My_Personal_Footprints_Library:GCT_USB4110GFA,
