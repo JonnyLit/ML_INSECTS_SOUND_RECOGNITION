@@ -1,0 +1,4 @@
+prova:
+	Config14_70Ksamples, epoch110, batch196, patience3
+	Config14_70Ksamples, epoch110, batch164, patience3
+	Config14_70Ksamples, epoch110, batch128, patience3

@@ -226,10 +226,13 @@ class Device:
 
     def update_battery_level(self, battery_level):
         print_debug("update_battery_level")
+        self.battery_level = battery_level
+        """
         if 0.0 <= battery_level <= 100.0:
             self.battery_level = battery_level
         else:
             raise ValueError("Battery level must be between 0.0 and 100.0.")
+        """
 
     def update_state(self, state):
         print_debug("update_state")
@@ -316,6 +319,10 @@ class Device:
 
         :return: str - JSON string representation of the Client object
         """
+
+        battery_level = random.choice([2.9, 3, 3.1, 3.3, 3.5, 3.7, 3.9, 4.2])
+        esp32_device.update_battery_level(battery_level)
+
         esp32_data = {
             "device_model": self.device_model,
             "device_id": self.device_id,
@@ -518,7 +525,7 @@ esp32_device = Device(
     device_id=None,
     fixed_id="f3-dsfagafvbcv",
     location="Hive3",
-    battery_level=75.5,
+    battery_level=3.3,
     state="idle",
     ip_address="192.168.1.100",
     audio_data_topic_key=None,
@@ -549,7 +556,7 @@ def set_device_default_values(Device):
     Device.device_id = None
     Device.fixed_id = "f3-dsfagafvbcv"
     Device.location = "Hive3"
-    Device.battery_level = 75.5
+    Device.battery_level = 3.3
     Device.state = "idle"
     Device.ip_address = "192.168.1.100"
     Device.audio_data_topic_key = None

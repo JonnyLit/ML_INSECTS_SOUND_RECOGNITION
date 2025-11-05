@@ -1,0 +1,22 @@
+Classification Report:
+
+                              precision    recall  f1-score   support
+
+                queen_absent       0.99      0.99      0.99     37980
+queen_present_newly_accepted       1.00      1.00      1.00     37980
+      queen_present_original       0.99      0.99      0.99     37980
+      queen_present_rejected       0.99      0.99      0.99     37980
+
+                    accuracy                           0.99    151920
+                   macro avg       0.99      0.99      0.99    151920
+                weighted avg       0.99      0.99      0.99    151920
+
+Confusion Matrix:
+ [[37708    33   123   116]
+ [   53 37815    26    86]
+ [  143    27 37755    55]
+ [  139    80    45 37716]]
+Folder/Label: queen_present_rejected
+  Total samples: 37980
+  Misclassifications: 37980
+  Accuracy: 0.00%

@@ -224,10 +224,13 @@ class Device:
 
     def update_battery_level(self, battery_level):
         print_debug("update_battery_level")
+        self.battery_level = battery_level
+        """
         if 0.0 <= battery_level <= 100.0:
             self.battery_level = battery_level
         else:
             raise ValueError("Battery level must be between 0.0 and 100.0.")
+        """
 
     def update_state(self, state):
         print_debug("update_state")
@@ -315,6 +318,10 @@ class Device:
 
         :return: str - JSON string representation of the Client object
         """
+
+        battery_level = random.choice([2.9, 3, 3.1, 3.3, 3.5, 3.7, 3.9, 4.2])
+        esp32_device.update_battery_level(battery_level)
+
         esp32_data = {
             "device_model": self.device_model,
             "device_id": self.device_id,
@@ -347,7 +354,7 @@ class Device:
         return esp32_data  # Return the dictionary directly instead of JSON string
 
     def __str__(self):
-        return f"Client(device_model: {self.device_model}, device_id: {self.device_id}, fixed_id: {self.fixed_id}, location: {self.location}, battery_level: {self.battery_level}%, state: {self.state}, ip_address: {self.ip_address}, audio_data_topic_key: {self.audio_data_topic_key}, invitation_id: {self.invitation_id}, subscribed_flag: {self.subscribed_flag}, communication_id: {self.communication_id}, enable_audio_record: {self.enable_audio_record}, last_record_date: {self.last_record_date}, last_record_epoch: {self.last_record_epoch}, net_password: {self.net_password}, start_recording_now: {self.start_recording_now}, start_sending_audio_now: {self.start_sending_audio_now}, currently_sending_audio: {self.currently_sending_audio}, new_audio_data_is_available: {self.new_audio_data_is_available}, deep_sleep_time: {self.deep_sleep_time}, max_time_on: {self.max_time_on}, epoch_time_at_subscription: {self.epoch_time_at_subscription}, max_time_for_successful_subscription: {self.max_time_for_successful_subscription})"
+        return f"Client(device_model: {self.device_model}, device_id: {self.device_id}, fixed_id: {self.fixed_id}, location: {self.location}, battery_level: {self.battery_level}V, state: {self.state}, ip_address: {self.ip_address}, audio_data_topic_key: {self.audio_data_topic_key}, invitation_id: {self.invitation_id}, subscribed_flag: {self.subscribed_flag}, communication_id: {self.communication_id}, enable_audio_record: {self.enable_audio_record}, last_record_date: {self.last_record_date}, last_record_epoch: {self.last_record_epoch}, net_password: {self.net_password}, start_recording_now: {self.start_recording_now}, start_sending_audio_now: {self.start_sending_audio_now}, currently_sending_audio: {self.currently_sending_audio}, new_audio_data_is_available: {self.new_audio_data_is_available}, deep_sleep_time: {self.deep_sleep_time}, max_time_on: {self.max_time_on}, epoch_time_at_subscription: {self.epoch_time_at_subscription}, max_time_for_successful_subscription: {self.max_time_for_successful_subscription})"
 
 
 
@@ -534,7 +541,7 @@ esp32_device = Device(
     device_id=None,
     fixed_id="f1-dsfagafvbcv",
     location="Hive1",
-    battery_level=75.5,
+    battery_level=3.6,
     state="idle",
     ip_address="192.168.1.100",
     audio_data_topic_key=None,
@@ -566,7 +573,7 @@ def set_device_default_values(Device):
         Device.device_id=None
         Device.fixed_id="f1-dsfagafvbcv"
         Device.location="Hive1"
-        Device.battery_level=75.5
+        Device.battery_level=3.6
         Device.state="idle"
         Device.ip_address="192.168.1.100"
         Device.audio_data_topic_key=None

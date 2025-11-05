@@ -1,0 +1,83 @@
+SBCM dataset:Smart Bee Colony Monitor: Clips of Beehive Sounds at the link: https://www.kaggle.com/datasets/annajyang/beehive-sounds/discussion?sort=undefined
+# ACCEPTANCE VALUES
+0 - no queen present
+1 - not accepted/rejected
+2 - accepted
+
+# STATUS
+0 - queenright/original queen --> folder: queen present or original queen
+1 - not present --> folder: queen not present
+2 - present and rejected --> folder: queen present and rejected
+3 - present and newly accepted --> folder: queen present and newly accepted
+
+
+Hi, very interesting dataset.
+Could you explain a bit more the meaning of features, for example:
+What are the Queen Aceptance values 0 to 2,
+What are the Queen Status 0 to 3?
+
+Anna Yang
+Dataset Creator
+
+Posted 2 years ago
+
+Sure! The queen acceptance values indicate whether the queen is accepted by the hive (0 - no queen present, 1 - not accepted/rejected, 2 - accepted).
+Queen status is a combined value for queen presence and acceptance (0 - queenright/original queen, 1 - not present, 2 - present and rejected, 3 - present and newly accepted)
+Alex Kudin
+
+Posted 2 years ago
+
+Hi, great dataset. Could you please explain also 'target' (6 levels)? I thought that detecting the queen's presence and status was the target feature, but what does the certain 'target' feature mean?
+Alex Kudin
+
+Posted 2 years ago
+
+Can you please also explain feature "time"?
+Anna Yang
+Dataset Creator
+
+Posted 2 years ago
+
+Yes, the "target" feature was another proposed way to combine queen presence and acceptance, but the "status" feature was a better way to do it. "Time" is the time of day (24 hours) scaled to values between 0 and 1.
+Hector De Sosa
+
+Posted 10 months ago
+
+Hello, so the status is the best classification to know what the situation of the queen is like in the hive?
+I'm also interested in knowing if the sensor was inside the hive or at the entrance? Thanks greetings.
+Anna Yang
+Dataset Creator
+
+Posted 8 months ago
+
+Hi Hector! Yes, "status" would be the indicator of the queen situation. The sensor was placed in the telescoping cover of the hive, which is below the outer cover but above the frames. The telescoping cover was sealed with wire mesh so bees couldn't get to the sensors, which decreased bee interference with the microphone as well.
+Junaidali Barodawala
+
+Posted a year ago
+
+Hey, this is a very comprehensive dataset by I have some queries:
+
+    Firstly, could you please tell me how was it recorded whether the queen bee has been accepted or rejected, or whether it was present or absent from the hive?
+    Could you please tell me how does the dataset relate to colony collapse disorder? Because I don't see any variable which classifies whether the hive has faced colony collapse disorder or not.
+    Lastly, is there any data on when were these hives affected by pesticides, or by varroa mite?
+
+I'm trying to do a dissertation on this data so this information will be of great help.
+Anna Yang
+Dataset Creator
+
+Posted a year ago
+
+Hi Junaidali, I'll try my best to answer your questions clearly.
+
+    To confirm whether the queen was accepted or rejected, I conducted a daily hive inspection. I observed the bees’ reaction towards the queen in the cage: Are they attempting to sting or ball (suffocate) her? Are they calm or excited? If there are 2+ layers of bees around the cage, it’s an indication that they are aggressive and hostile towards the queen. In the 24-hour period that the queen’s status changes from rejected to accepted (between hive inspections), there was ambiguity around the exact time that the queen became accepted. As a result, I discarded the data from this uncertain period.
+
+    I don't believe I ever noted that the dataset related to colony collapse disorder. However, I can describe how it could be indirectly related. Colony collapse disorder, a phenomenon that occurs when the majority of bees in a colony mysteriously disappear, has been on the decline in recent years. Initially, it was very concerning for scientists and beekeepers because bees were dying, seemingly without reason. Despite it being not as severe now, overall colony loss is still a major concern to beekeepers, and it has been reported that queen failure -- when a colony is headed by a queen bee that is infertile or weak -- has been consistently identified as one of the top four causes of colony mortality, annually, since 2009 (from the annual study conducted by the Canadian Association of Professional Apiculturists). This dataset records the difference in sound between queen states, addressing the widespread issue of queen failure.
+
+    No, I didn't collect data on varroa mites or pesticide exposure for this dataset. In fact, pesticide exposure is quite difficult to track, especially since the data was mostly collected on suburban backyard beehives. It's near impossible to know whether nearby residences treat their gardens with chemical or organic pesticides, and even where the bees were visiting, since they can fly 3-4 miles just to collect pollen and nectar.
+
+I hope this helped! Please let me know if you have any further questions.
+Junaidali Barodawala
+
+Posted a year ago
+
+That was very helpful. Thank you!

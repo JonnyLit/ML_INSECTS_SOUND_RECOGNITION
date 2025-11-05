@@ -1,0 +1,227 @@
+/home/zord/anaconda3/bin/python /home/zord/PycharmProjects/SBCM_4_classes/main.py 
+2025-08-15 09:53:00.596847: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+features_queen_absent.shape: (20317, 32, 44)
+queen_queen_absent.shape: (20317,)
+features_queen_present_newly_accepted.shape: (20372, 32, 44)
+queen_queen_present_newly_accepted.shape: (20372,)
+features_queen_present_original.shape: (20361, 32, 44)
+queen_queen_present_original.shape: (20361,)
+features_queen_present_rejected.shape: (20314, 32, 44)
+queen_queen_present_rejected.shape: (20314,)
+Training...
+2025-08-15 09:56:00.370074: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+shared_dense_one.shape=8
+shared_dense_two.shape=32
+avg_pool.shape=(None, 32)
+max_pool.shape=(None, 32)
+avg_dense.shape=(None, 32)
+max_dense.shape=(None, 32)
+channel_attention.shape=(None, 32)
+channel_attention.shape=(None, 32)
+channel_attention.shape=(None, 1, 1, 32)
+x.shape=(None, 8, 11, 32)
+avg_pool_spatial.shape=(None, 8, 11, 1)
+max_pool_spatial.shape=(None, 8, 11, 1)
+concat.shape=(None, 8, 11, 2)
+spatial_attention.shape=(None, 8, 11, 1)
+x.shape=(None, 8, 11, 32)
+shared_dense_one.shape=16
+shared_dense_two.shape=64
+avg_pool.shape=(None, 64)
+max_pool.shape=(None, 64)
+avg_dense.shape=(None, 64)
+max_dense.shape=(None, 64)
+channel_attention.shape=(None, 64)
+channel_attention.shape=(None, 64)
+channel_attention.shape=(None, 1, 1, 64)
+x.shape=(None, 4, 6, 64)
+avg_pool_spatial.shape=(None, 4, 6, 1)
+max_pool_spatial.shape=(None, 4, 6, 1)
+concat.shape=(None, 4, 6, 2)
+spatial_attention.shape=(None, 4, 6, 1)
+x.shape=(None, 4, 6, 64)
+shared_dense_one.shape=32
+shared_dense_two.shape=128
+avg_pool.shape=(None, 128)
+max_pool.shape=(None, 128)
+avg_dense.shape=(None, 128)
+max_dense.shape=(None, 128)
+channel_attention.shape=(None, 128)
+channel_attention.shape=(None, 128)
+channel_attention.shape=(None, 1, 1, 128)
+x.shape=(None, 2, 3, 128)
+avg_pool_spatial.shape=(None, 2, 3, 1)
+max_pool_spatial.shape=(None, 2, 3, 1)
+concat.shape=(None, 2, 3, 2)
+spatial_attention.shape=(None, 2, 3, 1)
+x.shape=(None, 2, 3, 128)
+X_train.shape
+56952 32
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(56952, 32, 44, 1) (56952, 1) (24412, 32, 44, 1) (24412, 1)
+le: LabelEncoder()
+after LabelEncoder()
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(56952, 32, 44, 1) (56952, 1) (24412, 32, 44, 1) (24412, 1)
+after Y_train = to_categorical(le.fit_transform(Y_train))
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(56952, 32, 44, 1) (56952, 4) (24412, 32, 44, 1) (24412, 1)
+before model.evaluate and after Y_test = to_categorical(le.fit_transform(Y_test))
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(56952, 32, 44, 1) (56952, 4) (24412, 32, 44, 1) (24412, 4)
+/home/zord/anaconda3/lib/python3.11/site-packages/sklearn/preprocessing/_label.py:110: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+/home/zord/anaconda3/lib/python3.11/site-packages/sklearn/preprocessing/_label.py:110: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+763/763 [==============================] - 22s 27ms/step - loss: 1.3862 - accuracy: 0.2474 - precision: 0.0000e+00 - recall: 0.0000e+00
+after model.evaluate
+X_train.shape, Y_train.shape, X_test.shape, Y_test.shape
+(56952, 32, 44, 1) (56952, 4) (24412, 32, 44, 1) (24412, 4)
+Predicted accuracy:  24.74192976951599
+Epoch 1/110
+890/890 [==============================] - 257s 283ms/step - loss: 1.0071 - accuracy: 0.5588 - precision: 0.7336 - recall: 0.3619 - val_loss: 2.1513 - val_accuracy: 0.3985 - val_precision: 0.4198 - val_recall: 0.3509 - lr: 5.0000e-04
+Epoch 2/110
+890/890 [==============================] - 269s 302ms/step - loss: 0.6725 - accuracy: 0.7426 - precision: 0.8031 - recall: 0.6603 - val_loss: 4.4534 - val_accuracy: 0.3519 - val_precision: 0.3507 - val_recall: 0.3374 - lr: 5.0000e-04
+Epoch 3/110
+890/890 [==============================] - 269s 302ms/step - loss: 0.5594 - accuracy: 0.7913 - precision: 0.8344 - recall: 0.7376 - val_loss: 0.5842 - val_accuracy: 0.7846 - val_precision: 0.8199 - val_recall: 0.7505 - lr: 5.0000e-04
+Epoch 4/110
+890/890 [==============================] - 274s 308ms/step - loss: 0.5014 - accuracy: 0.8145 - precision: 0.8507 - recall: 0.7711 - val_loss: 0.6436 - val_accuracy: 0.7698 - val_precision: 0.7902 - val_recall: 0.7486 - lr: 5.0000e-04
+Epoch 5/110
+890/890 [==============================] - 278s 313ms/step - loss: 0.4531 - accuracy: 0.8328 - precision: 0.8642 - recall: 0.7970 - val_loss: 1.7402 - val_accuracy: 0.5797 - val_precision: 0.5914 - val_recall: 0.5669 - lr: 5.0000e-04
+Epoch 6/110
+890/890 [==============================] - 273s 307ms/step - loss: 0.4256 - accuracy: 0.8446 - precision: 0.8710 - recall: 0.8137 - val_loss: 0.8737 - val_accuracy: 0.6803 - val_precision: 0.7081 - val_recall: 0.6478 - lr: 5.0000e-04
+Epoch 7/110
+890/890 [==============================] - 272s 306ms/step - loss: 0.3996 - accuracy: 0.8530 - precision: 0.8779 - recall: 0.8258 - val_loss: 0.3892 - val_accuracy: 0.8463 - val_precision: 0.8636 - val_recall: 0.8254 - lr: 5.0000e-04
+Epoch 8/110
+890/890 [==============================] - 275s 309ms/step - loss: 0.3823 - accuracy: 0.8610 - precision: 0.8821 - recall: 0.8347 - val_loss: 2.8643 - val_accuracy: 0.4015 - val_precision: 0.4088 - val_recall: 0.3845 - lr: 5.0000e-04
+Epoch 9/110
+890/890 [==============================] - 277s 311ms/step - loss: 0.3607 - accuracy: 0.8693 - precision: 0.8899 - recall: 0.8467 - val_loss: 2.5180 - val_accuracy: 0.5034 - val_precision: 0.5117 - val_recall: 0.4946 - lr: 5.0000e-04
+Epoch 10/110
+890/890 [==============================] - 267s 300ms/step - loss: 0.3450 - accuracy: 0.8715 - precision: 0.8912 - recall: 0.8506 - val_loss: 2.4674 - val_accuracy: 0.5430 - val_precision: 0.5502 - val_recall: 0.5264 - lr: 5.0000e-04
+Epoch 11/110
+890/890 [==============================] - 267s 300ms/step - loss: 0.3295 - accuracy: 0.8797 - precision: 0.8974 - recall: 0.8618 - val_loss: 0.7800 - val_accuracy: 0.7871 - val_precision: 0.8003 - val_recall: 0.7752 - lr: 5.0000e-04
+Epoch 12/110
+890/890 [==============================] - ETA: 0s - loss: 0.3227 - accuracy: 0.8818 - precision: 0.8987 - recall: 0.8635
+Epoch 12: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+890/890 [==============================] - 263s 295ms/step - loss: 0.3227 - accuracy: 0.8818 - precision: 0.8987 - recall: 0.8635 - val_loss: 0.8764 - val_accuracy: 0.7420 - val_precision: 0.7524 - val_recall: 0.7309 - lr: 5.0000e-04
+Epoch 13/110
+890/890 [==============================] - 260s 292ms/step - loss: 0.2665 - accuracy: 0.9029 - precision: 0.9165 - recall: 0.8891 - val_loss: 0.5961 - val_accuracy: 0.7901 - val_precision: 0.8047 - val_recall: 0.7763 - lr: 2.5000e-04
+Epoch 14/110
+890/890 [==============================] - 253s 285ms/step - loss: 0.2538 - accuracy: 0.9076 - precision: 0.9197 - recall: 0.8950 - val_loss: 0.3898 - val_accuracy: 0.8608 - val_precision: 0.8712 - val_recall: 0.8496 - lr: 2.5000e-04
+Epoch 15/110
+890/890 [==============================] - 261s 293ms/step - loss: 0.2461 - accuracy: 0.9106 - precision: 0.9217 - recall: 0.8987 - val_loss: 2.6138 - val_accuracy: 0.5342 - val_precision: 0.5401 - val_recall: 0.5277 - lr: 2.5000e-04
+Epoch 16/110
+890/890 [==============================] - 276s 310ms/step - loss: 0.2374 - accuracy: 0.9150 - precision: 0.9255 - recall: 0.9044 - val_loss: 0.3972 - val_accuracy: 0.8594 - val_precision: 0.8704 - val_recall: 0.8492 - lr: 2.5000e-04
+Epoch 17/110
+890/890 [==============================] - 285s 321ms/step - loss: 0.2306 - accuracy: 0.9165 - precision: 0.9264 - recall: 0.9066 - val_loss: 4.4460 - val_accuracy: 0.3654 - val_precision: 0.3684 - val_recall: 0.3617 - lr: 2.5000e-04
+Epoch 18/110
+890/890 [==============================] - 268s 301ms/step - loss: 0.2252 - accuracy: 0.9172 - precision: 0.9272 - recall: 0.9066 - val_loss: 2.1718 - val_accuracy: 0.5664 - val_precision: 0.5757 - val_recall: 0.5598 - lr: 2.5000e-04
+Epoch 19/110
+890/890 [==============================] - ETA: 0s - loss: 0.2229 - accuracy: 0.9196 - precision: 0.9289 - recall: 0.9103
+Epoch 19: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+890/890 [==============================] - 274s 307ms/step - loss: 0.2229 - accuracy: 0.9196 - precision: 0.9289 - recall: 0.9103 - val_loss: 1.1568 - val_accuracy: 0.6928 - val_precision: 0.7029 - val_recall: 0.6821 - lr: 2.5000e-04
+Epoch 20/110
+890/890 [==============================] - 259s 290ms/step - loss: 0.1897 - accuracy: 0.9295 - precision: 0.9372 - recall: 0.9225 - val_loss: 0.9408 - val_accuracy: 0.7331 - val_precision: 0.7413 - val_recall: 0.7237 - lr: 1.2500e-04
+Epoch 21/110
+890/890 [==============================] - 266s 299ms/step - loss: 0.1789 - accuracy: 0.9332 - precision: 0.9400 - recall: 0.9270 - val_loss: 3.7465 - val_accuracy: 0.4586 - val_precision: 0.4623 - val_recall: 0.4553 - lr: 1.2500e-04
+Epoch 22/110
+890/890 [==============================] - 275s 309ms/step - loss: 0.1743 - accuracy: 0.9371 - precision: 0.9436 - recall: 0.9309 - val_loss: 2.1388 - val_accuracy: 0.5761 - val_precision: 0.5822 - val_recall: 0.5697 - lr: 1.2500e-04
+Epoch 23/110
+890/890 [==============================] - 262s 295ms/step - loss: 0.1736 - accuracy: 0.9363 - precision: 0.9429 - recall: 0.9304 - val_loss: 2.4303 - val_accuracy: 0.5645 - val_precision: 0.5713 - val_recall: 0.5579 - lr: 1.2500e-04
+Epoch 24/110
+890/890 [==============================] - ETA: 0s - loss: 0.1666 - accuracy: 0.9392 - precision: 0.9456 - recall: 0.9336
+Epoch 24: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+890/890 [==============================] - 257s 288ms/step - loss: 0.1666 - accuracy: 0.9392 - precision: 0.9456 - recall: 0.9336 - val_loss: 1.1484 - val_accuracy: 0.7254 - val_precision: 0.7321 - val_recall: 0.7198 - lr: 1.2500e-04
+56952/56952 [==============================] - 221s 4ms/step - loss: 0.3898 - accuracy: 0.8608 - precision: 0.8712 - recall: 0.8496
+WARNING:tensorflow:Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches (in this case, 56952 batches). You may need to use the repeat() function when building your dataset.
+Validation Loss: 0.3898, Validation Accuracy: 0.8608, Validation Precision: 0.8712, Validation Recall: 0.8496
+2025-08-15 11:48:30.959142: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'inputs' with dtype float and shape [?,32]
+	 [[{{node inputs}}]]
+2025-08-15 11:48:31.050786: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'inputs' with dtype float and shape [?,64]
+	 [[{{node inputs}}]]
+2025-08-15 11:48:31.144137: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'inputs' with dtype float and shape [?,128]
+	 [[{{node inputs}}]]
+2025-08-15 11:48:31.193180: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'inputs' with dtype float and shape [?,32]
+	 [[{{node inputs}}]]
+2025-08-15 11:48:32.768171: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'inputs' with dtype float and shape [?,32]
+	 [[{{node inputs}}]]
+2025-08-15 11:48:33.129346: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'inputs' with dtype float and shape [?,64]
+	 [[{{node inputs}}]]
+2025-08-15 11:48:33.493334: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'inputs' with dtype float and shape [?,128]
+	 [[{{node inputs}}]]
+2025-08-15 11:48:33.671158: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'inputs' with dtype float and shape [?,32]
+	 [[{{node inputs}}]]
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 20). These functions will not be directly callable after loading.
+2025-08-15 11:48:41.349744: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+2025-08-15 11:48:41.349775: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+2025-08-15 11:48:41.350908: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /tmp/tmpyd6tu7pl
+2025-08-15 11:48:41.367213: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2025-08-15 11:48:41.367235: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /tmp/tmpyd6tu7pl
+2025-08-15 11:48:41.378153: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2025-08-15 11:48:41.426631: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:353] MLIR V1 optimization pass is not enabled
+2025-08-15 11:48:41.438007: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2025-08-15 11:48:41.805823: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /tmp/tmpyd6tu7pl
+2025-08-15 11:48:41.904299: I tensorflow/cc/saved_model/loader.cc:314] SavedModel load for tags { serve }; Status: success: OK. Took 553396 microseconds.
+2025-08-15 11:48:42.193799: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Input details: [{'name': 'serving_default_input_1:0', 'index': 0, 'shape': array([ 1, 32, 44,  1], dtype=int32), 'shape_signature': array([-1, 32, 44,  1], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}, 'sparsity_parameters': {}}]
+Output details: [{'name': 'StatefulPartitionedCall:0', 'index': 159, 'shape': array([1, 4], dtype=int32), 'shape_signature': array([-1,  4], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}, 'sparsity_parameters': {}}]
+Training completed in time:  1:51:59.347940
+1780/1780 [==============================] - 50s 28ms/step - loss: 0.3176 - accuracy: 0.8785 - precision: 0.8897 - recall: 0.8683
+Training Accuracy:  0.878494143486023
+763/763 [==============================] - 23s 30ms/step - loss: 0.3898 - accuracy: 0.8608 - precision: 0.8712 - recall: 0.8496
+Testing Accuracy:  0.8608061671257019
+763/763 [==============================] - 23s 30ms/step
+0
+0
+Confusion matrix, without normalization
+[[5436  142  191  327]
+ [ 302 5091  165  554]
+ [ 503  169 5298  139]
+ [ 449  272  185 5189]]
+qt.xkb.compose: failed to create compose table
+
+Classification report for MfCCs + CNN for fold1:
+                               precision    recall  f1-score   support
+
+                queen_absent       0.81      0.89      0.85      6096
+queen_present_newly_accepted       0.90      0.83      0.86      6112
+      queen_present_original       0.91      0.87      0.89      6109
+      queen_present_rejected       0.84      0.85      0.84      6095
+
+                    accuracy                           0.86     24412
+                   macro avg       0.86      0.86      0.86     24412
+                weighted avg       0.86      0.86      0.86     24412
+
+rounded_predictions: [1 0 0 ... 3 3 3]
+rounded_labels: [0 0 0 ... 3 3 3]
+Confusion matrix, without normalization
+[[5436  142  191  327]
+ [ 302 5091  165  554]
+ [ 503  169 5298  139]
+ [ 449  272  185 5189]]
+
+Classification report:
+                               precision    recall  f1-score   support
+
+                queen_absent       0.81      0.89      0.85      6096
+queen_present_newly_accepted       0.90      0.83      0.86      6112
+      queen_present_original       0.91      0.87      0.89      6109
+      queen_present_rejected       0.84      0.85      0.84      6095
+
+                    accuracy                           0.86     24412
+                   macro avg       0.86      0.86      0.86     24412
+                weighted avg       0.86      0.86      0.86     24412
+
+Accuracy:  0.8608061609044733
+              precision    recall  f1-score       support
+0              0.812556  0.891732  0.850305   6096.000000
+1              0.897251  0.832952  0.863906   6112.000000
+2              0.907347  0.867245  0.886843   6109.000000
+3              0.835722  0.851354  0.843466   6095.000000
+accuracy       0.860806  0.860806  0.860806      0.860806
+macro avg      0.863219  0.860821  0.861130  24412.000000
+weighted avg   0.863266  0.860806  0.861146  24412.000000
+
+Process finished with exit code 0
